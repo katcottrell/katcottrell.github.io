@@ -1,0 +1,227 @@
+
+/*************************/
+/*    Styling  Header    */
+/*************************/
+header{
+    overflow: hidden; 
+}
+
+#top-header{
+    text-align: center; 
+    height: 60px; 
+}
+
+/***************************/
+/* Styling Navigation Menu */
+/***************************/
+#menu{ 
+    float: right; 
+    width: 100%; 
+    height: 100%; 
+    margin: none; 
+} 
+
+#menu ul{ 
+    text-align: center; 
+    float: right; 
+    margin: none; 
+    background: #181818; 
+} 
+      
+#menu li{ 
+    display: inline-block; 
+    padding: none; 
+    margin: none; 
+} 
+
+#menu li a, #menu li span{ 
+    display: inline-block; 
+    padding: 0em 1.5em; 
+    text-decoration: none; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    line-height: 60px; 
+} 
+
+#menu li a{
+    color: #FFF; 
+} 
+
+#menu li:hover a, #menu li span{ 
+    background: #FFF; 
+    color: #000000; 
+    border-left: 1px solid #ff1100; 
+    text-decoration: none; 
+} 
+
+/***************************/
+/* Default CSS values for HTML elements */
+/***************************/
+
+html, body{ 
+	height: 100%; 
+}
+
+body{ 
+	margin: 0px; 
+	padding: 0px; 
+	background: #000000; 
+	font-family: 'Roboto'; 
+	font-size: 12pt; 
+}
+		
+h1, h2, h3{ 
+	margin-left: 60; 
+	padding: 0; 
+	color: #FFF; 
+}
+	
+p, ol, ul{ 
+	margin-top: 30; 
+	margin-left: 60;
+	color: #FFF;
+} 
+
+p { 
+	line-height: 180%; 
+} 
+
+ol, ul{ 
+	padding: 0; 
+	list-style: none; 
+} 
+
+a {
+  color: #00ff84;
+}
+	
+.container{	 
+	/* Set width of container to 
+		1200px and align center */
+	margin: 0px auto; 
+	width: 1200px; 
+} 
+
+/*****************************/
+/* Styling Header Image Menu */
+/*****************************/
+
+ #header-image-menu{ 
+	top: 0px; 
+	position: relative; 
+}
+
+#header-image-menu img{ 
+	width: 100%; 
+	margin: none; 
+	padding: none; 
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #cccccc;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #e0e0e0;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #e0e0e0;
+  color: black;
+}
+
+/* List style */
+li {
+    font-size: 12pt;
+    margin-left: 60px;
+    list-style-type: circle;
+ }
+
+/* Logo */
+#logo{ 
+    float: left; 
+    padding: none; 
+    margin: none; 
+    height: 60px; 
+    width: 100%; 
+} 
+  
+#logo img{ 
+    width: 100%; 
+    float: left; 
+    padding: 0px 0px; 
+}    
+
+/* The sidebar menu */
+.sidenav {
+  /* height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 240px; /* Set the width of the sidebar */
+  position: absolute; /* CHANGED TO ABSOLUTE Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 400; /* CHANGED FROM 350: KEEP BELOW TOP BAR */
+  left: 0;
+  background-color: #cccccc; /* Gray */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #000000;
+  display: block;
+}
+
+.techIndent {
+	margin-top:  30px;
+	margin-right: 60px;
+	margin-bottom: 30px;
+	margin-left: 300px;
+}
+.standardIndent {
+	margin-top:  30px;
+	margin-right: 60px;
+	margin-bottom: 30px;
+	margin-left: 60px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+	background-color: #e0e0e0;
+	color: black;
+}
+
+/* Add a color to the active/current link */
+.sidenav a.active {
+  background-color: #e0e0e0;
+  color: black;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
