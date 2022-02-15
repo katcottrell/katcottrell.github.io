@@ -2,7 +2,7 @@ let headerCode =
     '<header>\n' +
 		'<link rel="stylesheet" href="style.css">\n' +
 		'<div id="header-image-menu">\n' +
-		'<img src="My_Banner.png">\n' +
+		'<img src="images/My_Banner.png">\n' +
 		'</div>\n' +
 		'<div class="topnav">\n' +
 		'<code><a href="index.html">Kat Cottrell</a></code>\n' +
