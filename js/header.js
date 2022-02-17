@@ -1,23 +1,30 @@
 function makeHeader(tab) {
-	let home     = tab === "home"     ? '<a class="active" href="index.html">Home</a>\n'            : '<a href="index.html">Home</a>\n';
-	let about    = tab === "about"    ? '<a class="active" href="about.html">About</a>\n'           : '<a href="about.html">About</a>\n';
-	let resume   = tab === "resume"   ? '<a class="active" href="resume.html">Resume</a>\n'         : '<a href="resume.html">Resume</a>\n';
-	let tech     = tab === "tech"     ? '<a class="active" href="tech.html">Technical Skills</a>\n' : '<a href="tech.html">Technical Skills</a>\n';
-	let projects = tab === "projects" ? '<a class="active" href="projects.html">Projects</a>\n'     : '<a href="projects.html">Projects</a>\n';
-	let art      = tab === "art"      ? '<a class="active" href="art.html">Art</a>\n'               : '<a href="art.html">Art</a>\n';
-	let contact  = tab === "contact"  ? '<a class="active" href="contact.html">Contact</a>\n'       : '<a href="contact.html">Contact</a>\n';
+	let abs      = 'https://katcottrell.github.io/';
+	let home     = tab === "home"     ? 'class="active" ' : '';
+	let about    = tab === "about"    ? 'class="active" ' : '';
+	let resume   = tab === "resume"   ? 'class="active" ' : '';
+	let tech     = tab === "tech"     ? 'class="active" ' : '';
+	let projects = tab === "projects" ? 'class="active" ' : '';
+	let art      = tab === "art"      ? 'class="active" ' : '';
+	let contact  = tab === "contact"  ? 'class="active" ' : '';
 	
 	let headerCode = 
 	    '<header>\n' +
-	    '<link rel="stylesheet" href="style.css">\n' +
+	    '<link rel="stylesheet" href="https://katcottrell.github.io/style.css">\n' +
 	    '<div id="header-image-menu">\n' +
-	    '<img src="images/My_Banner.png">\n' +
+	    '<img src="https://katcottrell.github.io/images/My_Banner.png">\n' +
 	    '</div>\n' +
 	    '<div class="topnav">\n' +
 	    '<code><a href="index.html">Kat Cottrell</a></code>\n' +
-	    home + about + resume + tech + projects + art + contact +
+	    '<a ' + home     + 'href="' + abs + 'index.html">Home</a>\n' +
+	    '<a ' + about    + 'href="' + abs + 'about.html">About</a>\n' +
+	    '<a ' + resume   + 'href="' + abs + 'resume.html">Resume</a>\n' +
+	    '<a ' + tech     + 'href="' + abs + 'tech.html">Technical Skills</a>\n' +
+	    '<a ' + projects + 'href="' + abs + 'projects.html">Projects</a>\n' +
+	    '<a ' + art      + 'href="' + abs + 'art.html">Art</a>\n' +
+	    '<a ' + contact  + 'href="' + abs + 'contact.html">Contact</a>\n' +
 	    '</div>\n' +
-	    '</header>';
+	    '</header>\n';
 	
 	document.write(headerCode);
 }
