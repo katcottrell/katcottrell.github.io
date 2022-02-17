@@ -1,22 +1,36 @@
 function makeSideNav(tab) {
-	let tech   = tab === "tech"   ? '<code><a class="active" href="tech.html">My Technical Skills</a></code>'  : '<code><a href="tech.html">My Technical Skills</a></code>\n';
-	let c      = tab === "c"      ? '<a class="active" href="c-skills.html">C</a>\n'                           : '<a href="c-skills.html">C</a>\n';
-	let excel  = tab === "excel"  ? '<a class="active" href="excel-openrefine-skills.html">Spreadsheets</a>\n' : '<a href="excel-openrefine-skills.html">Spreadsheets</a>\n';
-	let git    = tab === "git"    ? '<a class="active" href="git-skills.html">Git & Github</a>\n'              : '<a href="git-skills.html">Git & Github</a>\n';
-	let html   = tab === "html"   ? '<a class="active" href="html-css-skills.html">HTML & CSS</a>\n'           : '<a href="html-css-skills.html">HTML & CSS</a>\n';
-	let java   = tab === "java"   ? '<a class="active" href="java-skills.html">Java</a>\n'                     : '<a href="java-skills.html">Java</a>\n';
-	let linux  = tab === "linux"  ? '<a class="active" href="linux-unix-skills.html">Linux & Unix</a>\n'       : '<a href="linux-unix-skills.html">Linux & Unix</a>\n';
-	let ml     = tab === "ml"     ? '<a class="active" href="ml-skills.html">Machine Learning</a>\n'           : '<a href="ml-skills.html">Machine Learning</a>\n';
-	let matlab = tab === "matlab" ? '<a class="active" href="matlab-skills.html">MATLAB</a>\n'                 : '<a href="matlab-skills.html">MATLAB</a>\n';
-	let python = tab === "python" ? '<a class="active" href="python-skills.html">Python</a>\n'                 : '<a href="python-skills.html">Python</a>\n';
-	let r      = tab === "r"      ? '<a class="active" href="r-skills.html">R</a>\n'                           : '<a href="r-skills.html">R</a>\n';
-	let db     = tab === "db"     ? '<a class="active" href="sql-skills.html">Databases</a>\n'                 : '<a href="sql-skills.html">Databases</a>\n';
-	let stata  = tab === "stata"  ? '<a class="active" href="stata-skills.html">Stata</a>\n'                   : '<a href="stata-skills.html">Stata</a>\n';
-	let dv     = tab === "dv"     ? '<a class="active" href="tableau-skills.html">Data Visualization</a>\n'    : '<a href="tableau-skills.html">Data Visualization</a>\n';
+	let abs    = 'https://katcottrell.github.io/';
+	let tech   = tab === "tech"   ? 'class="active" ' : '';
+	let c      = tab === "c"      ? 'class="active" ' : '';
+	let excel  = tab === "excel"  ? 'class="active" ' : '';
+	let git    = tab === "git"    ? 'class="active" ' : '';
+	let html   = tab === "html"   ? 'class="active" ' : '';
+	let java   = tab === "java"   ? 'class="active" ' : '';
+	let linux  = tab === "linux"  ? 'class="active" ' : '';
+	let ml     = tab === "ml"     ? 'class="active" ' : '';
+	let matlab = tab === "matlab" ? 'class="active" ' : '';
+	let python = tab === "python" ? 'class="active" ' : '';
+	let r      = tab === "r"      ? 'class="active" ' : '';
+	let db     = tab === "db"     ? 'class="active" ' : '';
+	let stata  = tab === "stata"  ? 'class="active" ' : '';
+	let dv     = tab === "dv"     ? 'class="active" ' : '';
   
 	let sideNavCode = 
 	    '<div class="sidenav">\n' + 
-	    tech + c + excel + git + html + java + linux + ml + matlab + python + r + db + stata + dv + 
+	    '<code><a ' + tech + 'href="' + abs + 'tech.html">My Technical Skills</a></code>\n' +
+	    '<a ' + c      + 'href="' + abs + 'c-skills.html">C</a>\n' +
+	    '<a ' + excel  + 'href="' + abs + 'excel-openrefine-skills.html">Spreadsheets</a>\n' +
+	    '<a ' + git    + 'href="' + abs + 'git-skills.html">Git & Github</a>\n' +
+	    '<a ' + html   + 'href="' + abs + 'html-css-skills.html">HTML & CSS</a>\n' +
+	    '<a ' + java   + 'href="' + abs + 'java-skills.html">Java</a>\n' +
+	    '<a ' + linux  + 'href="' + abs + 'linux-unix-skills.html">Linux & Unix</a>\n' +
+	    '<a ' + ml     + 'href="' + abs + 'ml-skills.html">Machine Learning</a>\n' +
+	    '<a ' + matlab + 'href="' + abs + 'matlab-skills.html">MATLAB</a>\n' +
+	    '<a ' + python + 'href="' + abs + 'python-skills.html">Python</a>\n' +
+	    '<a ' + r      + 'href="' + abs + 'r-skills.html">R</a>\n' +
+	    '<a ' + db     + 'href="' + abs + 'sql-skills.html">Databases</a>\n' +
+	    '<a ' + stata  + 'href="' + abs + 'stata-skills.html">Stata</a>\n' +
+	    '<a ' + dv     + 'href="' + abs + 'tableau-skills.html">Data Visualization</a>\n' +
 	    '</div>\n';
 	
 	document.write(sideNavCode);
