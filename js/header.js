@@ -20,7 +20,7 @@ function makeHeader(tab) {
 	    '<a ' + about    + 'href="' + abs + 'about.html">About</a>\n' +
 	    '<a ' + resume   + 'href="' + abs + 'resume.html">Resume</a>\n' +
 	    '<a ' + tech     + 'href="' + abs + 'tech.html">Technical Skills</a>\n' +
-	    '<a ' + projects + 'href="' + abs + 'projects.html">Projects</a>\n' +
+	    // '<a ' + projects + 'href="' + abs + 'projects.html">Projects</a>\n' +
 	    '<a ' + art      + 'href="' + abs + 'art.html">Art</a>\n' +
 	    '<a ' + contact  + 'href="' + abs + 'contact.html">Contact</a>\n' +
 	    '</div>\n' +
