@@ -3,6 +3,6 @@ let headCode =
     '<title>\n' +
     'Kat Cottrell | Home\n' +
     '</title>\n' +
-    '<link rel="icon" href="images/kc_fav.png">\n' +
+    '<link rel="icon" href="https://katcottrell.github.io/images/kc_fav.png">\n' +
     '</head>';
 document.write(headCode);
