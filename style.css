@@ -225,9 +225,3 @@ li {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-
-/* Add border to images */
-img {
-  border: 5px solid #cccccc;
-  border-radius: 4px;
-}
