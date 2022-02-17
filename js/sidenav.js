@@ -18,19 +18,19 @@ function makeSideNav(tab) {
 	let sideNavCode = 
 	    '<div class="sidenav">\n' + 
 	    '<code><a ' + tech + 'href="' + abs + 'tech.html">My Technical Skills</a></code>\n' +
-	    '<a ' + c      + 'href="' + abs + 'c-skills.html">C</a>\n' +
-	    '<a ' + excel  + 'href="' + abs + 'excel-openrefine-skills.html">Spreadsheets</a>\n' +
-	    '<a ' + git    + 'href="' + abs + 'git-skills.html">Git & Github</a>\n' +
-	    '<a ' + html   + 'href="' + abs + 'html-css-skills.html">HTML & CSS</a>\n' +
-	    '<a ' + java   + 'href="' + abs + 'java-skills.html">Java</a>\n' +
-	    '<a ' + linux  + 'href="' + abs + 'linux-unix-skills.html">Linux & Unix</a>\n' +
-	    '<a ' + ml     + 'href="' + abs + 'ml-skills.html">Machine Learning</a>\n' +
-	    '<a ' + matlab + 'href="' + abs + 'matlab-skills.html">MATLAB</a>\n' +
-	    '<a ' + python + 'href="' + abs + 'python-skills.html">Python</a>\n' +
-	    '<a ' + r      + 'href="' + abs + 'r-skills.html">R</a>\n' +
-	    '<a ' + db     + 'href="' + abs + 'sql-skills.html">Databases</a>\n' +
-	    '<a ' + stata  + 'href="' + abs + 'stata-skills.html">Stata</a>\n' +
-	    '<a ' + dv     + 'href="' + abs + 'tableau-skills.html">Data Visualization</a>\n' +
+	    '<a ' + c      + 'href="' + abs + 'tech/c-skills.html">C</a>\n' +
+	    '<a ' + excel  + 'href="' + abs + 'tech/excel-openrefine-skills.html">Spreadsheets</a>\n' +
+	    '<a ' + git    + 'href="' + abs + 'tech/git-skills.html">Git & Github</a>\n' +
+	    '<a ' + html   + 'href="' + abs + 'tech/html-css-skills.html">HTML & CSS</a>\n' +
+	    '<a ' + java   + 'href="' + abs + 'tech/java-skills.html">Java</a>\n' +
+	    '<a ' + linux  + 'href="' + abs + 'tech/linux-unix-skills.html">Linux & Unix</a>\n' +
+	    '<a ' + ml     + 'href="' + abs + 'tech/ml-skills.html">Machine Learning</a>\n' +
+	    '<a ' + matlab + 'href="' + abs + 'tech/matlab-skills.html">MATLAB</a>\n' +
+	    '<a ' + python + 'href="' + abs + 'tech/python-skills.html">Python</a>\n' +
+	    '<a ' + r      + 'href="' + abs + 'tech/r-skills.html">R</a>\n' +
+	    '<a ' + db     + 'href="' + abs + 'tech/sql-skills.html">Databases</a>\n' +
+	    '<a ' + stata  + 'href="' + abs + 'tech/stata-skills.html">Stata</a>\n' +
+	    '<a ' + dv     + 'href="' + abs + 'tech/tableau-skills.html">Data Visualization</a>\n' +
 	    '</div>\n';
 	
 	document.write(sideNavCode);
