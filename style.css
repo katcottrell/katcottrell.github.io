@@ -173,7 +173,7 @@ li {
   width: 240px; /* Set the width of the sidebar */
   position: absolute; /* CHANGED TO ABSOLUTE Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
-  top: 400; /* CHANGED FROM 350: KEEP BELOW TOP BAR */
+  top: 420;  /*400;  CHANGED FROM 350: KEEP BELOW TOP BAR */
   left: 0;
   background-color: #cccccc; /* Gray */
   overflow-x: hidden; /* Disable horizontal scroll */
