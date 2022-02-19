@@ -12,7 +12,9 @@ function makeHeader(tab) {
 	    '<header>\n' +
 	    '<link rel="stylesheet" href="https://katcottrell.github.io/style.css">\n' +
 	    '<div id="header-image-menu">\n' +
+	    '<a href="https://katcottrell.github.io">' +
 	    '<img src="https://katcottrell.github.io/images/My_Banner.png">\n' +
+	    '</a>' + 
 	    '</div>\n' +
 	    '<div class="topnav">\n' +
 	    '<code><a href="index.html">Kat Cottrell</a></code>\n' +
