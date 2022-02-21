@@ -17,7 +17,7 @@ function makeSideNav(tab) {
   
 	let sideNavCode = 
 	    '<div class="sidenav">\n' + 
-	    '<code><a ' + tech + 'href="' + abs + 'tech.html">My Technical Skills</a></code>\n' +
+	    '<a ' + tech   + 'href="' + abs + 'tech/tech.html" style="font-weight:bold;font-size:20px;">My Technical Skills</a>\n' +
 	    '<a ' + c      + 'href="' + abs + 'tech/c-skills.html">C</a>\n' +
 	    '<a ' + excel  + 'href="' + abs + 'tech/excel-openrefine-skills.html">Spreadsheets</a>\n' +
 	    '<a ' + git    + 'href="' + abs + 'tech/git-skills.html">Git & Github</a>\n' +
