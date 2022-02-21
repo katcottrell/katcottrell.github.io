@@ -20,7 +20,7 @@ function makeHeader(tab) {
 	    '<a href="https://katcottrell.github.io/index.html" style="font-weight:bold;">Kat Cottrell</a>\n' +
 	    '<a ' + home     + 'href="' + abs + 'index.html">Home</a>\n' +
 	    '<a ' + about    + 'href="' + abs + 'about.html">About</a>\n' +
-	    '<a ' + resume   + 'href="' + abs + 'resume.html">Resume</a>\n' +
+	    '<a ' + resume   + 'href="' + abs + 'resume.html">Résumé</a>\n' +
 	    '<a ' + tech     + 'href="' + abs + 'tech.html">Technical Skills</a>\n' +
 	    // '<a ' + projects + 'href="' + abs + 'projects.html">Projects</a>\n' +
 	    '<a ' + art      + 'href="' + abs + 'art.html">Art</a>\n' +
