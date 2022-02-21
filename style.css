@@ -1,3 +1,50 @@
+/***************************/
+/* Default CSS values for HTML elements */
+/***************************/
+
+html, body{ 
+	height: 100%; 
+}
+
+body{ 
+	margin: 0px; 
+	padding: 0px; 
+	background: #000000; 
+	font-family: 'Roboto'; 
+	font-size: 12pt; 
+}
+		
+h1, h2, h3{ 
+	margin-left: 60; 
+	padding: 0; 
+	color: #FFF; 
+}
+	
+p, ol, ul{ 
+	margin-top: 30; 
+	margin-left: 60;
+	color: #FFF;
+} 
+
+p { 
+	line-height: 180%; 
+} 
+
+ol, ul{ 
+	padding: 0; 
+	list-style: none; 
+} 
+
+a {
+  color: #00ff84;
+}
+	
+.container{	 
+	/* Set width of container to 
+		1200px and align center */
+	margin: 0px auto; 
+	width: 1200px; 
+} 
 
 /*************************/
 /*    Styling  Header    */
@@ -52,54 +99,6 @@ header{
     color: #000000; 
     border-left: 1px solid #ff1100; 
     text-decoration: none; 
-} 
-
-/***************************/
-/* Default CSS values for HTML elements */
-/***************************/
-
-html, body{ 
-	height: 100%; 
-}
-
-body{ 
-	margin: 0px; 
-	padding: 0px; 
-	background: #000000; 
-	font-family: 'Roboto'; 
-	font-size: 12pt; 
-}
-		
-h1, h2, h3{ 
-	margin-left: 60; 
-	padding: 0; 
-	color: #FFF; 
-}
-	
-p, ol, ul{ 
-	margin-top: 30; 
-	margin-left: 60;
-	color: #FFF;
-} 
-
-p { 
-	line-height: 180%; 
-} 
-
-ol, ul{ 
-	padding: 0; 
-	list-style: none; 
-} 
-
-a {
-  color: #00ff84;
-}
-	
-.container{	 
-	/* Set width of container to 
-		1200px and align center */
-	margin: 0px auto; 
-	width: 1200px; 
 } 
 
 /*****************************/
@@ -230,4 +229,43 @@ li {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+
+
+/*******************************/
+/*    Styling  Collapsibles    */
+/*******************************/
+
+.collapsible {
+  background-color: #cccccc;
+  color: #000000;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.collapsible:hover {
+  background-color: #e0e0e0;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.collapsible:after {
+  content: '\26DB'; /* Unicode character for "plus" sign (+) */
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
