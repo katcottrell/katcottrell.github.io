@@ -266,6 +266,6 @@ li {
   margin-left: 5px;
 }
 
-.active:after {
+.opened:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
