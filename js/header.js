@@ -17,7 +17,7 @@ function makeHeader(tab) {
 	    '</a>' + 
 	    '</div>\n' +
 	    '<div class="topnav">\n' +
-	    '<code><a href="index.html">Kat Cottrell</a></code>\n' +
+	    '<a href="https://katcottrell.github.io/index.html" style="font-weight:bold;">Kat Cottrell</a>\n' +
 	    '<a ' + home     + 'href="' + abs + 'index.html">Home</a>\n' +
 	    '<a ' + about    + 'href="' + abs + 'about.html">About</a>\n' +
 	    '<a ' + resume   + 'href="' + abs + 'resume.html">Resume</a>\n' +
