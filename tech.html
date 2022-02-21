@@ -61,6 +61,41 @@
 				<li>And more!</li>
 			</ul>
 			
+			<!-- Ref: https://www.w3schools.com/howto/howto_js_collapsible.asp -->
+			
+			<h2>Technical Coursework</h2>
+			
+			<button type="button" class="collapsible">EGR 103</button>
+			<div class="content">
+				<p>Description.</p>
+			</div>
+			
+			<button type="button" class="collapsible">CS 201</button>
+			<div class="content">
+				<p>Description.</p>
+			</div>
+			
+			<button type="button" class="collapsible">CS 230</button>
+			<div class="content">
+				<p>Description.</p>
+			</div>
+			
+			<script>
+				var coll = document.getElementsByClassName("collapsible");
+				var i;
+				for (i = 0; i < coll.length; i++) {
+					coll[i].addEventListener("click", function() {
+						this.classList.toggle("active");
+						var content = this.nextElementSibling;
+						if (content.style.display === "block") {
+							content.style.display = "none";
+						} else {
+							content.style.display = "block";
+						}
+					});
+				}
+			</script>
+			
 			<p>Want to know if I can do something that isn’t listed here, or how quickly I could 
 				learn that skill?  Please email me at 
 				<a href="mailto:katherine.cottrell@duke.edu">katherine.cottrell@duke.edu</a>!  
