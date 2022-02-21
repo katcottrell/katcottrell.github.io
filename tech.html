@@ -4,23 +4,8 @@
 	<script>makeHead("Technical Skills");</script>
 	<script type="text/javascript" src="js/header.js"></script>
 	<script>makeHeader("tech");</script>
-	<!-- Side navigation -->
-	<div class="sidenav">
-		<code><a class="active" href="tech.html">My Technical Skills</a></code>
-		<a href="tech/c-skills.html">C</a>
-		<a href="tech/excel-openrefine-skills.html">Excel & OpenRefine</a>
-		<a href="tech/git-skills.html">Git & Github</a>
-		<a href="tech/html-css-skills.html">HTML & CSS</a>
-		<a href="tech/java-skills.html">Java</a>
-		<a href="tech/linux-unix-skills.html">Linux & Unix</a>
-		<a href="tech/ml-skills.html">Machine Learning</a>
-		<a href="tech/matlab-skills.html">MATLAB</a>
-		<a href="tech/python-skills.html">Python</a>
-		<a href="tech/r-skills.html">R</a>
-		<a href="tech/sql-skills.html">SQL</a>
-		<a href="tech/stata-skills.html">Stata</a>
-		<a href="tech/tableau-skills.html">Tableau</a>
-	</div>
+	<script type="text/javascript" src="https://katcottrell.github.io/js/sidenav.js"></script>
+	<script>makeSideNav("tech");</script>
 	<body>
 		<div class="techIndent">
 			<h1>My Technical Skills</h1>
@@ -85,7 +70,7 @@
 				var i;
 				for (i = 0; i < coll.length; i++) {
 					coll[i].addEventListener("click", function() {
-						this.classList.toggle("active");
+						this.classList.toggle("opened");
 						var content = this.nextElementSibling;
 						if (content.style.display === "block") {
 							content.style.display = "none";
