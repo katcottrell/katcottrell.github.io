@@ -256,11 +256,11 @@ li {
 }
 
 .collapsible:after {
-  content: '\26DB'; /* Unicode character for "plus" sign (+) */
-  float: right;
-  margin-left: 5px;
+  content: '\2796'; /* Unicode character for "minus" sign (-) */
+  float: left;
+  margin-right: 15px;
 }
 
 .opened:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "\26DB"; /* Unicode character for "down-pointing triangle" sign */
 }
