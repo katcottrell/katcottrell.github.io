@@ -192,7 +192,7 @@ li {
 }
 
 .sidenav a2 {
-	padding: 6px 8px 6px 32px;
+	padding: 6px 8px 6px 40px;
 	font-size: 17px;
 	font-family: monospace;
 	text-decoration: none;
@@ -214,13 +214,13 @@ li {
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.sidenav a2:hover {
 	background-color: #e0e0e0;
 	color: black;
 }
 
 /* Add a color to the active/current link */
-.sidenav a.active {
+.sidenav a2.active {
   background-color: #e0e0e0;
   color: black;
 }
