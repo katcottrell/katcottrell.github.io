@@ -220,9 +220,14 @@ li {
 }
 
 /* Add a color to the active/current link */
-.sidenav a.tabs:active {
-  background-color: #e0e0e0;
-  color: black;
+.sidenav a.active {
+	padding: 6px 8px 6px 40px;
+	font-size: 17px;
+	font-family: monospace;
+	text-decoration: none;
+	color: #000000;
+	display: block;
+	background-color: #e0e0e0;
 }
 
 /* Style page content */
