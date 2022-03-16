@@ -16,7 +16,7 @@ function makeSideNav(tab) {
 		sideNavCode += 'href="' + abs + languageLinks[i] + '-skills.html">' + 
 				languageTitles[i] + '</a>\n';
 	}
-	sideNavCode += '<a class="cats">Other Skills</a>\n';
+	sideNavCode += '<a class="cats" style="margin-top:20px;">Other Skills</a>\n';
 	for (let i = 0; i < otherSkillLinks.length; i++) {
 		if (tab === otherSkillLinks[i]) {
 			sideNavCode += '<a class="active" ';
