@@ -220,7 +220,7 @@ li {
 }
 
 /* Add a color to the active/current link */
-.sidenav a.tabs.active {
+.sidenav a.tabs:active {
   background-color: #e0e0e0;
   color: black;
 }
