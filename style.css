@@ -181,7 +181,7 @@ li {
   padding-bottom: 20px;
 }
 
-.sidenav a1 {
+.sidenav a.cats {
 	padding: 6px 8px 6px 16px;
 	font-size:20px;
 	font-weight:bold;
@@ -191,7 +191,7 @@ li {
 	display: block;
 }
 
-.sidenav a2 {
+.sidenav a.tabs {
 	padding: 6px 8px 6px 40px;
 	font-size: 17px;
 	font-family: monospace;
@@ -214,13 +214,13 @@ li {
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a2:hover {
+.sidenav a.tabs:hover {
 	background-color: #e0e0e0;
 	color: black;
 }
 
 /* Add a color to the active/current link */
-.sidenav a2.active {
+.sidenav a.tabs.active {
   background-color: #e0e0e0;
   color: black;
 }
