@@ -6,7 +6,7 @@ const otherSkillTitles = ['Data Visualization', 'Databases', 'Git', 'Machine Lea
 let abs                = 'https://katcottrell.github.io/tech/';
 
 function makeSideNav(tab) {  
-	let sideNavCode = '<div class="sidenav">\n<a class="cats">Languages</a>\n';
+	let sideNavCode = '<div class="sidenav">\n<a class="cats">Programming Languages</a>\n';
 	for (let i = 0; i < languageLinks.length; i++) {
 		if (tab === languageLinks[i]) {
 			sideNavCode += '<a class="active" ';
