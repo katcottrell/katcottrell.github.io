@@ -10,7 +10,7 @@ body{
 	margin: 0px; 
 	padding: 0px; 
 	background: #000000; 
-	font-family: 'Roboto'; 
+	font-family: "Century Gothic", Helvetica, Arial, sans-serif; 
 	font-size: 12pt; 
 }
 		
@@ -36,10 +36,11 @@ p {
 ol, ul{ 
 	padding: 0; 
 	list-style: none; 
+	line-height: 180%; 
 } 
 
 a {
-  color: #00ff84;
+	color: #00ff84;
 }
 	
 .container{	 
@@ -169,7 +170,7 @@ li {
 }    
 
 .sidenav {
-  width: 250px;
+  width: 270px;
   position: absolute;
   z-index: 1;
   margin-top: 30px;
@@ -202,9 +203,9 @@ li {
 
 .techIndent {
 	margin-top:  30px;
-	margin-right: 60px;
+	margin-right: 100px;
 	margin-bottom: 30px;
-	margin-left: 330px;
+	margin-left: 350px;
 }
 .standardIndent {
 	margin-top:  30px;
