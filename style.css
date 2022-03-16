@@ -109,22 +109,23 @@ header{
 /* Styling Header Image Menu */
 /*****************************/
 
- #header-image-menu{ 
+ #header-image-menu { 
 	top: 0px; 
 	position: relative; 
 }
 
-#header-image-menu img{ 
+#header-image-menu img { 
 	width: 100%; 
 	margin: none; 
 	padding: none; 
 }
 
 .topnav {
-  background-color: #cccccc;
-  font-family: monospace;
-  font-size: 17px;
-  overflow: hidden;
+	background-color: #cccccc;
+	font-family: monospace;
+	font-size: 17px;
+	overflow: hidden;
+	padding-left: 50px;
 }
 
 /* Style the links inside the navigation bar */
