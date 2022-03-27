@@ -289,3 +289,11 @@ li {
   float: left;
   margin-right: 15px;
 }
+
+/*video caption styling*/
+.vidcap { 
+	width: 600px;
+	margin: auto;
+	font-size: 12px;
+	font-style: italic;
+}
