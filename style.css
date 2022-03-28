@@ -208,8 +208,8 @@ li {
 .techIndent {
 	margin-top:  30px;
 	margin-right: 100px;
-	margin-bottom: 300px;
 	margin-left: 350px;
+	padding-bottom: 150px;
 }
 .standardIndent {
 	margin-top:  30px;
@@ -296,4 +296,5 @@ li {
 	margin: auto;
 	font-size: 12px;
 	font-style: italic;
+	max-width: 100%;
 }
