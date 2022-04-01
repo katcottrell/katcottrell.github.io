@@ -8,6 +8,7 @@ let abs = 'https://katcottrell.github.io/';
 function makeSideNav(tab) {  
 	let sideNavCode = '\n<div class="sidenav">\n';
 	sideNavCode    += '<a class="sideTitle" href="' + abs + 'tech.html">My Tech Skills</a>\n';
+	sideNavCode    += '<hr style="width:90%;">\n';
 	sideNavCode    += '<a class="sideHeading">Programming Languages</a>\n';
 	for (let i = 0; i < languageLinks.length; i++) {
 		if (tab === languageLinks[i]) {
