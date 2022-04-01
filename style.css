@@ -170,6 +170,10 @@ li {
     padding: 0px 0px; 
 }    
 
+/*********************************************************************************/
+/*                           Styling Side Navigation                             */ 
+/*********************************************************************************/
+
 .sidenav {
 	top: 40px;
 	float: left;
@@ -186,7 +190,17 @@ li {
 	padding-bottom: 20px;
 }
 
-.sidenav a.cats {
+.sidenav a.sideTitle {
+	padding-left: 16px;
+	font-size: 30px;
+	font-family: monospace;
+	font-weight: bolder;
+	text-decoration: none;
+	color: #000000;
+	display: block;
+}
+
+.sidenav a.sideHeading {
 	padding: 6px 8px 6px 16px;
 	font-size:20px;
 	font-weight:bold;
@@ -196,13 +210,28 @@ li {
 	display: block;
 }
 
-.sidenav a.tabs {
+.sidenav a.sideTabs {
 	padding: 6px 8px 6px 40px;
 	font-size: 17px;
 	font-family: monospace;
 	text-decoration: none;
 	color: #000000;
 	display: block;
+}
+
+.sidenav a.tabs:hover {
+	background-color: #e0e0e0;
+	color: black;
+}
+
+.sidenav a.active {
+	padding: 6px 8px 6px 40px;
+	font-size: 17px;
+	font-family: monospace;
+	text-decoration: none;
+	color: #000000;
+	display: block;
+	background-color: #e0e0e0;
 }
 
 .techIndent {
@@ -216,23 +245,6 @@ li {
 	margin-right: 100px;
 	margin-bottom: 300px;
 	margin-left: 100px;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a.tabs:hover {
-	background-color: #e0e0e0;
-	color: black;
-}
-
-/* Add a color to the active/current link */
-.sidenav a.active {
-	padding: 6px 8px 6px 40px;
-	font-size: 17px;
-	font-family: monospace;
-	text-decoration: none;
-	color: #000000;
-	display: block;
-	background-color: #e0e0e0;
 }
 
 /* Style page content */
