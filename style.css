@@ -221,13 +221,15 @@ li {
 
 .sidenav a.tabs:hover {
 	background-color: #e0e0e0;
-	color: black;
+	color: #000000;
+	background-color: #e0e0e0;
 }
 
 .sidenav a.active {
 	padding: 6px 8px 6px 40px;
 	font-size: 17px;
 	font-family: monospace;
+	font-weight: bold;
 	text-decoration: none;
 	color: #000000;
 	display: block;
