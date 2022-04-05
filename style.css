@@ -50,6 +50,28 @@ a {
 	width: 1200px; 
 } 
 
+/*********************************************************************************/
+/*                           Indentation and Spacing                             */ 
+/*********************************************************************************/
+
+.aboveFooter{
+	min-height: calc(100% - 40px);
+}
+
+.techIndent {
+	margin-top:  30px;
+	margin-right: 100px;
+	margin-left: 350px;
+	padding-bottom: 150px;
+}
+
+.standardIndent {
+	margin-top:  30px;
+	margin-right: 100px;
+	margin-bottom: 200px;
+	margin-left: 100px;
+}
+
 /*************************/
 /*    Styling  Header    */
 /*************************/
@@ -257,19 +279,6 @@ li {
 	color: #000000;
 	display: block;
 	background-color: #e0e0e0;
-}
-
-.techIndent {
-	margin-top:  30px;
-	margin-right: 100px;
-	margin-left: 350px;
-	padding-bottom: 150px;
-}
-.standardIndent {
-	margin-top:  30px;
-	margin-right: 100px;
-	margin-bottom: 200px;
-	margin-left: 100px;
 }
 
 /* Style page content */
