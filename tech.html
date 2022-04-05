@@ -2,14 +2,15 @@
 <html lang="en">
 	<script type="text/javascript" src="js/head.js"></script>
 	<script>makeHead("Technical Skills");</script>
-	<script type="text/javascript" src="js/header.js"></script>
-	<script>makeHeader("tech");</script>
-	<script type="text/javascript" src="https://katcottrell.github.io/js/sidenav.js"></script>
 	<div>
-	<script>makeSideNav("tech");</script>
-	<body>
-		<div class="techIndent">
-			<h1>My Technical Skills</h1>
+		<body>
+			<div class="aboveFooter">
+				<script type="text/javascript" src="js/header.js"></script>
+				<script>makeHeader("tech");</script>
+				<script type="text/javascript" src="https://katcottrell.github.io/js/sidenav.js"></script>
+				<script>makeSideNav("tech");</script>
+				<div class="techIndent">
+					<h1>My Technical Skills</h1>
 			<p>In my years as a computer science student and enthusiast, I have 
 				learned many programming languages and other tools for software 
 				development and data science.  Scroll on to see an overview of 
@@ -363,22 +364,25 @@
 			</div>
 			
 			
-			<script>
-				var coll = document.getElementsByClassName("collapsible");
-				var i;
-				for (i = 0; i < coll.length; i++) {
-					coll[i].addEventListener("click", function() {
-						this.classList.toggle("opened");
-						var content = this.nextElementSibling;
-						if (content.style.display === "block") {
-							content.style.display = "none";
-						} else {
-							content.style.display = "block";
+					<script>
+						var coll = document.getElementsByClassName("collapsible");
+						var i;
+						for (i = 0; i < coll.length; i++) {
+							coll[i].addEventListener("click", function() {
+								this.classList.toggle("opened");
+								var content = this.nextElementSibling;
+								if (content.style.display === "block") {
+									content.style.display = "none";
+								} else {
+									content.style.display = "block";
+								}
+							});
 						}
-					});
-				}
-			</script>
-		</div>
-	</body>
+					</script>
+				</div>
+			</div>
+			<script type="text/javascript" src="js/footer.js"></script> 
+			<script>makeFooter();</script>
+		</body>
 	</div>
 </html>
