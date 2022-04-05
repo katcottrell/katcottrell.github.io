@@ -2,14 +2,14 @@
 <html lang="en">
 	<script type="text/javascript" src="js/head.js"></script>
 	<script>makeHead("Art");</script>
-	<script type="text/javascript" src="js/header.js"></script>
-	<script>makeHeader("art");</script>
 	<body>
-		<div class="standardIndent">
-			<h1>My Art</h1>
-			<?php include 'test.php';?>
-			<div>
-				<p>
+		<div class="aboveFooter">
+			<script type="text/javascript" src="js/header.js"></script>
+			<script>makeHeader("art");</script>
+			<div class="standardIndent">
+				<h1>My Art</h1>
+				<div>
+					<p>
 					<img src="images/art/Hopf_pineapple_Full.png" alt="Hopf Pineapple Full" 
 					     style="float:left;width:40%;padding-right: 30px;">
 					<strong><em>Hopf Fibration with Pineapple Scales</em>, 2016</strong><br>
@@ -107,8 +107,11 @@
 					This "fake Polaroid" was a simple exercise in copying what I saw in front of 
 							    me: a couple loose playing cards.
 				</p>
+				</div>
+				<p style="clear:both"> <br> <br> </p>
 			</div>
-			<p style="clear:both"> <br> <br> </p>
 		</div>
+		<script type="text/javascript" src="js/footer.js"></script> 
+		<script>makeFooter();</script>
 	</body>
 </html>
