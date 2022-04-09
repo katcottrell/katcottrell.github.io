@@ -58,18 +58,22 @@ a {
 	min-height: calc(100% - 40px);
 }
 
-.techIndent {
+.standardIndent{
+	margin-top:  30px;
+	margin-right: 100px;
+	margin-bottom: 200px;
+	margin-left: 100px;
+}
+
+.techIndent{
 	margin-top:  30px;
 	margin-right: 100px;
 	margin-left: 350px;
 	padding-bottom: 150px;
 }
 
-.standardIndent {
-	margin-top:  30px;
-	margin-right: 100px;
-	margin-bottom: 200px;
-	margin-left: 100px;
+.techMain{
+	min-height: 700px;
 }
 
 /*************************/
