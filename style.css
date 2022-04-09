@@ -165,6 +165,11 @@ img.footer-icon{
 	padding: none; 
 }
 
+
+/*********************************************************************************/
+/*                           Styling Top Navigation Bar                          */ 
+/*********************************************************************************/
+
 .topnav {
 	background-color: #cccccc;
 	font-family: monospace;
@@ -173,46 +178,44 @@ img.footer-icon{
 	padding-left: 50px;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
-  color: #000000;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 20px;
+	float: left;
+	color: #000000;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	padding-left: 20px;
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #e0e0e0;
-  color: black;
+	background-color: #e0e0e0;
+	color: black;
 }
 
-/* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #e0e0e0;
-  color: black;
+	background-color: #e0e0e0;
+	color: black;
 }
 
 li {
-    font-size: 12pt;
-    margin-left: 60px;
-    list-style-type: circle;
+	font-size: 12pt;
+	margin-left: 60px;
+	list-style-type: circle;
  }
 
 #logo{ 
-    float: left; 
-    padding: none; 
-    margin: none; 
-    height: 60px; 
-    width: 100%; 
+	float: left; 
+	padding: none; 
+	margin: none; 
+	height: 60px; 
+	width: 100%; 
 } 
   
 #logo img{ 
-    width: 100%; 
-    float: left; 
-    padding: 0px 0px; 
+	width: 100%; 
+	float: left; 
+	padding: 0px 0px; 
 }    
 
 /*********************************************************************************/
@@ -294,10 +297,9 @@ li {
 }
 
 
-
-/*******************************/
-/*    Styling  Collapsibles    */
-/*******************************/
+/*********************************************************************************/
+/*                             Styling  Collapsibles                             */ 
+/*********************************************************************************/
 
 .collapsible {
   background-color: #cccccc;
@@ -318,10 +320,11 @@ li {
 }
 
 .content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  margin-bottom: 20px;
+	padding: 0 18px;
+	display: none;
+	overflow: hidden;
+	margin-bottom: 20px;
+	margin-top:0px;
 }
 
 .collapsible:after {
@@ -336,7 +339,25 @@ li {
   margin-right: 15px;
 }
 
-/*video caption styling*/
+.courseNum {
+	display:inline-block;
+	width:100px;
+}
+
+.divider {
+	display:inline-block;
+	width:20px;
+}
+
+.courseName {
+	display:inline-block;
+}
+
+
+/*********************************************************************************/
+/*                                 Video Styling                                 */ 
+/*********************************************************************************/
+
 .vidcap { 
 	width: 600px;
 	margin: auto;
@@ -344,6 +365,7 @@ li {
 	font-style: italic;
 	max-width: 100%;
 }
+
 
 /*********************************************************************************/
 /*                                 Table Styling                                 */ 
