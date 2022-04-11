@@ -21,7 +21,7 @@ h1, h2, h3{
 	margin-left: 60; 
 	padding: 0; 
 	color: #FFF; 
-	font-family: "Century Gothic", Helvetica, Arial, sans-serif;
+	font-family: monospace;
 }
 	
 p, ol, ul{ 
@@ -304,6 +304,7 @@ li {
 	color: #000000;
 	display: block;
 	background-color: #e0e0e0;
+	box-shadow: 0 0 12px #808080;
 }
 
 /* Style page content */
