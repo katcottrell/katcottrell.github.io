@@ -7,11 +7,14 @@ html, body{
 }
 
 body{ 
-	margin: 0px; 
-	padding: 0px; 
-	background: #000000; 
-	font-family: "Century Gothic", Helvetica, Arial, sans-serif; 
-	font-size: 12pt; 
+	background: #000000;
+	background-image: url(https://katcottrell.github.io/images/binary-background.png);
+	background-size: 300px;
+	background-repeat: repeat;
+	margin: 0px;
+	padding: 0px;
+	font-family: "Century Gothic", Helvetica, Arial, sans-serif;
+	font-size: 12pt;
 }
 		
 h1, h2, h3{ 
@@ -59,10 +62,12 @@ a {
 }
 
 .standardIndent{
-	margin-top:  30px;
-	margin-right: 100px;
-	margin-bottom: 200px;
-	margin-left: 100px;
+	background: #000000;
+	margin: 0px 150px 0px 150px;
+	padding: 20px 50px 200px 50px;
+	border-left: solid #808080;
+	border-right: solid #808080;
+	box-shadow: 0px 0px 20px #000000;
 }
 
 .techIndent{
@@ -184,6 +189,8 @@ img.footer-icon{
 	font-size: 17px;
 	overflow: hidden;
 	padding-left: 20px;
+	position: relative;
+	z-index: 0;
 }
 
 .topnav a {
