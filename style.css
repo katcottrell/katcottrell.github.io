@@ -216,6 +216,8 @@ img.footer-icon{
 .topnav a.active {
 	background-color: #e0e0e0;
 	color: black;
+	font-weight: bold;
+	box-shadow: 0 0 12px #808080;
 }
 
 li {
