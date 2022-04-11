@@ -14,14 +14,14 @@ body{
 	margin: 0px;
 	padding: 0px;
 	font-family: "Century Gothic", Helvetica, Arial, sans-serif;
-	font-size: 12pt;
 }
 		
-h1, h2, h3{ 
+h1, h2, h3 { 
 	margin-left: 60; 
 	padding: 0; 
 	color: #FFF; 
 	font-family: monospace;
+	font-weight: bold;
 }
 	
 p, ol, ul{ 
@@ -79,7 +79,13 @@ a {
 }
 
 .techMain{
-	min-height: 700px;
+	background: #000000;
+	margin: 0px 150px 0px 350px;
+	padding: 20px 50px 200px 50px;
+	border-left: solid #808080;
+	border-right: solid #808080;
+	box-shadow: 0px 0px 20px #000000;
+	min-height: calc(100vh - 480px);
 }
 
 /*************************/
@@ -245,19 +251,18 @@ li {
 /*********************************************************************************/
 
 .sidenav {
+	background-color: #cccccc;
+	position: -webkit-sticky;
+	position: sticky;
 	top: 40px;
 	float: left;
 	width: 270px;
-	/*height: 510px;*/
-	position: -webkit-sticky;
-	position: sticky;
 	z-index: 1;
-	margin-left: 30px;
-	border: solid 4px #999;
-	background-color: #cccccc;
 	overflow-x: hidden;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	margin: 40px 0px 0px 30px;
+	padding: 20px 0px 20px 0px;
+	border: solid 4px #999;
+	box-shadow: 0px 0px 20px #000000;
 }
 
 .sidenav a.sideTitle {
