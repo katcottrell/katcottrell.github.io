@@ -103,6 +103,7 @@ footer{
 	background-color: #555;
 	text-align: center;
 	padding: 10px;
+	border-top: solid #808080;
 }
 
 p.footer-text{
@@ -169,8 +170,9 @@ img.footer-icon{
 /*****************************/
 
  #header-image-menu { 
-	top: 0px; 
-	position: relative; 
+	 top: 0px; 
+	 position: relative;  
+	 font-size: 0;
 }
 
 #header-image-menu img { 
@@ -192,6 +194,8 @@ img.footer-icon{
 	padding-left: 20px;
 	position: relative;
 	z-index: 0;
+	border-top: solid #808080; 
+	border-bottom: solid #808080;
 }
 
 .topnav a {
