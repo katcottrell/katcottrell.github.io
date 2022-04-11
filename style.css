@@ -72,13 +72,6 @@ a {
 }
 
 .techIndent{
-	margin-top:  30px;
-	margin-right: 100px;
-	margin-left: 350px;
-	padding-bottom: 150px;
-}
-
-.techMain{
 	background: #000000;
 	margin: 0px 150px 0px 350px;
 	padding: 20px 50px 200px 50px;
@@ -86,6 +79,10 @@ a {
 	border-right: solid #808080;
 	box-shadow: 0px 0px 20px #000000;
 	min-height: calc(100vh - 480px);
+}
+
+.techMain{
+	min-height: 700px;
 }
 
 /*************************/
