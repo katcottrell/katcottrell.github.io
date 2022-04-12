@@ -29,17 +29,13 @@ p, ol, ul{
 	margin-left: 60;
 	color: #FFF;
 	font-family: "Century Gothic", Helvetica, Arial, sans-serif;
-	font-size: 15px;
-} 
-
-p { 
+	font-size: 17px;
 	line-height: 180%; 
-} 
+}
 
 ol, ul{ 
 	padding: 0; 
 	list-style: none; 
-	line-height: 180%; 
 } 
 
 a {
