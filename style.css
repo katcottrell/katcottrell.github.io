@@ -362,6 +362,19 @@ li {
 	padding-right: 50px;
 }
 
+.artPic {
+	float: left;
+	width: 40%;
+	margin-right: 30px;
+	border: solid #808080 4px;
+}
+
+.art3ColPic {
+	width: calc(calc(100% - 76px) / 3);
+	margin-right: 20px;
+	border: solid #808080 4px;
+}
+
 
 /*********************************************************************************/
 /*                             Styling  Collapsibles                             */ 
