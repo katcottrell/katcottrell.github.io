@@ -344,6 +344,12 @@ li {
 	border: solid #808080 4px;
 }
 
+.format2Col {
+	float: left;
+	width: calc(50% - 25px);
+	padding-right: 50px;
+}
+
 
 /*********************************************************************************/
 /*                             Styling  Collapsibles                             */ 
