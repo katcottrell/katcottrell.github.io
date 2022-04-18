@@ -53,6 +53,15 @@ ol, ul{
 a {
 	color: #00ff84;
 }
+
+.artTitle {
+	margin-bottom: 0px;
+}
+
+.artMedia {
+	margin-top: 0px;
+	font-size: 15px;
+}
 	
 .container{	 
 	/* Set width of container to 
@@ -365,7 +374,7 @@ li {
 .artPic {
 	float: left;
 	width: 40%;
-	margin-right: 30px;
+	margin: 0px 30px 30px 0px;
 	border: solid #808080 4px;
 }
 
