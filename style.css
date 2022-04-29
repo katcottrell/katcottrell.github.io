@@ -54,6 +54,11 @@ a {
 	color: #00ff84;
 }
 
+blockquote {
+	margin: auto;
+	width: 75%;
+}
+
 .artTitle {
 	margin-bottom: 0px;
 }
