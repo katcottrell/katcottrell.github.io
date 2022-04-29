@@ -382,6 +382,7 @@ li {
 	width: calc(calc(100% - 76px) / 3);
 	margin-right: 20px;
 	border: solid #808080 4px;
+	margin-bottom: 20px;
 }
 
 
