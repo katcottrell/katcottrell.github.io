@@ -1,5 +1,5 @@
 const languageLinks    = ['c', 'java', 'matlab', 'python', 'r', 'scheme'];
-const languageTitles   = ['C, C++, C#', 'Java', 'MATLAB', 'Python', 'R', 'Racket (Lisp/Scheme)'];
+const languageTitles   = ['C, C++, & C#', 'Java', 'MATLAB', 'Python', 'R', 'Racket (Lisp/Scheme)'];
 const otherSkillLinks  = ['datavis', 'database', 'git', 'ml', 'spreadsheet', 'web', 'more'];
 const otherSkillTitles = ['Data Visualization', 'Databases', 'Git', 'Machine Learning', 
 			  'Spreadsheets', 'Web Development', 'More']
