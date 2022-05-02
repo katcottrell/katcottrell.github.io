@@ -59,7 +59,7 @@ blockquote {
 	width: 75%;
 	border: solid #808080;
 	padding: 5px 20px;
-	background: #111;
+	background: #222;
 }
 
 .artTitle {
@@ -102,7 +102,9 @@ blockquote {
 
 .techIndent{
 	background: #000000;
-	margin: 0px 150px 0px 350px;
+	/*margin: 0px 150px 0px 350px;*/
+	width: 1000px;
+	margin: 0px calc(50% - 553px) 0px calc(50% - 553px);
 	padding: 20px 6% 200px 6%;
 	border-left: solid #808080;
 	border-right: solid #808080;
