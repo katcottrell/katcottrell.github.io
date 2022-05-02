@@ -93,10 +93,10 @@ blockquote {
 .standardIndent{
 	background: #000000;
 	/*margin: 0px 150px 0px 150px;*/
-	max-width: 84%;
+	max-width: 70%;
 	width: 1000px;
-	margin: 0px max(8%, calc(50% - 553px));
-	padding: 20px 50px 200px 50px;
+	margin: 0px max(10%, calc(50% - 553px));
+	padding: 20px 5% 200px 5%;
 	border-left: solid #808080;
 	border-right: solid #808080;
 	box-shadow: 0px 0px 20px #000000;
