@@ -37,8 +37,6 @@ h3 {
 }
 	
 p, ol, ul{ 
-	margin-top: 30; 
-	margin-left: 60;
 	color: #FFF;
 	font-family: "Century Gothic", Helvetica, Arial, sans-serif;
 	font-size: 17px;
@@ -126,6 +124,10 @@ hr {
 
 .techMain{
 	min-height: 700px;
+}
+
+.faqText {
+	margin-left: calc(20% + 38px);
 }
 
 /*************************/
