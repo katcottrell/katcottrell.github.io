@@ -96,10 +96,9 @@ hr {
 
 .standardIndent{
 	background: #000000;
-	/*margin: 0px 150px 0px 150px;*/
 	max-width: 70%;
 	width: 1000px;
-	margin: 0px max(10%, calc(50% - 553px));
+	margin: 0px max(10%, calc(45% - 503px));
 	padding: 20px 5% 200px 5%;
 	border-left: solid #808080;
 	border-right: solid #808080;
