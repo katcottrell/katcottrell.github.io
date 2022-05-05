@@ -61,7 +61,7 @@ blockquote {
 }
 
 hr {
-	margin: 20px 0;
+	margin: 40px 0px;
 }
 
 .artTitle {
@@ -404,6 +404,12 @@ li {
 	float: left;
 	width: calc(50% - 25px);
 	padding-right: 50px;
+}
+
+.row10 {
+	float: left;
+	width: 8.5%;
+	padding-right: 0.5%;
 }
 
 .artPic {
