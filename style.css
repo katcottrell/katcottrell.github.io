@@ -120,6 +120,10 @@ hr {
 	min-height: calc(100vh - 480px);
 }
 
+.artListing {
+	margin: 30px 0px 0px 0px;
+}
+
 .techMain{
 	min-height: 700px;
 }
@@ -365,6 +369,12 @@ li {
 /*********************************************************************************/
 /*                                 Image Styling                                 */ 
 /*********************************************************************************/
+
+.justBorder {
+	float: left;
+	border: solid #808080 4px;
+	margin-right: 0px 30px 30px 0px;
+}
 
 .aboutImgRound {
 	float: left;
