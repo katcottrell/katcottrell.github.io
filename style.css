@@ -426,6 +426,11 @@ li {
 	margin-bottom: 20px;
 }
 
+.bigPic {
+	width: 600px;
+	max-width: calc(100% - 8px);
+	border: solid #808080 4px;
+}
 
 /*********************************************************************************/
 /*                             Styling  Collapsibles                             */ 
@@ -496,6 +501,11 @@ li {
 	max-width: 100%;
 }
 
+.bigVid {
+	height: 450px;
+	width: 600px;
+	max-width: 100%;
+}
 
 /*********************************************************************************/
 /*                                 Table Styling                                 */ 
