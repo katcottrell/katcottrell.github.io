@@ -3,10 +3,10 @@
 /*********************************************************************************/
 
 :root {
---myTrueBlack:     #000000;
---myTrueWhite:     #FFFFFF;
---myLightGray:     #CCCCCC;
---myTextGray:      #AAAAAA;
+	--myTrueBlack:     #000000;
+	--myTrueWhite:     #FFFFFF;
+	--myLightGray:     #CCCCCC;
+	--myTextGray:      #AAAAAA;
 	--myMidGray:       #808080;
 	--myDarkGray:      #555555;
 	--myOffBlack:      #222222;
@@ -40,15 +40,15 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 30px;
+	font-size: 30px;
 }
 
 h2 {
-    font-size: 24px;
+	font-size: 24px;
 }
 
 h3 {
-    font-size: 20px;
+	font-size: 20px;
 }
 	
 p, ol, ul { 
@@ -376,21 +376,21 @@ img.footer-icon {
 /*********************************************************************************/
 
 .collapsible {
-  background-color: var(--myLightGray);
-  color: var(--myTrueBlack);
-  cursor: pointer;
-  padding: 10px;
-  width: 100%;
-  border: none;    
-  outline: solid #999;
-  outline-width: 2px;
-  font-weight: bold;
-  text-align: left;
-  margin-bottom: 10px;
+	background-color: var(--myLightGray);
+	color: var(--myTrueBlack);
+	cursor: pointer;
+	padding: 10px;
+	width: 100%;
+	border: none;
+	outline: solid #999;
+	outline-width: 2px;
+	font-weight: bold;
+	text-align: left;
+	margin-bottom: 10px;
 }
 
 .collapsible:hover {
-  background-color: var(--myHighlightGray);
+	background-color: var(--myHighlightGray);
 }
 
 .content {
@@ -402,15 +402,15 @@ img.footer-icon {
 }
 
 .collapsible:after {
-  content: '\2796'; /* Unicode character for "minus" sign (-) */
-  float: left;
-  margin-right: 15px;
+	content: '\2796'; /* Unicode character for "minus" sign (-) */
+	float: left;
+	margin-right: 15px;
 }
 
 .opened:after {
-  content: "\002B"; /* Unicode character for "plus" sign (+) */
-  float: left;
-  margin-right: 15px;
+	content: "\2795"; /* Unicode character for "plus" sign (+) */
+	float: left;
+	margin-right: 15px;
 }
 
 .courseNum {
