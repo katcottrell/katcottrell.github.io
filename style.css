@@ -299,6 +299,13 @@ img.footer-icon {
 	margin: 0px 30px 30px 0px;
 }
 
+.leftRect {
+	float: left;
+	width: 30%;
+	border: solid #808080 4px;
+	margin: 20px 30px 20px 0px;
+}
+
 .aboutImgRound {
 	float: left;
 	width: 20%;
