@@ -119,6 +119,10 @@ hr {
 	min-height: calc(100vh - 480px);
 }
 
+.listItem {
+	margin: 30px 0;
+}
+
 .artListing {
 	margin: 30px 0px 0px 0px;
 }
@@ -303,7 +307,7 @@ img.footer-icon {
 	float: left;
 	width: 30%;
 	border: solid #808080 4px;
-	margin: 20px 30px 20px 0px;
+	margin: 0px 30px 0px 0px;
 }
 
 .aboutImgRound {
