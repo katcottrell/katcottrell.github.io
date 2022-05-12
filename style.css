@@ -99,22 +99,21 @@ hr {
 	width: 1000px;
 	margin: 0px max(10%, calc(45% - 503px));
 	padding: 20px 5% 200px 5%;
-	border-left: solid var(--myMidGray);
-	border-right: solid var(--myMidGray);
+	border-left: solid 4px var(--myMidGray);
+	border-right: solid 4px var(--myMidGray);
 	box-shadow: 0px 0px 20px var(--myTrueBlack);
 	min-height: calc(100vh - 480px);
 }
 
 .techIndent {
 	background: var(--myTrueBlack);
-	/*margin: 0px 150px 0px 350px;*/
 	max-width: calc(80% - 338px);
 	width: 1000px;
 	margin-left: max(338px, calc(45% - 503px));
 	margin-right: max(10%, calc(45% - 503px));
 	padding: 20px 5% 200px 5%;
-	border-left: solid var(--myMidGray);
-	border-right: solid var(--myMidGray);
+	border-left: solid 4px var(--myMidGray);
+	border-right: solid 4px var(--myMidGray);
 	box-shadow: 0px 0px 20px var(--myTrueBlack);
 	min-height: calc(100vh - 480px);
 }
@@ -238,13 +237,12 @@ img.footer-icon {
 	background-color: var(--myLightGray);
 	position: -webkit-sticky;
 	position: sticky;
-	top: 40px;
+	top: 30px;
 	float: left;
 	width: 270px;
 	z-index: 1;
 	overflow-x: hidden;
-	margin-left: max(30px, calc((45% - 773px) / 2));
-	margin-top: 30px;
+	margin: 30px 0px 30px max(30px, calc((45% - 773px) / 2));
 	padding: 20px 0px 20px 0px;
 	border: solid 4px #999;
 	box-shadow: 0px 0px 20px var(--myTrueBlack);
@@ -373,7 +371,7 @@ img.footer-icon {
 /*********************************************************************************/
 
 .vidcap { 
-	width: 600px;
+	width: 500px;
 	margin: auto;
 	font-size: 12px;
 	font-style: italic;
