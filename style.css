@@ -438,6 +438,7 @@ img.footer-icon {
 
 .courseName {
 	display:inline-block;
+	width:calc(90% - 120px);
 }
 
 /*********************************************************************************/
