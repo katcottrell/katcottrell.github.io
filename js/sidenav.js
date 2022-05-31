@@ -1,7 +1,7 @@
 const languageLinks    = ['c', 'java', 'matlab', 'python', 'r', 'scheme'];
 const languageTitles   = ['C, C++, & C#', 'Java', 'MATLAB', 'Python', 'R', 'Racket (Lisp/Scheme)'];
-const otherSkillLinks  = ['database', 'datavis', 'git', 'ml', 'spreadsheet', 'web', 'more'];
-const otherSkillTitles = ['Databases', 'Data Visualization', 'Git', 'Machine Learning', 
+const otherSkillLinks  = ['coursework', 'database', 'datavis', 'git', 'ml', 'spreadsheet', 'web', 'more'];
+const otherSkillTitles = ['Coursework', 'Databases', 'Data Visualization', 'Git', 'Machine Learning', 
 			  'Spreadsheets', 'Web Development', 'More']
 let abs = 'https://katcottrell.github.io/';
 
