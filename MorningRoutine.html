@@ -1,14 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-	<script type="text/javascript" src="js/head.js"></script>
-	<script>makeHead("Morning Routine");</script>
+	<head>
+		<title>Kat Cottrell | Morning Routine</title>
+		<link rel="icon" href="https://katcottrell.github.io/images/kc_fav.png">
+		<style>
+			.collapsible {
+				background-color: #fadde1;
+				color: #c72e5c;
+				cursor: pointer;
+				padding: 10px;
+				width: 100%;
+				border: none;
+				outline: solid #ffcad4;
+				outline-width: 2px;
+				font-weight: bold;
+				text-align: left;
+				margin-bottom: 10px;
+			}
+			
+			.collapsible:hover {
+				background-color: #ffcad4;
+			}
+			
+			.content {
+				padding: 0 18px;
+				display: none;
+				overflow: hidden;
+				margin-bottom: 20px;
+				margin-top:0px;
+			}
+			
+			.collapsible:after {
+				content: '\2796'; /* Unicode character for "minus" sign (-) */
+				float: left;
+				margin-right: 15px;
+			}
+			
+			.opened:after {
+				content: "\2795"; /* Unicode character for "plus" sign (+) */
+				float: left;
+				margin-right: 15px;
+			}
+		</style>
+	</head>
 	<body>
 		<h1>Kat's Morning Routine</h1>
 		<p>Hello world :)</p>
-		<div>
-			<h2>Wake Up</h2>
-			<input type="checkbox" id="check1" name="check1" value="check1">
-			<label for="check1"> Wake up</label><br>
+		
+		<button type="button" class="collapsible opened">1. Get up</button>
+		<div class="content">
+			<p style="margin-top:0px;">
+				Give a big stretch and stand up!
+			</p>
+			<div style="text-align:right;">
+				<button type="button" onclick="completeStep()">Complete!</button>
+			</div>
 		</div>
+		
+		<button type="button" class="collapsible opened">2. Morning treat</button>
+		<div class="content">
+			<p style="margin-top:0px;">
+				Enjoy a morning snack :)
+			</p>
+			<div style="text-align:right;">
+				<button type="button" onclick="completeStep()">Complete!</button>
+			</div>
+		</div>
+		
+		<script>
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+			for (i = 0; i < coll.length; i++) {
+				coll[i].addEventListener("click", function() {
+					this.classList.toggle("opened");
+					var content = this.nextElementSibling;
+					if (content.style.display === "block") {
+						content.style.display = "none";
+					} else {
+						content.style.display = "block";
+					}
+				});
+			}
+		</script>
 	</body>
 </html>
