@@ -4,6 +4,10 @@
 		<title>Kat Cottrell | Morning Routine</title>
 		<link rel="icon" href="https://katcottrell.github.io/images/kc_fav.png">
 		<style>
+			body {
+				background-color: #fff0f2;
+			}
+			
 			h1 {
 				font-size: 64px;
 				color: #c72e5c;
@@ -19,13 +23,12 @@
 				color: #c72e5c;
 				cursor: pointer;
 				padding: 10px;
-				width: 100%;
-				border: none;
-				outline: solid #ffcad4;
-				outline-width: 2px;
+				width: calc(100% - 80px);
+				border: solid #ffcad4 8px;
+				border-radius: 10px;
 				font-weight: bold;
 				text-align: left;
-				margin-bottom: 10px;
+				margin: 20px 40px;
 				font-size: 32px;
 			}
 			
@@ -37,8 +40,7 @@
 				padding: 0 18px;
 				display: none;
 				overflow: hidden;
-				margin-bottom: 20px;
-				margin-top:0px;
+				margin: 0 40px 20px 40px;
 			}
 			
 			.collapsible:after {
@@ -55,8 +57,9 @@
 		</style>
 	</head>
 	<body>
-		<h1>Kat's Morning Routine</h1>
-		<p>Hello world :)</p>
+		<img src="images/Kat's%20morning%20routine%20banner.png"
+			class="titleBanner" 
+			alt="Kat's morning routine">
 		
 		<button type="button" class="collapsible opened">1. Get up</button>
 		<div class="content">
