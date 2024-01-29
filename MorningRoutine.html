@@ -5,10 +5,14 @@
 		<link rel="icon" href="https://katcottrell.github.io/images/kc_fav.png">
 		<style>
 			h1 {
-				font-size: 64px;			}
+				font-size: 64px;
+				color: #c72e5c;
+			}
 			
 			p {
 				font-size: 32px;
+				font-family: sans-serif;
+				color: #c72e5c;
 			}
 			.collapsible {
 				background-color: #fadde1;
@@ -22,6 +26,7 @@
 				font-weight: bold;
 				text-align: left;
 				margin-bottom: 10px;
+				font-size: 32px;
 			}
 			
 			.collapsible:hover {
@@ -205,37 +210,7 @@
 				<button type="button" onclick="completeStep()">Complete!</button>
 			</div>
 		</div>
-		
-		<button type="button" class="collapsible opened">12. Suit up</button>
-		<div class="content">
-			<p style="margin-top:0px;">
-				Put on backpack coat, shoes, etc as needed.
-			</p>
-			<div style="text-align:right;">
-				<button type="button" onclick="completeStep()">Complete!</button>
-			</div>
-		</div>
-		
-		<button type="button" class="collapsible opened">13. Downstairs</button>
-		<div class="content">
-			<p style="margin-top:0px;">
-				Bring cat bag and any other carryable waste to trash on way to car, then sanitize hands.
-			</p>
-			<div style="text-align:right;">
-				<button type="button" onclick="completeStep()">Complete!</button>
-			</div>
-		</div>
-		
-		<button type="button" class="collapsible opened">14. Commute</button>
-		<div class="content">
-			<p style="margin-top:0px;">
-				Hit the road!
-			</p>
-			<div style="text-align:right;">
-				<button type="button" onclick="completeStep()">Complete!</button>
-			</div>
-		</div>
-		
+
 		<button type="button" class="collapsible opened">12. Pack up</button>
 		<div class="content">
 			<p style="margin-top:0px;">
@@ -265,6 +240,36 @@
 				<br>
 				<input type="checkbox" id="pack9" name="pack9" value="pack9">
 				<label for="pack9">Lunchbox --> Backpack</label>
+			</p>
+			<div style="text-align:right;">
+				<button type="button" onclick="completeStep()">Complete!</button>
+			</div>
+		</div>
+		
+		<button type="button" class="collapsible opened">13. Suit up</button>
+		<div class="content">
+			<p style="margin-top:0px;">
+				Put on backpack coat, shoes, etc as needed.
+			</p>
+			<div style="text-align:right;">
+				<button type="button" onclick="completeStep()">Complete!</button>
+			</div>
+		</div>
+		
+		<button type="button" class="collapsible opened">14. Downstairs</button>
+		<div class="content">
+			<p style="margin-top:0px;">
+				Bring cat bag and any other carryable waste to trash on way to car, then sanitize hands.
+			</p>
+			<div style="text-align:right;">
+				<button type="button" onclick="completeStep()">Complete!</button>
+			</div>
+		</div>
+		
+		<button type="button" class="collapsible opened">15. Commute</button>
+		<div class="content">
+			<p style="margin-top:0px;">
+				Hit the road!
 			</p>
 			<div style="text-align:right;">
 				<button type="button" onclick="completeStep()">Complete!</button>
