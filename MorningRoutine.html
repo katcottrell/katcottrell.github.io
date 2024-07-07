@@ -30,12 +30,12 @@
 			}
 			
 			.collapsible {
-				background-color: #fadde1;
-				color: #c72e5c;
+				background-color: #b00049;
+				color: #fff0f2;
 				cursor: pointer;
 				padding: 10px;
 				width: calc(100% - 80px);
-				border: solid #ffcad4 8px;
+				border: solid #de1065 8px;
 				border-radius: 10px;
 				font-weight: bold;
 				text-align: left;
@@ -55,14 +55,26 @@
 			}
 			
 			.collapsible:after {
-				content: '\2796'; /* Unicode character for "minus" sign (-) */
-				float: left;
+				content: '–';
+				float: right;
 				margin-right: 15px;
 			}
 			
 			.opened:after {
-				content: "\2795"; /* Unicode character for "plus" sign (+) */
-				float: left;
+				content: "+";
+				float: right;
+				margin-right: 15px;
+			}
+
+			.skipped:after {
+				content: 'X';
+				float: right;
+				margin-right: 15px;
+			}
+
+			.completed:after {
+				content: 'DONE!';
+				float: right;
 				margin-right: 15px;
 			}
 		</style>
