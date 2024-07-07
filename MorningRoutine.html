@@ -303,14 +303,14 @@
 			</div>
 		</div>
 		
-		<button type="button" class="collapsible opened">15. Commute</button>
-		<div class="content">
+		<button type="button" id="commuteButton" class="collapsible opened">Commute</button>
+		<div class="content"  id="commuteContent">
 			<p style="margin-top:0px;">
 				Hit the road!
 			</p>
 			<div style="text-align:right;">
-				<button type="button" onclick="skipStep()"><img class="imgButton" src="images/Skip.png"></button>
-				<button type="button" onclick="completeStep()"><img class="imgButton" src="images/Done.png"></button>
+				<button type="button" onclick="skipStep('commute')">    <img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('commute')"><img class="imgButton" src="images/Done.png"></button>
 			</div>
 		</div>
 		
@@ -327,6 +327,23 @@
 						content.style.display = "block";
 					}
 				});
+			}
+			function skipStep(stepID) {
+				let buttonID = stepID.concat("Button");
+				const myButton = document.getElementById(buttonID);
+				myButton.style.color = #ff94af;
+				myButton.style.background-color = #ffdbe5;
+				myButton.style.border = solid #ffc2d3 8px;
+				myButton.disabled = true;
+				let buttonText = myButton.innerHTML;
+				myButton.innerHTML = "SKIPPED: ".concat(buttonText);
+				let contentID = stepID.concat("Content");
+				const myContent = document.getElementById(contentID);
+				myContent.style.display = "none";
+			}
+
+			function completeStep(buttonID) {
+				document.getElementById(buttonID).innerHTML = "Hello World";
 			}
 		</script>
 	</body>
