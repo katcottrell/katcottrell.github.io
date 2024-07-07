@@ -49,30 +49,6 @@
 				overflow: hidden;
 				margin: 0 40px 20px 40px;
 			}
-			
-			.collapsible:after {
-				content: '–';
-				float: right;
-				margin-right: 15px;
-			}
-			
-			.opened:after {
-				content: "+";
-				float: right;
-				margin-right: 15px;
-			}
-
-			.skipped:after {
-				content: 'X';
-				float: right;
-				margin-right: 15px;
-			}
-
-			.completed:after {
-				content: 'DONE!';
-				float: right;
-				margin-right: 15px;
-			}
 		</style>
 	</head>
 	<body>
@@ -331,9 +307,9 @@
 			function skipStep(stepID) {
 				let buttonID = stepID.concat("Button");
 				const myButton = document.getElementById(buttonID);
-				myButton.style.color = #ff94af;
-				myButton.style.background-color = #ffdbe5;
-				myButton.style.border = solid #ffc2d3 8px;
+				myButton.style.color = "#ff94af";
+				myButton.style.backgroundColor = "#ffdbe5";
+				myButton.style.border = "solid #ffc2d3 8px";
 				myButton.disabled = true;
 				let buttonText = myButton.innerHTML;
 				myButton.innerHTML = "SKIPPED: ".concat(buttonText);
@@ -342,8 +318,19 @@
 				myContent.style.display = "none";
 			}
 
-			function completeStep(buttonID) {
-				document.getElementById(buttonID).innerHTML = "Hello World";
+			function completeStep(stepID) {
+				let buttonID = stepID.concat("Button");
+				const myButton = document.getElementById(buttonID);
+				myButton.style.color = "#ff94af";
+				myButton.style.backgroundColor = "#ffdbe5";
+				myButton.style.border = "solid #ffc2d3 8px";
+				myButton.disabled = true;
+				let buttonText = myButton.innerHTML;
+				myButton.innerHTML = "DONE: ".concat(buttonText);
+				let contentID = stepID.concat("Content");
+				const myContent = document.getElementById(contentID);
+				myContent.style.display = "none";
+			}
 			}
 		</script>
 	</body>
