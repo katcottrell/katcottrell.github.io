@@ -51,83 +51,91 @@
 			}
 		</style>
 	</head>
+	
 	<body>
 		<img src="images/Kat's%20morning%20routine%20banner.png"
 			class="titleBanner" 
 			alt="Kat's morning routine"
 			style="width: calc(100% - 80px); margin: 40px 40px 10px 40px;">
 		
-		<button type="button" class="collapsible opened">1. Get up</button>
-		<div class="content">
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ wakeup ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		
+		<button type="button" id="wakeupButton" class="collapsible opened">Wake up :-)</button>
+		<div class="content"  id="wakeupContent">
 			<p style="margin-top:0px;">
-				Give a big stretch and stand up!
+				<input type="checkbox" id="wakeup0">
+				<label for="wakeup0">Wake up :-)</label><br>
+				<input type="checkbox" id="wakeup1">
+				<label for="wakeup1">Stretch toes, feet, and legs</label><br>
+				<input type="checkbox" id="wakeup2">
+				<label for="wakeup2">Stretch torso, arms, hands, and neck</label><br>
 			</p>
 			<div style="text-align:right;">
-				<button type="button" onclick="skipStep()"><img class="imgButton" src="images/Skip.png"></button>
-				<button type="button" onclick="completeStep()"><img class="imgButton" src="images/Done.png"></button>
+				<button type="button" onclick="skipStep('wakeup')">    <img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('wakeup')"><img class="imgButton" src="images/Done.png"></button>
 			</div>
 		</div>
 		
-		<button type="button" class="collapsible opened">2. Morning treat</button>
-		<div class="content">
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ dreams ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		
+		<button type="button" id="dreamsButton" class="collapsible opened">Log dreams</button>
+		<div class="content"  id="dreamsContent">
 			<p style="margin-top:0px;">
-				Turn on the lamp and enjoy a morning snack :)
+				<input type="checkbox" id="dreams0">
+				<label for="dreams0">
+					<a href="https://docs.google.com/forms/d/e/1FAIpQLScLhOhcoRgwkhihtRugG0KaUR6PYMmNtz696LUPt1vI2sYK9A/viewform">
+						Log dreams here.
+					</a>
+				</label><br>
 			</p>
 			<div style="text-align:right;">
-				<button type="button" onclick="skipStep()"><img class="imgButton" src="images/Skip.png"></button>
-				<button type="button" onclick="completeStep()"><img class="imgButton" src="images/Done.png"></button>
+				<button type="button" onclick="skipStep('dreams')">    <img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('dreams')"><img class="imgButton" src="images/Done.png"></button>
 			</div>
 		</div>
 		
-		<button type="button" class="collapsible opened">3. Record dreams</button>
-		<div class="content">
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ npr ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		
+		<button type="button" id="nprButton" class="collapsible opened">NPR & Vitamins</button>
+		<div class="content"  id="nprContent">
 			<p style="margin-top:0px;">
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLScLhOhcoRgwkhihtRugG0KaUR6PYMmNtz696LUPt1vI2sYK9A/viewform">
-					Record dreams here
-				</a>.
+				<input type="checkbox" id="npr0">
+				<label for="npr0">  
+					<a href="https://open.spotify.com/show/6BRSvIBNQnB68GuoXJRCnQ?si=68c51fe1ff4c4ed5">
+						Launch NPR hourly update
+					</a>;
+				</label><br>
+				<input type="checkbox" id="npr1">
+				<label for="npr1">Put on robe</label><br>
+				<input type="checkbox" id="npr2">
+				<label for="npr2">Eat vitamins on steps outside</label><br>
+				<input type="checkbox" id="npr3">
+				<label for="npr3">
+					<a href="https://www.npr.org/">
+						Put on NPR live radio
+					</a>
+				</label><br>
 			</p>
 			<div style="text-align:right;">
-				<button type="button" onclick="skipStep()"><img class="imgButton" src="images/Skip.png"></button>
-				<button type="button" onclick="completeStep()"><img class="imgButton" src="images/Done.png"></button>
+				<button type="button" onclick="skipStep('npr')">    <img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('npr')"><img class="imgButton" src="images/Done.png"></button>
 			</div>
 		</div>
 		
-		<button type="button" class="collapsible opened">4. NPR and puzzles in the sun</button>
-		<div class="content">
-			<p style="margin-top:0px;">
-				<input type="checkbox" id="NPR1" name="NPR1" value="NPR1">
-				<label for="NPR1"> Launch 
-					<a href="https://open.spotify.com/show/6BRSvIBNQnB68GuoXJRCnQ?si=68c51fe1ff4c4ed5">NPR hourly update</a>;
-					switch to <a href="https://www.npr.org/">NPR live radio</a> for extra
-				</label>
-				<br>
-				<input type="checkbox" id="NPR2" name="NPR2" value="NPR2">
-				<label for="NPR2">Put on snow pants, robe, and socks</label>
-				<br>
-				<input type="checkbox" id="NPR3" name="NPR3" value="NPR3">
-				<label for="NPR3">Sit outside for 5-10 minutes on sunny mornings, and 15-20 minutes on cloudy mornings.</label>
-				<br>
-				<input type="checkbox" id="NPR4" name="NPR4" value="NPR4">
-				<label for="NPR4">If time, play Wordle and Connections</label>
-			</p>
-			<div style="text-align:right;">
-				<button type="button" onclick="skipStep()"><img class="imgButton" src="images/Skip.png"></button>
-				<button type="button" onclick="completeStep()"><img class="imgButton" src="images/Done.png"></button>
-			</div>
-		</div>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ makebed ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 		
-		<button type="button" class="collapsible opened">5. Make bed</button>
+		<button type="button" class="collapsible opened">Make bed</button>
 		<div class="content">
 			<p style="margin-top:0px;">
 				Make bed
 			</p>
 			<div style="text-align:right;">
-				<button type="button" onclick="skipStep()"><img class="imgButton" src="images/Skip.png"></button>
-				<button type="button" onclick="completeStep()"><img class="imgButton" src="images/Done.png"></button>
+				<button type="button" onclick="skipStep('')"><img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('')"><img class="imgButton" src="images/Done.png"></button>
 			</div>
 		</div>
 		
-		<button type="button" class="collapsible opened">6. Stretch</button>
+		<button type="button" class="collapsible opened">Stretch</button>
 		<div class="content">
 			<p style="margin-top:0px;">
 				<a href="https://docs.google.com/forms/d/e/1FAIpQLScLhOhcoRgwkhihtRugG0KaUR6PYMmNtz696LUPt1vI2sYK9A/viewform">
@@ -135,12 +143,12 @@
 				</a>.
 			</p>
 			<div style="text-align:right;">
-				<button type="button" onclick="skipStep()"><img class="imgButton" src="images/Skip.png"></button>
-				<button type="button" onclick="completeStep()"><img class="imgButton" src="images/Done.png"></button>
+				<button type="button" onclick="skipStep('')"><img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('')"><img class="imgButton" src="images/Done.png"></button>
 			</div>
 		</div>
 		
-		<button type="button" class="collapsible opened">7. Powder up</button>
+		<button type="button" class="collapsible opened">Powder up</button>
 		<div class="content">
 			<p style="margin-top:0px;">
 				<input type="checkbox" id="pow1" name="pow1" value="pow1">
@@ -158,12 +166,12 @@
 				Toothbrush audio here.
 			</p>
 			<div style="text-align:right;">
-				<button type="button" onclick="skipStep()"><img class="imgButton" src="images/Skip.png"></button>
-				<button type="button" onclick="completeStep()"><img class="imgButton" src="images/Done.png"></button>
+				<button type="button" onclick="skipStep('')"><img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('')"><img class="imgButton" src="images/Done.png"></button>
 			</div>
 		</div>
 		
-		<button type="button" class="collapsible opened">8. Get dressed</button>
+		<button type="button" class="collapsible opened">Get dressed</button>
 		<div class="content">
 			<p style="margin-top:0px;">
 				<input type="checkbox" id="dress1" name="dress1" value="dress1">
@@ -179,23 +187,23 @@
 				<label for="dress4">Do makeup</label>
 			</p>
 			<div style="text-align:right;">
-				<button type="button" onclick="skipStep()"><img class="imgButton" src="images/Skip.png"></button>
-				<button type="button" onclick="completeStep()"><img class="imgButton" src="images/Done.png"></button>
+				<button type="button" onclick="skipStep('')"><img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('')"><img class="imgButton" src="images/Done.png"></button>
 			</div>
 		</div>
 		
-		<button type="button" class="collapsible opened">9. Check door agenda</button>
+		<button type="button" class="collapsible opened">Check door agenda</button>
 		<div class="content">
 			<p style="margin-top:0px;">
 				Check out my day!
 			</p>
 			<div style="text-align:right;">
-				<button type="button" onclick="skipStep()"><img class="imgButton" src="images/Skip.png"></button>
-				<button type="button" onclick="completeStep()"><img class="imgButton" src="images/Done.png"></button>
+				<button type="button" onclick="skipStep('')"><img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('')"><img class="imgButton" src="images/Done.png"></button>
 			</div>
 		</div>
 		
-		<button type="button" class="collapsible opened">10. Respond to work emails and messages</button>
+		<button type="button" class="collapsible opened">Respond to work emails and messages</button>
 		<div class="content">
 			<p style="margin-top:0px;">
 				<input type="checkbox" id="msgs1" name="msgs1" value="msgs1">
@@ -205,23 +213,23 @@
 				<label for="msgs2">Check work messages</label>
 			</p>
 			<div style="text-align:right;">
-				<button type="button" onclick="skipStep()"><img class="imgButton" src="images/Skip.png"></button>
-				<button type="button" onclick="completeStep()"><img class="imgButton" src="images/Done.png"></button>
+				<button type="button" onclick="skipStep('')"><img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('')"><img class="imgButton" src="images/Done.png"></button>
 			</div>
 		</div>
 		
-		<button type="button" class="collapsible opened">11. Breakfast</button>
+		<button type="button" class="collapsible opened">Breakfast</button>
 		<div class="content">
 			<p style="margin-top:0px;">
 				Eat a healthy breakfast :)
 			</p>
 			<div style="text-align:right;">
-				<button type="button" onclick="skipStep()"><img class="imgButton" src="images/Skip.png"></button>
-				<button type="button" onclick="completeStep()"><img class="imgButton" src="images/Done.png"></button>
+				<button type="button" onclick="skipStep('')"><img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('')"><img class="imgButton" src="images/Done.png"></button>
 			</div>
 		</div>
 
-		<button type="button" class="collapsible opened">12. Pack up</button>
+		<button type="button" class="collapsible opened">Pack up</button>
 		<div class="content">
 			<p style="margin-top:0px;">
 				<input type="checkbox" id="pack1" name="pack1" value="pack1">
@@ -252,30 +260,30 @@
 				<label for="pack9">Lunchbox --> Backpack</label>
 			</p>
 			<div style="text-align:right;">
-				<button type="button" onclick="skipStep()"><img class="imgButton" src="images/Skip.png"></button>
-				<button type="button" onclick="completeStep()"><img class="imgButton" src="images/Done.png"></button>
+				<button type="button" onclick="skipStep('')"><img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('')"><img class="imgButton" src="images/Done.png"></button>
 			</div>
 		</div>
 		
-		<button type="button" class="collapsible opened">13. Suit up</button>
+		<button type="button" class="collapsible opened">Suit up</button>
 		<div class="content">
 			<p style="margin-top:0px;">
 				Put on backpack coat, shoes, etc as needed.
 			</p>
 			<div style="text-align:right;">
-				<button type="button" onclick="skipStep()"><img class="imgButton" src="images/Skip.png"></button>
-				<button type="button" onclick="completeStep()"><img class="imgButton" src="images/Done.png"></button>
+				<button type="button" onclick="skipStep('')"><img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('')"><img class="imgButton" src="images/Done.png"></button>
 			</div>
 		</div>
 		
-		<button type="button" class="collapsible opened">14. Downstairs</button>
+		<button type="button" class="collapsible opened">Downstairs</button>
 		<div class="content">
 			<p style="margin-top:0px;">
 				Bring cat bag and any other carryable waste to trash on way to car, then sanitize hands.
 			</p>
 			<div style="text-align:right;">
-				<button type="button" onclick="skipStep()"><img class="imgButton" src="images/Skip.png"></button>
-				<button type="button" onclick="completeStep()"><img class="imgButton" src="images/Done.png"></button>
+				<button type="button" onclick="skipStep('')"><img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('')"><img class="imgButton" src="images/Done.png"></button>
 			</div>
 		</div>
 		
@@ -330,7 +338,6 @@
 				let contentID = stepID.concat("Content");
 				const myContent = document.getElementById(contentID);
 				myContent.style.display = "none";
-			}
 			}
 		</script>
 	</body>
