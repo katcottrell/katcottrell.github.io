@@ -141,22 +141,6 @@
 			</div>
 		</div>
 		
-		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ makebed ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-		
-		<button type="button" id="makebedButton" class="collapsible opened">Make bed</button>
-		<div class="content"  id="makebedContent">
-			<p style="margin-top:0px;">
-				<input type="checkbox" id="makebed1">
-				<label for="makebed1">Make bed</label>
-				<br><br>
-				<img src="images/morning/makebed.png" class="moodBoard">
-			</p>
-			<div style="text-align:right;">
-				<button type="button" onclick="skipStep('makebed')">    <img class="imgButton" src="images/Skip.png"></button>
-				<button type="button" onclick="completeStep('makebed')"><img class="imgButton" src="images/Done.png"></button>
-			</div>
-		</div>
-		
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ powder ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 		
 		<button type="button" id="powderButton" class="collapsible opened">Powder up</button>
@@ -180,6 +164,25 @@
 			<div style="text-align:right;">
 				<button type="button" onclick="skipStep('powder')">    <img class="imgButton" src="images/Skip.png"></button>
 				<button type="button" onclick="completeStep('powder')"><img class="imgButton" src="images/Done.png"></button>
+			</div>
+		</div>
+		
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ makebed ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		
+		<button type="button" id="makebedButton" class="collapsible opened">Make bed</button>
+		<div class="content"  id="makebedContent">
+			<p style="margin-top:0px;">
+				<input type="checkbox" id="makebed1">
+				<label for="makebed1">Make bed</label>
+				<br>
+				<input type="checkbox" id="makebed2">
+				<label for="makebed2">Draw curtains</label>
+				<br><br>
+				<img src="images/morning/makebed.png" class="moodBoard">
+			</p>
+			<div style="text-align:right;">
+				<button type="button" onclick="skipStep('makebed')">    <img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('makebed')"><img class="imgButton" src="images/Done.png"></button>
 			</div>
 		</div>
 		
