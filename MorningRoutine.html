@@ -19,6 +19,10 @@
 				color: #c72e5c;
 			}
 
+			a {
+				color: #de1065;
+			}
+
 			button {
 				background: transparent;
 				border: none;
@@ -60,15 +64,18 @@
 		
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ wakeup ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 		
-		<button type="button" id="wakeupButton" class="collapsible opened">Wake up :-)</button>
+		<button type="button" id="wakeupButton" class="collapsible opened">Good morning!</button>
 		<div class="content"  id="wakeupContent">
 			<p style="margin-top:0px;">
 				<input type="checkbox" id="wakeup0">
-				<label for="wakeup0">Wake up :-)</label><br>
+				<label for="wakeup0">Wake up :-)</label>
+				<br>
 				<input type="checkbox" id="wakeup1">
-				<label for="wakeup1">Stretch toes, feet, and legs</label><br>
+				<label for="wakeup1">Stretch toes, feet, and legs</label>
+				<br>
 				<input type="checkbox" id="wakeup2">
-				<label for="wakeup2">Stretch torso, arms, hands, and neck</label><br>
+				<label for="wakeup2">Stretch torso, arms, hands, and neck</label>
+				<br>
 			</p>
 			<div style="text-align:right;">
 				<button type="button" onclick="skipStep('wakeup')">    <img class="imgButton" src="images/Skip.png"></button>
@@ -82,11 +89,12 @@
 		<div class="content"  id="dreamsContent">
 			<p style="margin-top:0px;">
 				<input type="checkbox" id="dreams0">
-				<label for="dreams0">
+				<label for="dreams0">Log dreams 
 					<a href="https://docs.google.com/forms/d/e/1FAIpQLScLhOhcoRgwkhihtRugG0KaUR6PYMmNtz696LUPt1vI2sYK9A/viewform">
-						Log dreams here.
+						here
 					</a>
-				</label><br>
+				</label>
+				<br>
 			</p>
 			<div style="text-align:right;">
 				<button type="button" onclick="skipStep('dreams')">    <img class="imgButton" src="images/Skip.png"></button>
@@ -100,21 +108,25 @@
 		<div class="content"  id="nprContent">
 			<p style="margin-top:0px;">
 				<input type="checkbox" id="npr0">
-				<label for="npr0">  
+				<label for="npr0"> Launch 
 					<a href="https://open.spotify.com/show/6BRSvIBNQnB68GuoXJRCnQ?si=68c51fe1ff4c4ed5">
-						Launch NPR hourly update
-					</a>;
-				</label><br>
-				<input type="checkbox" id="npr1">
-				<label for="npr1">Put on robe</label><br>
-				<input type="checkbox" id="npr2">
-				<label for="npr2">Eat vitamins on steps outside</label><br>
-				<input type="checkbox" id="npr3">
-				<label for="npr3">
-					<a href="https://www.npr.org/">
-						Put on NPR live radio
+						NPR hourly update
 					</a>
-				</label><br>
+				</label>
+				<br>
+				<input type="checkbox" id="npr1">
+				<label for="npr1">Put on robe</label>
+				<br>
+				<input type="checkbox" id="npr2">
+				<label for="npr2">Eat vitamins on steps outside</label>
+				<br>
+				<input type="checkbox" id="npr3">
+				<label for="npr3">Put on 
+					<a href="https://www.npr.org/">
+						NPR live radio
+					</a>
+				</label>
+				<br>
 			</p>
 			<div style="text-align:right;">
 				<button type="button" onclick="skipStep('npr')">    <img class="imgButton" src="images/Skip.png"></button>
@@ -124,179 +136,257 @@
 		
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ makebed ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 		
-		<button type="button" class="collapsible opened">Make bed</button>
-		<div class="content">
+		<button type="button" id="makebedButton" class="collapsible opened">Make bed</button>
+		<div class="content"  id="makebedContent">
 			<p style="margin-top:0px;">
-				Make bed
+				<input type="checkbox" id="makebed1">
+				<label for="makebed1">Make bed</label>
+				<br>
 			</p>
 			<div style="text-align:right;">
-				<button type="button" onclick="skipStep('')"><img class="imgButton" src="images/Skip.png"></button>
-				<button type="button" onclick="completeStep('')"><img class="imgButton" src="images/Done.png"></button>
+				<button type="button" onclick="skipStep('makebed')">    <img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('makebed')"><img class="imgButton" src="images/Done.png"></button>
 			</div>
 		</div>
 		
-		<button type="button" class="collapsible opened">Stretch</button>
-		<div class="content">
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ powder ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		
+		<button type="button" id="powderButton" class="collapsible opened">Powder up</button>
+		<div class="content"  id="powderContent">
 			<p style="margin-top:0px;">
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLScLhOhcoRgwkhihtRugG0KaUR6PYMmNtz696LUPt1vI2sYK9A/viewform">
-					Record dreams here
-				</a>.
+				<input type="checkbox" id="pow1">
+				<label for="pow1">Get toothbrush and brush teeth with
+					<a href="https://www.youtube.com/watch?v=gAODutgIIVQ">
+						timer
+					</a>
+				</label>
+				<br>
+				<input type="checkbox" id="pow2">
+				<label for="pow2">Put hair up and apply salicylic acid face wash</label>
+				<br>
+				<input type="checkbox" id="pow3">
+				<label for="pow3">Restroom</label>
+				<br>
 			</p>
 			<div style="text-align:right;">
-				<button type="button" onclick="skipStep('')"><img class="imgButton" src="images/Skip.png"></button>
-				<button type="button" onclick="completeStep('')"><img class="imgButton" src="images/Done.png"></button>
+				<button type="button" onclick="skipStep('powder')">    <img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('powder')"><img class="imgButton" src="images/Done.png"></button>
 			</div>
 		</div>
 		
-		<button type="button" class="collapsible opened">Powder up</button>
-		<div class="content">
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ msgs ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		
+		<button type="button" id="msgsButton" class="collapsible opened">Respond to emails and messages</button>
+		<div class="content"  id="msgsContent">
 			<p style="margin-top:0px;">
-				<input type="checkbox" id="pow1" name="pow1" value="pow1">
-				<label for="pow1">Get dental caddy and fresh washcloth</label>
+				<input type="checkbox" id="msgs3">
+				<label for="msgs3">Check and respond to texts</label>
 				<br>
-				<input type="checkbox" id="pow2" name="pow2" value="pow2">
-				<label for="pow2">Brush teeth</label>
+				<input type="checkbox" id="msgs1">
+				<label for="msgs1">Check and respond to Teams messages</label>
 				<br>
-				<input type="checkbox" id="pow3" name="pow3" value="pow3">
-				<label for="pow3">Wash face</label>
-				<br>
-				<input type="checkbox" id="pow4" name="pow4" value="pow4">
-				<label for="pow4">Launder washcloth and put away toothbrush</label>
-				<br>
-				Toothbrush audio here.
+				<input type="checkbox" id="msgs2">
+				<label for="msgs2">Check and respond to emails</label><br>
 			</p>
 			<div style="text-align:right;">
-				<button type="button" onclick="skipStep('')"><img class="imgButton" src="images/Skip.png"></button>
-				<button type="button" onclick="completeStep('')"><img class="imgButton" src="images/Done.png"></button>
+				<button type="button" onclick="skipStep('msgs')">    <img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('msgs')"><img class="imgButton" src="images/Done.png"></button>
 			</div>
 		</div>
 		
-		<button type="button" class="collapsible opened">Get dressed</button>
-		<div class="content">
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ pack ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+		<button type="button" id="packButton" class="collapsible opened">Pack up</button>
+		<div class="content"  id="packContent">
+			<p style="margin-top:0px;"> Pack up: <br>
+				<input type="checkbox" id="pack1">
+				<label for="pack1">Laptop --> Backpack</label>
+				<br>
+				<input type="checkbox" id="pack2">
+				<label for="pack2">Laptop charger --> Pink bag --> Backpack</label>
+				<br>
+				<input type="checkbox" id="pack3">
+				<label for="pack3">White mouse --> Backpack</label>
+				<br>
+				<input type="checkbox" id="pack4">
+				<label for="pack4">Jabras + cord --> Case --> Backpack</label>
+				<br>
+				<input type="checkbox" id="pack5">
+				<label for="pack5">Keys --> Badge holder --> Backpack side pocket</label>
+				<br>
+				<input type="checkbox" id="pack6">
+				<label for="pack6">Wallet --> Purse</label>
+				<br>
+				<input type="checkbox" id="pack8">
+				<label for="pack8">Jacket --> Backpack</label>
+				<br>
+				<input type="checkbox" id="pack7">
+				<label for="pack7">Purse --> Backpack</label>
+				<br>
+				<input type="checkbox" id="pack9">
+				<label for="pack9">Lunchbox --> Backpack</label>
+				<br>
+				<input type="checkbox" id="pack10">
+				<label for="pack10">Gym bag</label>
+				<br>
+				<input type="checkbox" id="pack11">
+				<label for="pack11">Anything else needed for the day</label>
+				<br>
+			</p>
+			<div style="text-align:right;">
+				<button type="button" onclick="skipStep('pack')">    <img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('pack')"><img class="imgButton" src="images/Done.png"></button>
+			</div>
+		</div>
+		
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ rinse ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		
+		<button type="button" id="rinseButton" class="collapsible opened">Rinse face</button>
+		<div class="content"  id="rinseContent">
 			<p style="margin-top:0px;">
-				<input type="checkbox" id="dress1" name="dress1" value="dress1">
+				<input type="checkbox" id="rinse1">
+				<label for="rinse1">Grab towel</label>
+				<br>
+				<input type="checkbox" id="rinse2">
+				<label for="rinse2">Wash salicylic acid off face</label>
+				<br>
+				<input type="checkbox" id="rinse3">
+				<label for="rinse3">Dry face</label>
+				<br>
+				<input type="checkbox" id="rinse4">
+				<label for="rinse4">Moisturize face</label>
+				<br>
+				<input type="checkbox" id="rinse5">
+				<label for="rinse5">Take down hair</label>
+				<br>
+				<input type="checkbox" id="rinse6">
+				<label for="rinse6">Put towel in wash</label>
+				<br>
+			</p>
+			<div style="text-align:right;">
+				<button type="button" onclick="skipStep('rinse')">    <img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('rinse')"><img class="imgButton" src="images/Done.png"></button>
+			</div>
+		</div>
+		
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ door ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		
+		<button type="button" id="doorButton" class="collapsible opened">Check door agenda</button>
+		<div class="content"  id="doorContent">
+			<p style="margin-top:0px;">
+				<input type="checkbox" id="door1">
+				<label for="door1">Check door agenda for preview of day</label>
+				<br>
+			</p>
+			<div style="text-align:right;">
+				<button type="button" onclick="skipStep('door')">    <img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('door')"><img class="imgButton" src="images/Done.png"></button>
+			</div>
+		</div>
+		
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ dress ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		
+		<button type="button" id="dressButton" class="collapsible opened">Get dressed</button>
+		<div class="content"  id="dressContent">
+			<p style="margin-top:0px;">
+				<input type="checkbox" id="dress1"">
 				<label for="dress1">Open outfit planner and get dressed</label>
 				<br>
-				<input type="checkbox" id="dress2" name="dress2" value="dress2">
+				<input type="checkbox" id="dress2">
 				<label for="dress2">Clip on ASML badge</label>
 				<br>
-				<input type="checkbox" id="dress3" name="dress3" value="dress3">
+				<input type="checkbox" id="dress3">
 				<label for="dress3">Do hair</label>
 				<br>
-				<input type="checkbox" id="dress4" name="dress4" value="dress4">
+				<input type="checkbox" id="dress4">
 				<label for="dress4">Do makeup</label>
 			</p>
 			<div style="text-align:right;">
-				<button type="button" onclick="skipStep('')"><img class="imgButton" src="images/Skip.png"></button>
-				<button type="button" onclick="completeStep('')"><img class="imgButton" src="images/Done.png"></button>
+				<button type="button" onclick="skipStep('dress')">    <img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('dress')"><img class="imgButton" src="images/Done.png"></button>
 			</div>
 		</div>
 		
-		<button type="button" class="collapsible opened">Check door agenda</button>
-		<div class="content">
-			<p style="margin-top:0px;">
-				Check out my day!
-			</p>
-			<div style="text-align:right;">
-				<button type="button" onclick="skipStep('')"><img class="imgButton" src="images/Skip.png"></button>
-				<button type="button" onclick="completeStep('')"><img class="imgButton" src="images/Done.png"></button>
-			</div>
-		</div>
-		
-		<button type="button" class="collapsible opened">Respond to work emails and messages</button>
-		<div class="content">
-			<p style="margin-top:0px;">
-				<input type="checkbox" id="msgs1" name="msgs1" value="msgs1">
-				<label for="msgs1">Check work email</label>
-				<br>
-				<input type="checkbox" id="msgs2" name="msgs2" value="msgs2">
-				<label for="msgs2">Check work messages</label>
-			</p>
-			<div style="text-align:right;">
-				<button type="button" onclick="skipStep('')"><img class="imgButton" src="images/Skip.png"></button>
-				<button type="button" onclick="completeStep('')"><img class="imgButton" src="images/Done.png"></button>
-			</div>
-		</div>
-		
-		<button type="button" class="collapsible opened">Breakfast</button>
-		<div class="content">
-			<p style="margin-top:0px;">
-				Eat a healthy breakfast :)
-			</p>
-			<div style="text-align:right;">
-				<button type="button" onclick="skipStep('')"><img class="imgButton" src="images/Skip.png"></button>
-				<button type="button" onclick="completeStep('')"><img class="imgButton" src="images/Done.png"></button>
-			</div>
-		</div>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ bf ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-		<button type="button" class="collapsible opened">Pack up</button>
-		<div class="content">
+		<button type="button" id="bfButton" class="collapsible opened">Breakfast</button>
+		<div class="content"  id="bfContent">
 			<p style="margin-top:0px;">
-				<input type="checkbox" id="pack1" name="pack1" value="pack1">
-				<label for="pack1">Laptop --> Backpack</label>
+				<input type="checkbox" id="bf1">
+				<label for="bf1">Eat a healthy breakfast</label>
 				<br>
-				<input type="checkbox" id="pack2" name="pack2" value="pack2">
-				<label for="pack2">Laptop charger --> Pink bag --> Backpack</label>
-				<br>
-				<input type="checkbox" id="pack3" name="pack3" value="pack3">
-				<label for="pack3">Mouse --> Orange bag --> Backpack</label>
-				<br>
-				<input type="checkbox" id="pack4" name="pack4" value="pack4">
-				<label for="pack1">Jabas + cord --> Case --> Backpack</label>
-				<br>
-				<input type="checkbox" id="pack5" name="pack5" value="pack5">
-				<label for="pack5">Keys --> Purse</label>
-				<br>
-				<input type="checkbox" id="pack6" name="pack6" value="pack6">
-				<label for="pack6">Wallet --> Purse</label>
-				<br>
-				<input type="checkbox" id="pack7" name="pack7" value="pack7">
-				<label for="pack7">Purse --> Backpack</label>
-				<br>
-				<input type="checkbox" id="pack8" name="pack8" value="pack8">
-				<label for="pack8">Jacket --> Backpack</label>
-				<br>
-				<input type="checkbox" id="pack9" name="pack9" value="pack9">
-				<label for="pack9">Lunchbox --> Backpack</label>
 			</p>
 			<div style="text-align:right;">
-				<button type="button" onclick="skipStep('')"><img class="imgButton" src="images/Skip.png"></button>
-				<button type="button" onclick="completeStep('')"><img class="imgButton" src="images/Done.png"></button>
+				<button type="button" onclick="skipStep('bf')">    <img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('bf')"><img class="imgButton" src="images/Done.png"></button>
 			</div>
 		</div>
 		
-		<button type="button" class="collapsible opened">Suit up</button>
-		<div class="content">
-			<p style="margin-top:0px;">
-				Put on backpack coat, shoes, etc as needed.
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ bundle ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+		<button type="button" id="bundleButton" class="collapsible opened">Suit up</button>
+		<div class="content"  id="bundleContent">
+			<p style="margin-top:0px;"> Put on: <br>
+				<input type="checkbox" id="bundle1">
+				<label for="bundle1">Shoes</label>
+				<br>
+				<input type="checkbox" id="bundle2">
+				<label for="bundle2">Coat</label>
+				<br>
+				<input type="checkbox" id="bundle3">
+				<label for="bundle3">Accessories (hat, scarf, glasses, etc)</label>
+				<br>
+				<input type="checkbox" id="bundle4">
+				<label for="bundle4">Backpack and other bags</label>
+				<br>
+				as needed.
 			</p>
 			<div style="text-align:right;">
-				<button type="button" onclick="skipStep('')"><img class="imgButton" src="images/Skip.png"></button>
-				<button type="button" onclick="completeStep('')"><img class="imgButton" src="images/Done.png"></button>
+				<button type="button" onclick="skipStep('bundle')">    <img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('bundle')"><img class="imgButton" src="images/Done.png"></button>
 			</div>
 		</div>
 		
-		<button type="button" class="collapsible opened">Downstairs</button>
-		<div class="content">
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ downstairs ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+		<button type="button" id="downstairsButton" class="collapsible opened">Go downstairs</button>
+		<div class="content"  id="downstairsContent">
 			<p style="margin-top:0px;">
-				Bring cat bag and any other carryable waste to trash on way to car, then sanitize hands.
+				<input type="checkbox" id="downstairs1">
+				<label for="downstairs1">Get cat bag and carryable trash on the way out</label>
+				<br>
+				<input type="checkbox" id="downstairs2">
+				<label for="downstairs2">Throw out trash</label>
+				<br>
+				<input type="checkbox" id="downstairs3">
+				<label for="downstairs3">Load up car and buckle in</label>
+				<br>
+				<input type="checkbox" id="downstairs4">
+				<label for="downstairs4">Sanitize hands</label>
+				<br>
 			</p>
 			<div style="text-align:right;">
-				<button type="button" onclick="skipStep('')"><img class="imgButton" src="images/Skip.png"></button>
-				<button type="button" onclick="completeStep('')"><img class="imgButton" src="images/Done.png"></button>
+				<button type="button" onclick="skipStep('downstairs')">    <img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('downstairs')"><img class="imgButton" src="images/Done.png"></button>
 			</div>
 		</div>
+		
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ commute ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 		
 		<button type="button" id="commuteButton" class="collapsible opened">Commute</button>
 		<div class="content"  id="commuteContent">
 			<p style="margin-top:0px;">
-				Hit the road!
+				<input type="checkbox" id="commute1">
+				<label for="commute1">Hit the road and have a great day!</label>
+				<br>
 			</p>
 			<div style="text-align:right;">
 				<button type="button" onclick="skipStep('commute')">    <img class="imgButton" src="images/Skip.png"></button>
 				<button type="button" onclick="completeStep('commute')"><img class="imgButton" src="images/Done.png"></button>
 			</div>
 		</div>
+		
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ JAVASCRIPT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 		
 		<script>
 			var coll = document.getElementsByClassName("collapsible");
