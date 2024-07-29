@@ -29,19 +29,43 @@
 	</head>
 	
 	<body>
+		<script>
+			function makeCheckboxes(clothesList) {
+				let myCode = '<p style="margin-top:0px;">\n'; //<p style="margin-top:0px;">
+				for (let item=0; item<clothesList.length; item++) {
+					myCode += '<input type="checkbox" id="' + clothesList[item] + '">\n'; // <input type="checkbox" id="proTop0">
+					myCode += '<label for="' + clothesList[item] + '">' + clothesList[item] + '</label>\n<br>\n'; // <label for="proTop0">Black shirt</label> <br>
+				}
+				myCode += '<br>\n</p>\n'; // <br> </p>
+				document.write(myCode);
+			}
+		</script>
+		
 		<h1>Kat's Outfit Planner</h1>
 		
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TOPS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 		<button type="button" id="topButton" class="collapsible opened">Tops</button>
 		<div class="content"  id="topContent">
 			<h2>Professional tops</h2>
-			<script>makeCheckboxes(protops);</script>
+			<script>
+				const protops = ["proTop0", "proTop1", "proTop2"];
+				makeCheckboxes(protops);
+			</script>
 			<h2>Casual long-sleeve tops</h2>
-			<script>makeCheckboxes(casLStops);</script>
+			<script>
+				makeCheckboxes(casLStops);
+				const casLStops = ["proTop0", "proTop1", "proTop2"];
+			</script>
 			<h2>Casual short-sleeve tops</h2>
-			<script>makeCheckboxes(casSStops);</script>
+			<script>
+				makeCheckboxes(casSStops);
+				const casSStops = ["proTop0", "proTop1", "proTop2"];
+			</script>
 			<h2>Casual camisole tops</h2>
-			<script>makeCheckboxes(casCtops);</script>
+			<script>
+				makeCheckboxes(casCtops);
+				const casCtops  = ["proTop0", "proTop1", "proTop2"];
+			</script>
 		</div>
 
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ BOTTOMS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -113,22 +137,6 @@
 					}
 				});
 			}
-
-			function makeCheckboxes(clothesList) {
-				let myCode = '<p style="margin-top:0px;">\n'; //<p style="margin-top:0px;">
-				for (let item=0; item<clothesList.length; item++) {
-					myCode += '<input type="checkbox" id="' + clothesList[item] + '">\n'; // <input type="checkbox" id="proTop0">
-					myCode += '<label for="' + clothesList[item] + '">' + clothesList[item] + '</label>\n<br>\n'; // <label for="proTop0">Black shirt</label> <br>
-				}
-				myCode += '<br>\n</p>\n'; // <br> </p>
-				document.write(myCode);
-			}
-
-			// TOPS
-			const protops   = ["proTop0", "proTop1", "proTop2"];
-			const casLStops = ["proTop0", "proTop1", "proTop2"];
-			const casSStops = ["proTop0", "proTop1", "proTop2"];
-			const casCtops  = ["proTop0", "proTop1", "proTop2"];
 	
 			// BOTTOMS
 			const proBottoms = [];
