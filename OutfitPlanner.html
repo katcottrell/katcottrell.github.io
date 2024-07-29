@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Kat Cottrell | Outfit Planner</title>
+		<link rel="icon" href="https://katcottrell.github.io/images/kc_fav.png">
+		<style>
+			body {
+				background-color: #fff0f2;
+			}
+
+      h1 {
+        text-align: center;
+      }
+			
+			.collapsible {
+				background-color: #b00049;
+				color: #fff0f2;
+				cursor: pointer;
+				padding: 10px;
+				width: calc(100% - 80px);
+				border: solid #de1065 8px;
+				border-radius: 10px;
+				font-weight: bold;
+				text-align: left;
+				margin: 20px 40px;
+				font-size: 32px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1>Kat's Outfit Planner</h1>
+		
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TOPS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		
+		<button type="button" id="topButton" class="collapsible opened">Tops</button>
+		<div class="content"  id="topContent">
+      <h2>Professional tops</h2>
+			<p style="margin-top:0px;">
+				<input type="checkbox" id="proTop0">
+				<label for="proTop0">Black shirt</label>
+				<br>
+				<input type="checkbox" id="proTop1">
+				<label for="proTop1">Stretch toes, feet, and legs</label>
+				<br>
+				<input type="checkbox" id="proTop2">
+				<label for="proTop2">Stretch torso, arms, hands, and neck</label>
+				<br><br>
+			</p>
+      <h2>Casual long-sleeve tops</h2>
+			<p style="margin-top:0px;">
+				<input type="checkbox" id="casLStops0">
+				<label for="casLStops0">Black shirt</label>
+				<br>
+				<input type="checkbox" id="casLStops1">
+				<label for="casLStops1">Stretch toes, feet, and legs</label>
+				<br>
+				<input type="checkbox" id="casLStops2">
+				<label for="casLStops2">Stretch torso, arms, hands, and neck</label>
+				<br><br>
+			</p>
+      <h2>Casual short-sleeve tops</h2>
+			<p style="margin-top:0px;">
+				<input type="checkbox" id="casSStops0">
+				<label for="casSStops0">Black shirt</label>
+				<br>
+				<input type="checkbox" id="casSStops1">
+				<label for="casSStops1">Stretch toes, feet, and legs</label>
+				<br>
+				<input type="checkbox" id="casSStops2">
+				<label for="casSStops2">Stretch torso, arms, hands, and neck</label>
+				<br><br>
+			</p>
+      <h2>Casual camisole tops</h2>
+			<p style="margin-top:0px;">
+				<input type="checkbox" id="casCtops0">
+				<label for="casCtops0">Black shirt</label>
+				<br>
+				<input type="checkbox" id="casCtops1">
+				<label for="casCtops1">Stretch toes, feet, and legs</label>
+				<br>
+				<input type="checkbox" id="casCtops2">
+				<label for="casCtops2">Stretch torso, arms, hands, and neck</label>
+				<br><br>
+			</p>
+		</div>
+		
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ JAVASCRIPT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		
+		<script>
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+			for (i = 0; i < coll.length; i++) {
+				coll[i].addEventListener("click", function() {
+					this.classList.toggle("opened");
+					var content = this.nextElementSibling;
+					if (content.style.display === "block") {
+						content.style.display = "none";
+					} else {
+						content.style.display = "block";
+					}
+				});
+			}
+		</script>
+	</body>
+</html>
