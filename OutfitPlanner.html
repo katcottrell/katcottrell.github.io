@@ -35,59 +35,20 @@
 		<button type="button" id="topButton" class="collapsible opened">Tops</button>
 		<div class="content"  id="topContent">
 			<h2>Professional tops</h2>
-			<p style="margin-top:0px;">
-				<input type="checkbox" id="proTop0">
-				<label for="proTop0">Black shirt</label>
-				<br>
-				<input type="checkbox" id="proTop1">
-				<label for="proTop1">Stretch toes, feet, and legs</label>
-				<br>
-				<input type="checkbox" id="proTop2">
-				<label for="proTop2">Stretch torso, arms, hands, and neck</label>
-				<br><br>
-			</p>
+			<script>makeCheckboxes(protops);</script>
 			<h2>Casual long-sleeve tops</h2>
-			<p style="margin-top:0px;">
-				<input type="checkbox" id="casLStops0">
-				<label for="casLStops0">Black shirt</label>
-				<br>
-				<input type="checkbox" id="casLStops1">
-				<label for="casLStops1">Stretch toes, feet, and legs</label>
-				<br>
-				<input type="checkbox" id="casLStops2">
-				<label for="casLStops2">Stretch torso, arms, hands, and neck</label>
-				<br><br>
-			</p>
+			<script>makeCheckboxes(casLStops);</script>
 			<h2>Casual short-sleeve tops</h2>
-			<p style="margin-top:0px;">
-				<input type="checkbox" id="casSStops0">
-				<label for="casSStops0">Black shirt</label>
-				<br>
-				<input type="checkbox" id="casSStops1">
-				<label for="casSStops1">Stretch toes, feet, and legs</label>
-				<br>
-				<input type="checkbox" id="casSStops2">
-				<label for="casSStops2">Stretch torso, arms, hands, and neck</label>
-				<br><br>
-			</p>
+			<script>makeCheckboxes(casSStops);</script>
 			<h2>Casual camisole tops</h2>
-			<p style="margin-top:0px;">
-				<input type="checkbox" id="casCtops0">
-				<label for="casCtops0">Black shirt</label>
-				<br>
-				<input type="checkbox" id="casCtops1">
-				<label for="casCtops1">Stretch toes, feet, and legs</label>
-				<br>
-				<input type="checkbox" id="casCtops2">
-				<label for="casCtops2">Stretch torso, arms, hands, and neck</label>
-				<br><br>
-			</p>
+			<script>makeCheckboxes(casCtops);</script>
 		</div>
 
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ BOTTOMS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 		<button type="button" id="bottomButton" class="collapsible opened">Bottoms</button>
 		<div class="content"  id="bottomContent">
 			<h2>Professional bottoms</h2>
+			
 			<h2>Casual pants</h2>
 			<h2>Casual skirts</h2>
 			<h2>Casual shorts</h2>
@@ -152,6 +113,57 @@
 					}
 				});
 			}
+
+			function makeCheckboxes(clothesList) {
+				let myCode = '<p style="margin-top:0px;">\n'; //<p style="margin-top:0px;">
+				for (let item=0; item<clothesList.length; item++) {
+					myCode += '<input type="checkbox" id="' + clothesList[item] + '">\n'; // <input type="checkbox" id="proTop0">
+					myCode += '<label for="' + clothesList[item] + '">' + clothesList[item] + '</label>\n<br>\n'; // <label for="proTop0">Black shirt</label> <br>
+				}
+				myCode += '<br>\n</p>\n'; // <br> </p>
+				document.write(myCode);
+			}
+
+			// TOPS
+			const protops   = ["proTop0", "proTop1", "proTop2"];
+			const casLStops = ["proTop0", "proTop1", "proTop2"];
+			const casSStops = ["proTop0", "proTop1", "proTop2"];
+			const casCtops  = ["proTop0", "proTop1", "proTop2"];
+	
+			// BOTTOMS
+			const proBottoms = [];
+			const casPants   = [];
+			const casSkirts  = [];
+			const casShorts  = [];
+			const athBottoms = [];
+	
+			// DRESSES
+			const proDresses = [];
+			const casDresses = [];
+			const occDresses = [];
+	
+			// SHOES
+			const proShoes = [];
+			const casShoes = [];
+			const athShoes = [];
+			const occShoes = [];
+	
+			// WARMTH
+			const coats   = [];
+			const jackets = [];
+			const sweats  = [];
+			const wingear = [];
+	
+			// ACCESSORIES
+			const miscAcc = [];
+	
+			// JEWELRY
+			const earrings   = [];
+			const rings      = [];
+			const necklaces  = [];
+			const bracelets  = [];
+			const misJewelry = [];
+		
 		</script>
 	</body>
 </html>
