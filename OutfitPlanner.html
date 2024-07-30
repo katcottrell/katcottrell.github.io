@@ -34,7 +34,7 @@
 			function makeCheckboxes(clothesList) {
 				let myCode = '<p style="margin-top:0px;">\n'; //<p style="margin-top:0px;">
 				for (let item = 0; item < clothesList.length; item++) {
-					myCode += '<input type="checkbox" id="' + clothesList[item] + '" onclick="updateOutfitList("' + clothesList[item] + '")">\n'; // <input type="checkbox" id="proTop0">
+					myCode += '<input type="checkbox" id="' + clothesList[item] + '" onclick="updateOutfitList' + "('" + clothesList[item] + "'" + ')">\n'; // <input type="checkbox" id="proTop0">
 					myCode += '<label for="' + clothesList[item] + '">' + clothesList[item] + '</label>\n<br>\n'; // <label for="proTop0">Black shirt</label> <br>
 				}
 				myCode += '<br>\n</p>\n'; // <br> </p>
