@@ -62,7 +62,7 @@
 				let myCode = "";
 				for (let itemIdx = 0; itemIdx < myOutfitList.length; itemIdx++) {
 					myCode += '<input type="checkbox" id="box' + itemIdx.toString() + '">\n'; // <input type="checkbox" id="box0">
-					myCode += '<label for="box' + itemIdx.toString() + '">' + clothesListItem + '</label>\n'; // <label for="box0">proTop0</label> 
+					myCode += '<label for="box' + itemIdx.toString() + '">' + myOutfitList[itemIdx] + '</label>\n'; // <label for="box0">proTop0</label> 
 				}
 				document.getElementById("outfitList").innerHTML = myCode;
 			}
@@ -79,22 +79,22 @@
 		<div class="content"  id="topContent">
 			<h2>Professional tops</h2>
 			<script>
-				const protops = ["proTop0", "proTop1", "proTop2"];
+				const protops = ["blkLSscoopSweater", "blkLStwistSweater", "blkHSvshirt", "redLSscoopSweater"];
 				makeCheckboxes(protops);
 			</script>
 			<h2>Casual long-sleeve tops</h2>
 			<script>
-				const casLStops = ["proTop0", "proTop1", "proTop2"];
+				const casLStops = ["libbyWords", "giveBlood", "dukeWbBall"];
 				makeCheckboxes(casLStops);
 			</script>
 			<h2>Casual short-sleeve tops</h2>
 			<script>
-				const casSStops = ["proTop0", "proTop1", "proTop2"];
+				const casSStops = ["dukeCS", "daniel", "dukeDevil"];
 				makeCheckboxes(casSStops);
 			</script>
-			<h2>Casual camisole tops</h2>
+			<h2>Casual camisole & sleeveless tops</h2>
 			<script>
-				const casCtops  = ["proTop0", "proTop1", "proTop2"];
+				const casCtops  = ["blkScoop", "blkLace", "blkDukeLace", "bleghssed", "redScrunch", "redEmbroidery", "orng", "tanLace", "grnPattern"];
 				makeCheckboxes(casCtops);
 			</script>
 		</div>
