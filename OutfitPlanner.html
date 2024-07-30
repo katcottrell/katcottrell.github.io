@@ -34,7 +34,7 @@
 			function makeCheckboxes(clothesList) {
 				let myCode = '<p style="margin-top:0px;">\n'; //<p style="margin-top:0px;">
 				for (let item = 0; item < clothesList.length; item++) {
-					myCode += '<input type="checkbox" id="' + clothesList[item] + '" onclick="updateOutfitList(' + clothesList[item] + ')">\n'; // <input type="checkbox" id="proTop0">
+					myCode += '<input type="checkbox" id="' + clothesList[item] + '" onclick="updateOutfitList("' + clothesList[item] + '")">\n'; // <input type="checkbox" id="proTop0">
 					myCode += '<label for="' + clothesList[item] + '">' + clothesList[item] + '</label>\n<br>\n'; // <label for="proTop0">Black shirt</label> <br>
 				}
 				myCode += '<br>\n</p>\n'; // <br> </p>
@@ -61,8 +61,8 @@
 				}
 				let myCode = "";
 				for (let itemIdx = 0; itemIdx < myOutfitList.length; itemIdx++) {
-					myCode += '<input type="checkbox" id="box' + itemIdx.toString() + '">\n'; // <input type="checkbox" id="vehicle1">
-					myCode += '<label for="box' + itemIdx.toString() + '">' + myOutfitList[itemIdx] + '</label>\n'; // <label for="myCheck">Checkbox:</label> 
+					myCode += '<input type="checkbox" id="box' + itemIdx.toString() + '">\n'; // <input type="checkbox" id="box0">
+					myCode += '<label for="box' + itemIdx.toString() + '">' + clothesListItem + '</label>\n'; // <label for="box0">proTop0</label> 
 				}
 				document.getElementById("outfitList").innerHTML = myCode;
 			}
