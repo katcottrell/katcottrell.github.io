@@ -10,19 +10,29 @@
 			h1 {
 				text-align: center;
 			}
-			
 			.collapsible {
-				background-color: #b00049;
-				color: #fff0f2;
+				background-color: white;
+				color: black;
 				cursor: pointer;
 				padding: 10px;
 				width: calc(100% - 80px);
-				border: solid #de1065 8px;
+				border: solid black 8px;
 				border-radius: 10px;
 				font-weight: bold;
 				text-align: left;
 				margin: 20px 40px;
 				font-size: 32px;
+			}
+			.cbDiv {
+				float: left;
+				width: 18%;
+				padding: 1%;
+			}
+			.cb {
+				display: none;
+			}
+			.itemImg {
+				width: 100%;
 			}
 		</style>
 	</head>
@@ -32,10 +42,12 @@
 			const myOutfitList = [];
 			
 			function makeCheckboxes(clothesList) {
-				let myCode = '<p style="margin-top:0px;">\n'; //<p style="margin-top:0px;">
+				let myCode = '<p>\n'; // <p>
 				for (let item = 0; item < clothesList.length; item++) {
-					myCode += '<input type="checkbox" id="' + clothesList[item] + '" onclick="updateOutfitList' + "('" + clothesList[item] + "'" + ')">\n'; // <input type="checkbox" id="proTop0">
-					myCode += '<label for="' + clothesList[item] + '">' + clothesList[item] + '</label>\n<br>\n'; // <label for="proTop0">Black shirt</label> <br>
+					myCode += '<div class="cbDiv">\n'; // <div style="float:left;width:18%;padding:1%;">
+					myCode += '<input type="checkbox" id="' + clothesList[item] + '" class="cb" onclick="updateOutfitList' + "('" + clothesList[item] + "'" + ')">\n'; // <input type="checkbox" id="proTop0">
+					myCode += '<label for="' + clothesList[item] + '"><img src="https://www.w3schools.com/howto/img_snow.jpg" class="itemImg;"></label>\n<br>\n'; // <label for="proTop0">Black shirt</label> <br>
+					myCode += '</div>\n\n';  // </div>
 				}
 				myCode += '<br>\n</p>\n'; // <br> </p>
 				document.write(myCode);
