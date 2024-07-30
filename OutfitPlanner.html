@@ -107,7 +107,7 @@
 		<div class="content"  id="bottomContent">
 			<h2>Professional bottoms</h2>
 			<script>
-				const proBottoms = ["blkPants","bwPants","tanPants", "oliveCargoSkirt"];
+				const proBottoms = ["blkPants","bwPants","tanPants", "maroonFlowerSkirt", "oliveCargoSkirt"];
 				makeCheckboxes(proBottoms);
 			</script>
 			<h2>Casual pants</h2>
@@ -117,13 +117,13 @@
 			</script>
 			<h2>Casual skirts</h2>
 			<script>
-				const casSkirts  = [];
+				const casSkirts  = ["grayMini", "oliveMini"];
 				makeCheckboxes(casSkirts);
 			</script>
 			<h2>Casual shorts</h2>
 			<script>
-				const casShorts  = [];
-				makeCheckboxes("blkFrayed", "blkCuffed");
+				const casShorts  = ["blkFrayed", "blkCuffed", "oliveLace"];
+				makeCheckboxes(casShorts);
 			</script>
 			<h2>Athletic bottoms</h2>
 			<script>
@@ -187,13 +187,13 @@
 			</script>
 			<h2>Jackets, sweaters, blazers & cardigans</h2>
 			<script>
-				const jackets = ["oliveZippers","blkASML","patagonia","orngSweater","grayCard","tanBlazer","aTeam"];
+				const jackets = ["blkASML", "grayPatagonia", "grayCard", "orngSweater", "tanBlazer", "oliveZippers", "aTeam"];
 				makeCheckboxes(jackets);
 			</script>
 			<h2>Sweatshirts</h2>
 			<script>
-				const weats  = ["orngSlouch","greenFew","Daniel","obscure","women","duke"];
-				makeCheckboxes(weats);
+				const sweats  = ["orngSlouch","greenFew","daniel","obscureASML","womenASML","grayDuke"];
+				makeCheckboxes(sweats);
 			</script>
 			<h2>Winter gear</h2>
 			<script>
@@ -205,9 +205,14 @@
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ACCESSORIES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 		<button type="button" id="accessoriesButton" class="collapsible opened">Accessories</button>
 		<div class="content"  id="accessoriesContent">
+			<h2>Bags</h2>
+			<script>
+				const bags = ["tan9wPurse", "ylwPurse", "egTote", "rbTote", "blkKnitBag"];
+				makeCheckboxes(bags);
+			</script>
 			<h2>Miscellaneous accessories</h2>
 			<script>
-				const miscAcc = [];
+				const miscAcc = ["blkSunglasses", "brnSunglasses", "aviSunglasses", "pinkScarf"];
 				makeCheckboxes(miscAcc);
 			</script>
 		</div>
@@ -219,12 +224,12 @@
 			<h3>Hanging</h3>
 			<script>
 				const hangingEarrings   = [];
-				makeCheckboxes(earrings);
+				makeCheckboxes(hangingEarrings);
 			</script>
 			<h3>Studs</h3>
 			<script>
 				const studEarrings   = [];
-				makeCheckboxes(earrings);
+				makeCheckboxes(studEarrings);
 			</script>
 			<h2>Rings</h2>
 			<script>
@@ -260,6 +265,11 @@
 			<script>
 				const makeup = ["bare", "spring", "summer", "autumn", "winter", "glam"];
 				makeCheckboxes(makeup);
+			</script>
+			<h2>Scent</h2>
+			<script>
+				const scents = ["vanilla", "lilac"];
+				makeCheckboxes(scents);
 			</script>
 		
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ JAVASCRIPT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
