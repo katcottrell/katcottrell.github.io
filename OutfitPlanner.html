@@ -56,7 +56,7 @@
 					}
 				} else {
 					if (itemPresent == true) {
-						const removeIdx = array.indexOf(clothesListItem);
+						const removeIdx = myOutfitList.indexOf(clothesListItem);
 						if (removeIdx > -1) { // only splice array when item is found
 							myOutfitList.splice(removeIdx, 1); // 2nd parameter means remove one item only
 						}
@@ -97,7 +97,7 @@
 			</script>
 			<h2>Casual camisole & sleeveless tops</h2>
 			<script>
-				const casCtops  = ["blkScoop", "blkLace", "blkDukeLace", "bleghssed", "redScrunch", "redEmbroidery", "orng", "tanLace", "grnPattern"];
+				const casCtops  = ["blkScoop", "blkLace", "blkDukeLace", "gothCap", "bleghssed", "redScrunch", "redEmbroidery", "orng", "tanLace", "grnPattern"];
 				makeCheckboxes(casCtops);
 			</script>
 		</div>
@@ -107,7 +107,7 @@
 		<div class="content"  id="bottomContent">
 			<h2>Professional bottoms</h2>
 			<script>
-				const proBottoms = ["blkPants","tanPants","bwPants"];
+				const proBottoms = ["blkPants","bwPants","tanPants", "oliveCargoSkirt"];
 				makeCheckboxes(proBottoms);
 			</script>
 			<h2>Casual pants</h2>
