@@ -56,7 +56,10 @@
 					}
 				} else {
 					if (itemPresent == true) {
-						myOutfitList.pop(clothesListItem);
+						const removeIdx = array.indexOf(clothesListItem);
+						if (removeIdx > -1) { // only splice array when item is found
+							myOutfitList.splice(removeIdx, 1); // 2nd parameter means remove one item only
+						}
 					}
 				}
 				let myCode = "";
