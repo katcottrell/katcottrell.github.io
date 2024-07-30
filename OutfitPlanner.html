@@ -29,18 +29,50 @@
 	
 	<body>
 		<script>
+			const myOutfitList = [];
+			
 			function makeCheckboxes(clothesList) {
 				let myCode = '<p style="margin-top:0px;">\n'; //<p style="margin-top:0px;">
-				for (let item=0; item<clothesList.length; item++) {
-					myCode += '<input type="checkbox" id="' + clothesList[item] + '">\n'; // <input type="checkbox" id="proTop0">
+				for (let item = 0; item < clothesList.length; item++) {
+					myCode += '<input type="checkbox" id="' + clothesList[item] + '" onclick="updateOutfitList(' + clothesList[item] + ')">\n'; // <input type="checkbox" id="proTop0">
 					myCode += '<label for="' + clothesList[item] + '">' + clothesList[item] + '</label>\n<br>\n'; // <label for="proTop0">Black shirt</label> <br>
 				}
 				myCode += '<br>\n</p>\n'; // <br> </p>
 				document.write(myCode);
 			}
+			
+			function updateOutfitList(clothesListItem) {
+			        let itemPresent = false;
+				for (let itemIdx = 0; itemIdx < myOutfitList.length; itemIdx++) {
+					if (myOutfitList[itemIdx] == clothesListItem) {
+						itemPresent = true;
+						break;
+					}
+				}
+				let checkBox = document.getElementById(clothesListItem);
+				if (checkBox.checked == true) {
+					if (itemPresent == false) {
+						myOutfitList.push(clothesListItem);
+					}
+				} else {
+					if (itemPresent == true) {
+						myOutfitList.pop(clothesListItem);
+					}
+				}
+				let myCode = "";
+				for (let itemIdx = 0; itemIdx < myOutfitList.length; itemIdx++) {
+					myCode += '<input type="checkbox" id="box' + itemIdx.toString() + '">\n'; // <input type="checkbox" id="vehicle1">
+					myCode += '<label for="box' + itemIdx.toString() + '">' + myOutfitList[itemIdx] + '</label>\n'; // <label for="myCheck">Checkbox:</label> 
+				}
+				document.getElementById("outfitList").innerHTML = myCode;
+			}
 		</script>
 		
 		<h1>Kat's Outfit Planner</h1>
+
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CLOTHES LIST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<h2>My outfit:</h2>
+		<p id="outfitList">Select clothes to start an outfit!</p>
 		
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TOPS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 		<button type="button" id="topButton" class="collapsible opened">Tops</button>
