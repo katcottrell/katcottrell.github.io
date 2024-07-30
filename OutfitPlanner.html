@@ -87,7 +87,7 @@
 			</script>
 			<h2>Casual long-sleeve tops</h2>
 			<script>
-				const casLStops = ["libbyWords", "giveBlood", "dukeWbBall"];
+				const casLStops = ["libbyWords", "giveBlood", "alienHoodie", "dukeWbBall"];
 				makeCheckboxes(casLStops);
 			</script>
 			<h2>Casual short-sleeve tops</h2>
@@ -112,7 +112,7 @@
 			</script>
 			<h2>Casual pants</h2>
 			<script>
-				const casPants   = [];
+				const casPants   = ["blackJeans", "maroonJeans", "oliveCargoPants"];
 				makeCheckboxes(casPants);
 			</script>
 			<h2>Casual skirts</h2>
@@ -123,11 +123,11 @@
 			<h2>Casual shorts</h2>
 			<script>
 				const casShorts  = [];
-				makeCheckboxes(casShorts);
+				makeCheckboxes("blkFrayed", "blkCuffed");
 			</script>
 			<h2>Athletic bottoms</h2>
 			<script>
-				const athBottoms = [];
+				const athBottoms = ["blkBball", "blkCotton", "blkTskirt", "blkLeggings", "grayTskirt" "pinkLeggings", "oliveLeggings"];
 				makeCheckboxes(athBottoms);
 			</script>
 		</div>
@@ -216,8 +216,14 @@
 		<button type="button" id="jewelryButton" class="collapsible opened">Jewelry</button>
 		<div class="content"  id="jewelryContent">
 			<h2>Earrings</h2>
+			<h3>Hanging</h3>
 			<script>
-				const earrings   = [];
+				const hangingEarrings   = [];
+				makeCheckboxes(earrings);
+			</script>
+			<h3>Studs</h3>
+			<script>
+				const studEarrings   = [];
 				makeCheckboxes(earrings);
 			</script>
 			<h2>Rings</h2>
@@ -241,6 +247,20 @@
 				makeCheckboxes(misJewelry);
 			</script>
 		</div>
+		
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ STYLING ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<button type="button" id="stylingButton" class="collapsible opened">Styling</button>
+		<div class="content"  id="stylingContent">
+			<h2>Hair</h2>
+			<script>
+				const hairstyles = ["down", "clipUp", "halfUp", "braidback", "braidDown", "braidCrown"];
+				makeCheckboxes(hairstyles);
+			</script>
+			<h2>Makeup</h2>
+			<script>
+				const makeup = ["bare", "spring", "summer", "autumn", "winter", "glam"];
+				makeCheckboxes(makeup);
+			</script>
 		
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ JAVASCRIPT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 		
