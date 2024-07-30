@@ -52,12 +52,12 @@
 			function makeCheckboxes(clothesList) {
 				let myCode = '<p>\n'; // <p>
 				for (let item = 0; item < clothesList.length; item++) {
-					myCode += '<div class="cbDiv">\n'; // <div style="float:left;width:18%;padding:1%;">
-					myCode += '<input type="checkbox" id="' + clothesList[item] + '" class="cb" onclick="updateOutfitList(' + "'" + clothesList[item] + "'" + ')">\n'; // <input type="checkbox" id="proTop0">
-					myCode += '<label for="' + clothesList[item] + '"><img src="https://www.w3schools.com/howto/img_snow.jpg" class="itemImg"></label>\n<br>\n'; // <label for="proTop0">Black shirt</label> <br>
-					myCode += '</div>\n';  // </div>
+					myCode += '<div class="cbDiv">\n'; 
+					myCode += '<input type="checkbox" id="' + clothesList[item] + '" class="cb" onclick="updateOutfitList(' + "'" + clothesList[item] + "'" + ')">\n'; 
+					myCode += '<label for="' + clothesList[item] + '"><img src="https://www.w3schools.com/howto/img_snow.jpg" class="itemImg"></label>\n<br>\n'; 
+					myCode += '</div>\n';  
 				}
-				myCode += '</p>\n<br>\n'; // </p> <br>
+				myCode += '</p>\n<br>\n'; 
 				myCode += '<div style="clear:both"> </div>\n<br>\n';
 				document.write(myCode);
 			}
@@ -85,8 +85,9 @@
 				}
 				let myCode = "";
 				for (let itemIdx = 0; itemIdx < myOutfitList.length; itemIdx++) {
-					myCode += '<input type="checkbox" id="box' + itemIdx.toString() + '">\n'; // <input type="checkbox" id="box0">
-					myCode += '<label for="box' + itemIdx.toString() + '">' + myOutfitList[itemIdx] + '</label>\n'; // <label for="box0">proTop0</label> 
+					myCode += '<input type="checkbox" id="box' + itemIdx.toString() + '">\n'; 
+					myCode += '<label for="box' + itemIdx.toString() + '">' + myOutfitList[itemIdx] + '</label>\n';
+					myCode += '<br>\n';
 				}
 				document.getElementById("outfitList").innerHTML = myCode;
 			}
