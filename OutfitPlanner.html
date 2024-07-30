@@ -45,11 +45,12 @@
 				let myCode = '<p>\n'; // <p>
 				for (let item = 0; item < clothesList.length; item++) {
 					myCode += '<div class="cbDiv">\n'; // <div style="float:left;width:18%;padding:1%;">
-					myCode += '<input type="checkbox" id="' + clothesList[item] + '" class="cb" onclick="updateOutfitList' + "('" + clothesList[item] + "'" + ')">\n'; // <input type="checkbox" id="proTop0">
-					myCode += '<label for="' + clothesList[item] + '"><img src="https://www.w3schools.com/howto/img_snow.jpg" class="itemImg;"></label>\n<br>\n'; // <label for="proTop0">Black shirt</label> <br>
-					myCode += '</div>\n\n';  // </div>
+					myCode += '<input type="checkbox" id="' + clothesList[item] + '" class="cb" onclick="updateOutfitList(' + "'" + clothesList[item] + "'" + ')">\n'; // <input type="checkbox" id="proTop0">
+					myCode += '<label for="' + clothesList[item] + '"><img src="https://www.w3schools.com/howto/img_snow.jpg" class="itemImg"></label>\n<br>\n'; // <label for="proTop0">Black shirt</label> <br>
+					myCode += '</div>\n';  // </div>
 				}
-				myCode += '<br>\n</p>\n'; // <br> </p>
+				myCode += '</p>\n<br>\n'; // </p> <br>
+				myCode += '</div>\n<div style="clear:both"> </div>\n';
 				document.write(myCode);
 			}
 			
@@ -139,7 +140,7 @@
 			</script>
 			<h2>Athletic bottoms</h2>
 			<script>
-				const athBottoms = ["blkBball", "blkCotton", "blkTskirt", "blkLeggings", "grayTskirt" "pinkLeggings", "oliveLeggings"];
+				const athBottoms = ["blkBball", "blkCotton", "blkTskirt", "blkLeggings", "grayTskirt", "pinkLeggings", "oliveLeggings"];
 				makeCheckboxes(athBottoms);
 			</script>
 		</div>
