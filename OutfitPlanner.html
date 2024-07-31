@@ -85,10 +85,15 @@
 					}
 				}
 				let myCode = "";
-				for (let itemIdx = 0; itemIdx < myOutfitList.length; itemIdx++) {
-					myCode += '<input type="checkbox" id="box' + itemIdx.toString() + '">\n'; 
-					myCode += '<label for="box' + itemIdx.toString() + '">' + myOutfitList[itemIdx] + '</label>\n';
-					myCode += '<br>\n';
+				if (myOutfitList.length < 1) {
+					myCode = "<h2>Select items to create an outfit!</h2>\n";
+				} else {
+					mycode += '<h2>My outfit:</h2>\n';
+					for (let itemIdx = 0; itemIdx < myOutfitList.length; itemIdx++) {
+						myCode += '<input type="checkbox" id="box' + itemIdx.toString() + '">\n'; 
+						myCode += '<label for="box' + itemIdx.toString() + '">' + myOutfitList[itemIdx] + '</label>\n';
+						myCode += '<br>\n';
+					}
 				}
 				document.getElementById("outfitList").innerHTML = myCode;
 			}
@@ -97,7 +102,6 @@
 		<h1>Kat's Outfit Planner</h1>
 
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CLOTHES LIST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-		<h2>My outfit:</h2>
 		<p id="outfitList">Select clothes to start an outfit!</p>
 		
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TOPS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -165,7 +169,7 @@
 			</script>
 			<h2>Casual dresses</h2>
 			<script>
-				const casDresses = ["Black cotton wrap dress", "Gingham red dress", "Brown lace dress", "rwbSun", "Orange spaghetti strap dress", "Orange tent dress", "Orange strapless hi-lo dress", "Yellow floral sundress", "Yellow scrunch sundress", "Blue patterned maxi dress", "RWB sundress"];
+				const casDresses = ["Black cotton wrap dress", "Gingham red dress", "Brown lace dress", "Orange spaghetti strap dress", "Orange tent dress", "Orange strapless hi-lo dress", "Yellow floral sundress", "Yellow scrunch sundress", "Blue patterned maxi dress", "RWB sundress"];
 				makeCheckboxes(casDresses);
 			</script>
 			<h2>Occasion dresses</h2>
