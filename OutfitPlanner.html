@@ -94,13 +94,13 @@
 				if (myOutfitList.length < 1) {
 					myCode = "<h2>Select items to create an outfit!</h2>\n";
 				} else {
-					myCode += '<div style="float:left;width:45%;margin: 0 0 0 calc(10% - 8px);">\n';
+					myCode += '<div style="float:left;width:45%;padding:0 2% 0 calc(8% - 8px);border-right:solid dimgray 1px;">\n';
 					for (let itemIdx = 0; itemIdx < myOutfitList.length; itemIdx++) {
 						myCode += '<img src="images/clothes/' + myOutfitList[itemIdx] + '.png" class="tileImg">\n';
 					}
 					myCode += '</div>\n';
-					myCode += '<div style="float:left;width:35%;margin: 0 0 0 calc(10% - 8px);">\n';
-					myCode += '<p>My outfit:</p>\n';
+					myCode += '<div style="float:left;width:35%;padding:0 calc(8% - 8px) 0 2%;">\n';
+					myCode += '<h2 style="text-align:left;">My outfit:</h2>\n';
 					for (let itemIdx = 0; itemIdx < myOutfitList.length; itemIdx++) {
 						myCode += '<input type="checkbox" id="box' + itemIdx.toString() + '">\n'; 
 						myCode += '<label for="box' + itemIdx.toString() + '">' + myOutfitList[itemIdx] + '</label>\n';
