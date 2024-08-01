@@ -43,6 +43,12 @@
 				border: none;
 				aspect-ratio: 1;
 			}
+			.tileImg {
+				padding: 1%;
+				margin: 0;
+				float: left;
+				width: 31%;
+			}
 		</style>
 	</head>
 	
@@ -84,11 +90,17 @@
 						}
 					}
 				}
-				let myCode = "";
+				let myCode = '';
 				if (myOutfitList.length < 1) {
 					myCode = "<h2>Select items to create an outfit!</h2>\n";
 				} else {
-					myCode += '<h2>My outfit:</h2>\n';
+					myCode += '<div style="float:left;width:45%;margin: 0 0 0 calc(10% - 8px);">\n';
+					for (let itemIdx = 0; itemIdx < myOutfitList.length; itemIdx++) {
+						myCode += '<img src="images/clothes/' + myOutfitList[itemIdx] + '.png" class="tileImg">\n';
+					}
+					myCode += '</div>\n';
+					myCode += '<div style="float:left;width:35%;margin: 0 0 0 calc(10% - 8px);">\n';
+					myCode += '<p>My outfit:</p>\n';
 					for (let itemIdx = 0; itemIdx < myOutfitList.length; itemIdx++) {
 						myCode += '<input type="checkbox" id="box' + itemIdx.toString() + '">\n'; 
 						myCode += '<label for="box' + itemIdx.toString() + '">' + myOutfitList[itemIdx] + '</label>\n';
@@ -102,7 +114,10 @@
 		<h1>Kat's Outfit Planner</h1>
 
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CLOTHES LIST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-		<p id="outfitList">Select clothes to start an outfit!</p>
+		
+		<p id="outfitList">
+			<h2>Select clothes to start an outfit!</h2>
+		</p>
 		
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TOPS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 		<button type="button" id="topButton" class="collapsible opened">{   TOPS   }</button>
@@ -247,13 +262,12 @@
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ JEWELRY ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 		<button type="button" id="jewelryButton" class="collapsible opened">{   JEWELRY   }</button>
 		<div class="content"  id="jewelryContent">
-			<h2>earrings</h2>
-			<h3>hanging</h3>
+			<h2>hanging earrings</h2>
 			<script>
 				const hangingEarrings   = [];
 				makeCheckboxes(hangingEarrings);
 			</script>
-			<h3>studs</h3>
+			<h2>stud earrings</h2>
 			<script>
 				const studEarrings   = [];
 				makeCheckboxes(studEarrings);
