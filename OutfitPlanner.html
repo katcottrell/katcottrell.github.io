@@ -49,6 +49,10 @@
 				float: left;
 				width: 31%;
 			}
+			.content {
+				display: none;
+				overflow: hidden;
+			}
 		</style>
 	</head>
 	
@@ -115,7 +119,7 @@
 
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CLOTHES LIST ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 		
-		<p id="outfitList">Select items to create an outfit!</p>
+		<p id="outfitList" style="text-align:center;">Select items to create an outfit!</p>
 		
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TOPS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 		<button type="button" id="topButton" class="collapsible opened">{   TOPS   }</button>
@@ -318,7 +322,7 @@
 			var i;
 			for (i = 0; i < coll.length; i++) {
 				coll[i].addEventListener("click", function() {
-					//this.classList.toggle("opened");
+					this.classList.toggle("opened");
 					var content = this.nextElementSibling;
 					if (content.style.display === "block") {
 						content.style.display = "none";
