@@ -65,8 +65,8 @@
 				for (let item = 0; item < clothesList.length; item++) {
 					myCode += '<div class="cbDiv">\n'; 
 					myCode += '<input type="checkbox" id="' + clothesList[item] + '" class="cb" onclick="updateOutfitList(' + "'" + clothesList[item] + "'" + ')">\n'; 
-					myCode += '<label for="' + clothesList[item] + '"><img src="images/clothes/' + clothesList[item] + '.png" class="itemImg"></label>\n<br>\n'; 
-					myCode += '</div>\n';  
+					myCode += '<label for="' + clothesList[item] + '"><img src="images/clothes/' + clothesList[item] + '.png" class="itemImg" id="' + clothesList[item] + 'Img"></label>\n<br>\n'; 
+					myCode += '</div>\n';
 				}
 				myCode += '</p>\n<br>\n'; 
 				myCode += '<div style="clear:both"> </div>\n<br>\n';
@@ -85,6 +85,7 @@
 				if (checkBox.checked == true) {
 					if (itemPresent == false) {
 						myOutfitList.push(clothesListItem);
+						document.getElementById(clothesListItem + "Img").style.boxShadow = "0 0 4px 4px lightgray";
 					}
 				} else {
 					if (itemPresent == true) {
@@ -92,6 +93,7 @@
 						if (removeIdx > -1) { // only splice array when item is found
 							myOutfitList.splice(removeIdx, 1); // 2nd parameter means remove one item only
 						}
+						document.getElementById(clothesListItem + "Img").style.boxShadow = "none";
 					}
 				}
 				let myCode = '';
