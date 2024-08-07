@@ -1,0 +1,423 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Kat Cottrell | Evening Routine</title>
+		<link rel="icon" href="https://katcottrell.github.io/images/kc_fav.png">
+		<style>
+			body {
+				background-color: #140940;
+        color: #fff3d1;
+			}
+			
+			h1 {
+				font-size: 64px;
+				color: #fff3d1;
+			}
+			
+			p {
+				font-size: 32px;
+				font-family: sans-serif;
+				color: #fff3d1;
+			}
+
+			a {
+				color: #ffbc00;
+			}
+
+			button {
+				background: transparent;
+				border: none;
+				width: 25%;
+			}
+
+			.moodBoard {
+				width: 100%;
+			}
+
+			.imgButton {
+				width: 100%;
+			}
+			
+			.collapsible {
+				background-color: #1e0a6e;
+				color: #fff3d1;
+				cursor: pointer;
+				padding: 10px;
+				width: calc(100% - 80px);
+				border: solid #fff3d1 8px;
+				border-radius: 10px;
+				font-weight: bold;
+				text-align: left;
+				margin: 20px 40px;
+				font-size: 32px;
+			}
+			
+			.content {
+				padding: 0 18px;
+				display: none;
+				overflow: hidden;
+				margin: 0 40px 20px 40px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<img src="images/Kat's%20morning%20routine%20banner.png"
+			class="titleBanner" 
+			alt="Kat's morning routine"
+			style="width: calc(100% - 80px); margin: 40px 40px 10px 40px;">
+		
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ close workday ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		
+		<button type="button" id="endworkButton" class="collapsible opened">Close out workday</button>
+		<div class="content"  id="endworkContent">
+			<p style="margin-top:0px;">
+				<input type="checkbox" id="endwork0">
+				<label for="endwork0">Confirm that all messages and emails have been addressed</label>
+				<br><br>
+				<input type="checkbox" id="endwork1">
+				<label for="endwork1">Confirm that all by-EoD tasks have been completed</label>
+				<br><br>
+				<input type="checkbox" id="endwork2">
+				<label for="endwork2">Log time & notes in Jira--if you continue in the evening, log that separately!</label>
+				<br>
+				<input type="checkbox" id="endwork3">
+				<label for="endwork3">Log TLDR in SharePoint</label>
+				<br>
+				<input type="checkbox" id="endwork4">
+				<label for="endwork4">Put back items from locker and exercise machine</label>
+				<br><br>
+				<input type="checkbox" id="endwork5">
+				<label for="endwork5">Get lunch from fridge</label>
+				<br><br>
+				<input type="checkbox" id="endwork6">
+				<label for="endwork6">Close all apps</label>
+				<br><br>
+				<input type="checkbox" id="endwork7">
+				<label for="endwork7">Pack up backpack</label>
+				<br><br>
+				<input type="checkbox" id="endwork8">
+				<label for="endwork8">Wipe down workstation</label>
+				<br><br>
+				<input type="checkbox" id="endwork9">
+				<label for="endwork9">If leaving to exercise, change out in bathroom</label>
+				<br><br>
+				<input type="checkbox" id="endwork10">
+				<label for="endwork10">Commute to home/exercise</label>
+				<br><br>
+				<input type="checkbox" id="endwork11">
+				<label for="endwork11">OPTIONAL: Exercise here</label>
+			</p>
+			<div style="text-align:right;">
+				<button type="button" onclick="skipStep('endwork')">    <img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('endwork')"><img class="imgButton" src="images/Done.png"></button>
+			</div>
+		</div>
+		
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ exercise ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		
+		<button type="button" id="exerciseButton" class="collapsible opened">Exercise</button>
+		<div class="content"  id="exerciseContent">
+			<p style="margin-top:0px;">
+				<input type="checkbox" id="exercise0">
+				<label for="exercise0">Workout outfit: clothes, shoes, warmth, safety gear</label>
+				<br><br>
+				<input type="checkbox" id="exercise1">
+				<label for="exercise1">Get keys, phone, headphones, wallet if necessary</label>
+				<br><br>
+				<input type="checkbox" id="exercise2">
+				<label for="exercise2">Start Strava</label>
+				<br><br>
+				<input type="checkbox" id="exercise3">
+				<label for="exercise3">Exercise</label>
+				<br><br>
+				<input type="checkbox" id="exercise4">
+				<label for="exercise4">Stop Strava</label>
+				<br><br>
+				<input type="checkbox" id="exercise5">
+				<label for="exercise5">Cooldown Sudoku</label>
+				<br><br>
+				<input type="checkbox" id="exercise6">
+				<label for="exercise6">Drive home</label>
+			</p>
+			<div style="text-align:right;">
+				<button type="button" onclick="skipStep('exercise')">    <img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('exercise')"><img class="imgButton" src="images/Done.png"></button>
+			</div>
+		</div>
+		
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ set up at home ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		
+		<button type="button" id="gethomeButton" class="collapsible opened">Set up at home</button>
+		<div class="content"  id="gethomeContent">
+			<p style="margin-top:0px;">
+				<input type="checkbox" id="gethome0">
+				<label for="gethome0">Arrive home</label>
+				<br>
+				<input type="checkbox" id="gethome1">
+				<label for="gethome1">Set up workstation in room: laptop, mouse, charger</label>
+				<br>
+				<input type="checkbox" id="gethome2">
+				<label for="gethome2">Remove and store shoes and work clothes</label>
+				<br>
+				<input type="checkbox" id="gethome3">
+				<label for="gethome3">Unpack lunch</label>
+				<br>
+				<input type="checkbox" id="gethome4">
+				<label for="gethome4">Snack</label>
+				<br>
+				<input type="checkbox" id="gethome5">
+				<label for="gethome5">OPTIONAL: Exercise here</label>
+			</p>
+			<div style="text-align:right;">
+				<button type="button" onclick="skipStep('gethome')">    <img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('gethome')"><img class="imgButton" src="images/Done.png"></button>
+			</div>
+		</div>
+		
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ refresh ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		
+		<button type="button" id="refreshButton" class="collapsible opened">Shower & refresh</button>
+		<div class="content"  id="refreshContent">
+			<p style="margin-top:0px;">
+				<input type="checkbox" id="refresh0">
+				<label for="refresh0">Put on robe, get towel</label>
+				<br>
+				<input type="checkbox" id="refresh1">
+				<label for="refresh1">Wash hair</label>
+				<br>
+				<input type="checkbox" id="refresh2">
+				<label for="refresh2">Wash face</label>
+				<br><br>
+				<input type="checkbox" id="refresh3">
+				<label for="refresh3">Scrub body</label>
+				<br><br>
+				<input type="checkbox" id="refresh4">
+				<label for="refresh4">Shave</label>
+				<br><br>
+				<input type="checkbox" id="refresh5">
+				<label for="refresh5">Clean shower</label>
+				<br><br>
+				<input type="checkbox" id="refresh6">
+				<label for="refresh6">Hang towel and robe</label>
+				<br><br>
+				<input type="checkbox" id="refresh7">
+				<label for="refresh7">Moisturize</label>
+				<br><br>
+				<input type="checkbox" id="refresh8">
+				<label for="refresh8">Put on pajamas and fuzzy socks</label>
+				<br><br>
+				<input type="checkbox" id="refresh9">
+				<label for="refresh9">Comb and condition hair</label>
+			</p>
+			<div style="text-align:right;">
+				<button type="button" onclick="skipStep('refresh')">    <img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('refresh')"><img class="imgButton" src="images/Done.png"></button>
+			</div>
+		</div>
+		
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ free time ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		
+		<button type="button" id="freeButton" class="collapsible opened">Free time</button>
+		<div class="content"  id="freeContent">
+			<p style="margin-top:0px;">
+				<input type="checkbox" id="free0">
+				<label for="free0">Art</label>
+				<br>
+				<input type="checkbox" id="free1">
+				<label for="free1">Read or watch</label>
+				<br><br>
+				<input type="checkbox" id="free2">
+				<label for="free2">Chores</label>
+				<br><br>
+				<input type="checkbox" id="free3">
+				<label for="free3">Work, log in Jira</label>
+				<br><br>
+				<input type="checkbox" id="free4">
+				<label for="free4">Miscellaneous</label>
+			</p>
+			<div style="text-align:right;">
+				<button type="button" onclick="skipStep('free')">    <img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('free')"><img class="imgButton" src="images/Done.png"></button>
+			</div>
+		</div>
+		
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ dinner ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		
+		<button type="button" id="dinnerButton" class="collapsible opened">Dinner</button>
+		<div class="content"  id="dinnerContent">
+			<p style="margin-top:0px;">
+				<input type="checkbox" id="dinner0">
+				<label for="dinner0">Make dinner</label>
+				<br>
+				<input type="checkbox" id="dinner1">
+				<label for="dinner1">Eat dinner</label>
+				<br>
+				<input type="checkbox" id="dinner2">
+				<label for="dinner2">Treat</label>
+				<br><br>
+				<input type="checkbox" id="dinner3">
+				<label for="dinner3">Bus dishes</label>
+			</p>
+			<div style="text-align:right;">
+				<button type="button" onclick="skipStep('dinner')">    <img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('dinner')"><img class="imgButton" src="images/Done.png"></button>
+			</div>
+		</div>
+		
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ night chores ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+		<button type="button" id="choresButton" class="collapsible opened">Tidy & chores</button>
+		<div class="content"  id="choresContent">
+			<p style="margin-top:0px;">
+				<input type="checkbox" id="chores12">
+				<label for="chores12">Switch to fairy lights</label>
+        <br>
+				<input type="checkbox" id="chores8">
+				<label for="chores8">Update to-dos on door</label>
+				<br>
+				<input type="checkbox" id="chores1">
+				<label for="chores1">Pack & refridgerate lunch</label>
+				<br>
+				<input type="checkbox" id="chores10">
+				<label for="chores10">Pack gym bag</label>
+				<br>
+				<input type="checkbox" id="chores4">
+				<label for="chores4">Select and box outfit for next day</label>
+				<br>
+				<input type="checkbox" id="chores0">
+				<label for="chores0">Dishes</label>
+				<br>
+				<input type="checkbox" id="chores2">
+				<label for="chores2">Water cat</label>
+				<br>
+				<input type="checkbox" id="chores5">
+				<label for="chores5">Tidy bedroom</label>
+				<br>
+				<input type="checkbox" id="chores6">
+				<label for="chores6">Tidy bathroom</label>
+				<br>
+				<input type="checkbox" id="chores9">
+				<label for="chores9">Set alarm clock</label>
+				<br>
+				<input type="checkbox" id="chores3">
+				<label for="chores3">Scoop box, set out, and wash hands</label>
+				<br>
+				<input type="checkbox" id="chores11">
+				<label for="chores11">Take out trash, recycling, and bins</label>
+				<br>
+				<input type="checkbox" id="chores7">
+				<label for="chores7">Lock up the Burrow</label>
+			</p>
+			<div style="text-align:right;">
+				<button type="button" onclick="skipStep('chores')">    <img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('chores')"><img class="imgButton" src="images/Done.png"></button>
+			</div>
+		</div>
+		
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ dental ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		
+		<button type="button" id="dentalButton" class="collapsible opened">Dental</button>
+		<div class="content"  id="dentalContent">
+			<p style="margin-top:0px;">
+				<input type="checkbox" id="dental0">
+				<label for="dental0">Get towel</label>
+        <br>
+				<input type="checkbox" id="dental1">
+				<label for="dental1">Brush teeth with 
+					<a href="https://www.youtube.com/watch?v=gAODutgIIVQ" target="_blank">
+						timer
+					</a>
+        </label>
+				<br>
+				<input type="checkbox" id="dental2">
+				<label for="dental2">Wash mouth and dry with towel</label>
+			</p>
+			<div style="text-align:right;">
+				<button type="button" onclick="skipStep('dental')">    <img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('dental')"><img class="imgButton" src="images/Done.png"></button>
+			</div>
+		</div>
+		
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ bedtime ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		
+		<button type="button" id="bedtimeButton" class="collapsible opened">Cozy time</button>
+		<div class="content"  id="bedtimeContent">
+			<p style="margin-top:0px;">
+				<input type="checkbox" id="bedtime0">
+				<label for="bedtime0">Find right pillow</label>
+				<br>
+				<input type="checkbox" id="bedtime1">
+				<label for="bedtime1">Find right bonnet</label>
+				<br>
+				<input type="checkbox" id="bedtime2">
+				<label for="bedtime2">Mouthguard</label>
+				<br>
+				<input type="checkbox" id="bedtime3">
+				<label for="bedtime3">Lip balm</label>
+				<br>
+				<input type="checkbox" id="bedtime4">
+				<label for="bedtime4">Open window and put on fan</label>
+				<br>
+				<input type="checkbox" id="bedtime5">
+				<label for="bedtime5">Read</label>
+				<br>
+				<input type="checkbox" id="bedtime6">
+				<label for="bedtime6">Put on sleep podcast</label>
+				<br>
+				<input type="checkbox" id="bedtime7">
+				<label for="bedtime7">Snuggle up and sleep</label>
+			</p>
+			<div style="text-align:right;">
+				<button type="button" onclick="skipStep('bedtime')">    <img class="imgButton" src="images/Skip.png"></button>
+				<button type="button" onclick="completeStep('bedtime')"><img class="imgButton" src="images/Done.png"></button>
+			</div>
+		</div>
+    
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ JAVASCRIPT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		
+		<script>
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+			for (i = 0; i < coll.length; i++) {
+				coll[i].addEventListener("click", function() {
+					this.classList.toggle("opened");
+					var content = this.nextElementSibling;
+					if (content.style.display === "block") {
+						content.style.display = "none";
+					} else {
+						content.style.display = "block";
+					}
+				});
+			}
+			function skipStep(stepID) {
+				let buttonID = stepID.concat("Button");
+				const myButton = document.getElementById(buttonID);
+				myButton.style.color = "#ff94af";
+				myButton.style.backgroundColor = "#ffdbe5";
+				myButton.style.border = "solid #ffc2d3 8px";
+				myButton.disabled = true;
+				let buttonText = myButton.innerHTML;
+				myButton.innerHTML = "SKIPPED: ".concat(buttonText);
+				let contentID = stepID.concat("Content");
+				const myContent = document.getElementById(contentID);
+				myContent.style.display = "none";
+			}
+
+			function completeStep(stepID) {
+				let buttonID = stepID.concat("Button");
+				const myButton = document.getElementById(buttonID);
+				myButton.style.color = "#ff94af";
+				myButton.style.backgroundColor = "#ffdbe5";
+				myButton.style.border = "solid #ffc2d3 8px";
+				myButton.disabled = true;
+				let buttonText = myButton.innerHTML;
+				myButton.innerHTML = "DONE: ".concat(buttonText);
+				let contentID = stepID.concat("Content");
+				const myContent = document.getElementById(contentID);
+				myContent.style.display = "none";
+			}
+		</script>
+	</body>
+</html>
