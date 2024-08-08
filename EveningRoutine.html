@@ -6,19 +6,20 @@
 		<link rel="icon" href="https://katcottrell.github.io/images/kc_fav.png">
 		<style>
 			body {
-				background-color: #140940;
+				background-color: #060609;
+				background-image: url('images/Blue%20canvas.png');
         color: #fff3d1;
 			}
 			
 			h1 {
 				font-size: 64px;
-				color: #fff3d1;
+				color: #FDDE33;
 			}
 			
 			p {
 				font-size: 32px;
 				font-family: sans-serif;
-				color: #fff3d1;
+				color: #FDDE33;
 			}
 
 			a {
@@ -40,12 +41,12 @@
 			}
 			
 			.collapsible {
-				background-color: #1e0a6e;
-				color: #fff3d1;
+				background-color: #060609;
+				color: #FDDE33;
 				cursor: pointer;
 				padding: 10px;
 				width: calc(100% - 80px);
-				border: solid #fff3d1 8px;
+				border: solid #FDDE33 8px;
 				border-radius: 10px;
 				font-weight: bold;
 				text-align: left;
@@ -63,9 +64,9 @@
 	</head>
 	
 	<body>
-		<img src="images/Kat's%20morning%20routine%20banner.png"
+		<img src="images/Kats%20evening%20routine.png"
 			class="titleBanner" 
-			alt="Kat's morning routine"
+			alt="Kat's evening routine"
 			style="width: calc(100% - 80px); margin: 40px 40px 10px 40px;">
 		
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ close workday ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -80,13 +81,13 @@
 				<label for="endwork1">Confirm that all by-EoD tasks have been completed</label>
 				<br><br>
 				<input type="checkbox" id="endwork2">
-				<label for="endwork2">Log time & notes in Jira--if you continue in the evening, log that separately!</label>
-				<br>
+				<label for="endwork2">Log time and notes in Jira--if continuing in the evening, log separately</label>
+				<br><br>
 				<input type="checkbox" id="endwork3">
-				<label for="endwork3">Log TLDR in SharePoint</label>
-				<br>
+				<label for="endwork3">Log EoD notes in SharePoint</label>
+				<br><br>
 				<input type="checkbox" id="endwork4">
-				<label for="endwork4">Put back items from locker and exercise machine</label>
+				<label for="endwork4">Put back exercise machine and items from locker</label>
 				<br><br>
 				<input type="checkbox" id="endwork5">
 				<label for="endwork5">Get lunch from fridge</label>
@@ -107,7 +108,7 @@
 				<label for="endwork10">Commute to home/exercise</label>
 				<br><br>
 				<input type="checkbox" id="endwork11">
-				<label for="endwork11">OPTIONAL: Exercise here</label>
+				<label for="endwork11">OPTIONAL: Exercise</label>
 			</p>
 			<div style="text-align:right;">
 				<button type="button" onclick="skipStep('endwork')">    <img class="imgButton" src="images/Skip.png"></button>
@@ -121,7 +122,7 @@
 		<div class="content"  id="exerciseContent">
 			<p style="margin-top:0px;">
 				<input type="checkbox" id="exercise0">
-				<label for="exercise0">Workout outfit: clothes, shoes, warmth, safety gear</label>
+				<label for="exercise0">Dress: clothes, shoes, warmth, safety gear</label>
 				<br><br>
 				<input type="checkbox" id="exercise1">
 				<label for="exercise1">Get keys, phone, headphones, wallet if necessary</label>
@@ -154,21 +155,21 @@
 			<p style="margin-top:0px;">
 				<input type="checkbox" id="gethome0">
 				<label for="gethome0">Arrive home</label>
-				<br>
+				<br><br>
 				<input type="checkbox" id="gethome1">
-				<label for="gethome1">Set up workstation in room: laptop, mouse, charger</label>
-				<br>
+				<label for="gethome1">Set up workstation: laptop, mouse, charger</label>
+				<br><br>
 				<input type="checkbox" id="gethome2">
 				<label for="gethome2">Remove and store shoes and work clothes</label>
-				<br>
+				<br><br>
 				<input type="checkbox" id="gethome3">
 				<label for="gethome3">Unpack lunch</label>
-				<br>
+				<br><br>
 				<input type="checkbox" id="gethome4">
 				<label for="gethome4">Snack</label>
-				<br>
+				<br><br>
 				<input type="checkbox" id="gethome5">
-				<label for="gethome5">OPTIONAL: Exercise here</label>
+				<label for="gethome5">OPTIONAL: Exercise</label>
 			</p>
 			<div style="text-align:right;">
 				<button type="button" onclick="skipStep('gethome')">    <img class="imgButton" src="images/Skip.png"></button>
@@ -181,12 +182,15 @@
 		<button type="button" id="refreshButton" class="collapsible opened">Shower & refresh</button>
 		<div class="content"  id="refreshContent">
 			<p style="margin-top:0px;">
+				<input type="checkbox" id="refresh10">
+				<label for="refresh10">Put clothes away or in hamper</label>
+				<br><br>
 				<input type="checkbox" id="refresh0">
-				<label for="refresh0">Put on robe, get towel</label>
-				<br>
+				<label for="refresh0">Put on robe and get towel</label>
+				<br><br>
 				<input type="checkbox" id="refresh1">
 				<label for="refresh1">Wash hair</label>
-				<br>
+				<br><br>
 				<input type="checkbox" id="refresh2">
 				<label for="refresh2">Wash face</label>
 				<br><br>
@@ -224,7 +228,7 @@
 			<p style="margin-top:0px;">
 				<input type="checkbox" id="free0">
 				<label for="free0">Art</label>
-				<br>
+				<br><br>
 				<input type="checkbox" id="free1">
 				<label for="free1">Read or watch</label>
 				<br><br>
@@ -232,7 +236,7 @@
 				<label for="free2">Chores</label>
 				<br><br>
 				<input type="checkbox" id="free3">
-				<label for="free3">Work, log in Jira</label>
+				<label for="free3">Work and log in Jira</label>
 				<br><br>
 				<input type="checkbox" id="free4">
 				<label for="free4">Miscellaneous</label>
@@ -250,10 +254,10 @@
 			<p style="margin-top:0px;">
 				<input type="checkbox" id="dinner0">
 				<label for="dinner0">Make dinner</label>
-				<br>
+				<br><br>
 				<input type="checkbox" id="dinner1">
 				<label for="dinner1">Eat dinner</label>
-				<br>
+				<br><br>
 				<input type="checkbox" id="dinner2">
 				<label for="dinner2">Treat</label>
 				<br><br>
@@ -273,40 +277,40 @@
 			<p style="margin-top:0px;">
 				<input type="checkbox" id="chores12">
 				<label for="chores12">Switch to fairy lights</label>
-        <br>
+				<br><br>
 				<input type="checkbox" id="chores8">
 				<label for="chores8">Update to-dos on door</label>
-				<br>
+				<br><br>
 				<input type="checkbox" id="chores1">
 				<label for="chores1">Pack & refridgerate lunch</label>
-				<br>
+				<br><br>
 				<input type="checkbox" id="chores10">
 				<label for="chores10">Pack gym bag</label>
-				<br>
+				<br><br>
 				<input type="checkbox" id="chores4">
 				<label for="chores4">Select and box outfit for next day</label>
-				<br>
+				<br><br>
 				<input type="checkbox" id="chores0">
 				<label for="chores0">Dishes</label>
-				<br>
+				<br><br>
 				<input type="checkbox" id="chores2">
 				<label for="chores2">Water cat</label>
-				<br>
+				<br><br>
 				<input type="checkbox" id="chores5">
 				<label for="chores5">Tidy bedroom</label>
-				<br>
+				<br><br>
 				<input type="checkbox" id="chores6">
 				<label for="chores6">Tidy bathroom</label>
-				<br>
+				<br><br>
 				<input type="checkbox" id="chores9">
 				<label for="chores9">Set alarm clock</label>
-				<br>
+				<br><br>
 				<input type="checkbox" id="chores3">
-				<label for="chores3">Scoop box, set out, and wash hands</label>
-				<br>
+				<label for="chores3">Scoop box, set on porch, and wash hands</label>
+				<br><br>
 				<input type="checkbox" id="chores11">
-				<label for="chores11">Take out trash, recycling, and bins</label>
-				<br>
+				<label for="chores11">Wednesday: Take out trash, recycling, and bins</label>
+				<br><br>
 				<input type="checkbox" id="chores7">
 				<label for="chores7">Lock up the Burrow</label>
 			</p>
@@ -323,14 +327,14 @@
 			<p style="margin-top:0px;">
 				<input type="checkbox" id="dental0">
 				<label for="dental0">Get towel</label>
-        <br>
+				<br><br>
 				<input type="checkbox" id="dental1">
 				<label for="dental1">Brush teeth with 
 					<a href="https://www.youtube.com/watch?v=gAODutgIIVQ" target="_blank">
 						timer
 					</a>
-        </label>
-				<br>
+				</label>
+				<br><br>
 				<input type="checkbox" id="dental2">
 				<label for="dental2">Wash mouth and dry with towel</label>
 			</p>
@@ -346,26 +350,26 @@
 		<div class="content"  id="bedtimeContent">
 			<p style="margin-top:0px;">
 				<input type="checkbox" id="bedtime0">
-				<label for="bedtime0">Find right pillow</label>
-				<br>
+				<label for="bedtime0">Find daily pillow</label>
+				<br><br>
 				<input type="checkbox" id="bedtime1">
-				<label for="bedtime1">Find right bonnet</label>
-				<br>
+				<label for="bedtime1">Find daily bonnet</label>
+				<br><br>
 				<input type="checkbox" id="bedtime2">
 				<label for="bedtime2">Mouthguard</label>
-				<br>
+				<br><br>
 				<input type="checkbox" id="bedtime3">
 				<label for="bedtime3">Lip balm</label>
-				<br>
+				<br><br>
 				<input type="checkbox" id="bedtime4">
 				<label for="bedtime4">Open window and put on fan</label>
-				<br>
+				<br><br>
 				<input type="checkbox" id="bedtime5">
 				<label for="bedtime5">Read</label>
-				<br>
+				<br><br>
 				<input type="checkbox" id="bedtime6">
 				<label for="bedtime6">Put on sleep podcast</label>
-				<br>
+				<br><br>
 				<input type="checkbox" id="bedtime7">
 				<label for="bedtime7">Snuggle up and sleep</label>
 			</p>
@@ -394,9 +398,9 @@
 			function skipStep(stepID) {
 				let buttonID = stepID.concat("Button");
 				const myButton = document.getElementById(buttonID);
-				myButton.style.color = "#ff94af";
-				myButton.style.backgroundColor = "#ffdbe5";
-				myButton.style.border = "solid #ffc2d3 8px";
+				myButton.style.color = "#FDDE33";
+				myButton.style.backgroundColor = "#0f0f1c";
+				myButton.style.border = "solid #0f0f1c 8px";
 				myButton.disabled = true;
 				let buttonText = myButton.innerHTML;
 				myButton.innerHTML = "SKIPPED: ".concat(buttonText);
@@ -408,9 +412,9 @@
 			function completeStep(stepID) {
 				let buttonID = stepID.concat("Button");
 				const myButton = document.getElementById(buttonID);
-				myButton.style.color = "#ff94af";
-				myButton.style.backgroundColor = "#ffdbe5";
-				myButton.style.border = "solid #ffc2d3 8px";
+				myButton.style.color = "#FDDE33";
+				myButton.style.backgroundColor = "#0f0f1c";
+				myButton.style.border = "solid #0f0f1c 8px";
 				myButton.disabled = true;
 				let buttonText = myButton.innerHTML;
 				myButton.innerHTML = "DONE: ".concat(buttonText);
