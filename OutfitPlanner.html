@@ -68,21 +68,21 @@
 						myCode += "<div style='margin:auto;'>";
 						for (let j = 0; j < 5; j++) {
 							item = i + j;
-							text += '<img src="images/clothes/' + clothesList[item] + '" style="float:left;width:18%;margin:1%;">';
+							myCode += '<img src="images/clothes/' + clothesList[item] + '" style="float:left;width:18%;margin:1%;">';
 						}
-						text += "</div>";
-						text += '<div style="clear:both"></div>';
+						myCode += "</div>";
+						myCode += '<div style="clear:both"></div>';
 					} else {
 						let r = cars.length - i;
 						let marg = 10 * (5 - r);
 						for (let Idx = i; Idx < cars.length; Idx++) {
 							if (Idx == i) {
-								text += '<img src="images/clothes/' + clothesList[item] + '" style="float:left;width:18%;margin:1% 1% 1% ' + marg.toString() + '%">';
+								myCode += '<img src="images/clothes/' + clothesList[item] + '" style="float:left;width:18%;margin:1% 1% 1% ' + marg.toString() + '%">';
 							} else {
-								text += '<img src="images/clothes/' + clothesList[item] + '" style="float:left;width:18%;margin:1%">';
+								myCode += '<img src="images/clothes/' + clothesList[item] + '" style="float:left;width:18%;margin:1%">';
 							}
 						}
-						text += '<div style="clear:both"></div>';
+						myCode += '<div style="clear:both"></div>';
 					} 
 				}
 
