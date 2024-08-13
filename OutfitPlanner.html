@@ -68,7 +68,11 @@
 						myCode += "<div style='margin:auto;'>";
 						for (let j = 0; j < 5; j++) {
 							item = i + j;
-							myCode += '<img src="images/clothes/' + clothesList[item] + '.png" style="float:left;width:18%;margin:1%;">';
+							//myCode += '<img src="images/clothes/' + clothesList[item] + '.png" style="float:left;width:18%;margin:1%;">';
+							myCode += '<div class="cbDiv">\n'; 
+							myCode += '<input type="checkbox" id="' + clothesList[item] + '" class="cb" onclick="updateOutfitList(' + "'" + clothesList[item] + "'" + ')">\n'; 
+							myCode += '<label for="' + clothesList[item] + '"><img src="images/clothes/' + clothesList[item] + '.png" class="itemImg" id="' + clothesList[item] + 'Img"></label>\n<br>\n'; 
+							myCode += '</div>\n';
 						}
 						myCode += "</div>";
 						myCode += '<div style="clear:both"></div>';
@@ -77,9 +81,17 @@
 						let marg = 10 * (5 - r);
 						for (let Idx = i; Idx < clothesList.length; Idx++) {
 							if (Idx == i) {
-								myCode += '<img src="images/clothes/' + clothesList[Idx] + '.png" style="float:left;width:18%;margin:1% 1% 1% ' + marg.toString() + '%">';
+								//myCode += '<img src="images/clothes/' + clothesList[Idx] + '.png" style="float:left;width:18%;margin:1% 1% 1% ' + marg.toString() + '%">';
+								myCode += '<div class="cbDiv">\n'; 
+								myCode += '<input type="checkbox" id="' + clothesList[Idx] + '" class="cb" onclick="updateOutfitList(' + "'" + clothesList[Idx] + "'" + ')">\n'; 
+								myCode += '<label for="' + clothesList[Idx] + '"><img src="images/clothes/' + clothesList[Idx] + '.png" class="itemImg" id="' + clothesList[Idx] + 'Img"></label>\n<br>\n'; 
+								myCode += '</div>\n';
 							} else {
-								myCode += '<img src="images/clothes/' + clothesList[Idx] + '.png" style="float:left;width:18%;margin:1%">';
+								//myCode += '<img src="images/clothes/' + clothesList[Idx] + '.png" style="float:left;width:18%;margin:1%">';
+								myCode += '<div class="cbDiv">\n'; 
+								myCode += '<input type="checkbox" id="' + clothesList[Idx] + '" class="cb" onclick="updateOutfitList(' + "'" + clothesList[Idx] + "'" + ')">\n'; 
+								myCode += '<label for="' + clothesList[Idx] + '"><img src="images/clothes/' + clothesList[Idx] + '.png" class="itemImg" id="' + clothesList[Idx] + 'Img"></label>\n<br>\n'; 
+								myCode += '</div>\n';
 							}
 						}
 						myCode += '<div style="clear:both"></div>';
