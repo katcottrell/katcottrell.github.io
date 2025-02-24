@@ -450,6 +450,8 @@ table, th, td {
   border: 1px solid var(--myMidGray);
   border-collapse: collapse;
   padding: 5px 15px;
+  white-space: pre-wrap; 
+  word-wrap: break-word;
 }
 
 table {
