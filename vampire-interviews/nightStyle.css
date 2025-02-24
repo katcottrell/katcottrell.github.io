@@ -23,7 +23,7 @@ html, body {
 }
 
 body { 
-	background: #000000cc;
+	background: var(--myTrueBlack);
 	background-image: url(https://katcottrell.github.io/vampire-interviews/starry%20sky.png);
 	background-size: 600px;
 	background-repeat: repeat;
@@ -107,7 +107,7 @@ hr {
 }
 
 .techIndent {
-	background: var(--myTrueBlack);
+	background: #000000cc;
 	max-width: calc(80% - 338px);
 	width: 1000px;
 	margin-left: max(338px, calc(45% - 503px));
