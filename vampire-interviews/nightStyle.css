@@ -446,6 +446,12 @@ img.footer-icon {
 /*                                 Table Styling                                 */ 
 /*********************************************************************************/
 
+table, th, td {
+  border: 1px solid var(--myMidGray);
+  border-collapse: collapse;
+  padding: 5px 15px;
+}
+
 table {
 	width:100%;
 	color:var(--myTrueWhite);
