@@ -23,7 +23,7 @@ html, body {
 }
 
 body { 
-	background: var(--myTrueBlack);
+	background: #000000cc;
 	background-image: url(https://katcottrell.github.io/vampire-interviews/starry%20sky.png);
 	background-size: 600px;
 	background-repeat: repeat;
@@ -35,8 +35,9 @@ body {
 h1, h2, h3 { 
 	padding: 0; 
 	color: var(--myTrueWhite); 
-	font-family: serif;
-	font-weight: bold;
+	font-family: "Copperplate Gothic Light", serif;
+	font-weight: normal;
+	text-align: center;
 }
 
 h1 {
