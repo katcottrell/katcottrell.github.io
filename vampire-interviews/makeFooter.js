@@ -15,7 +15,11 @@ function makeFooter() {
 	    '</a>'                                                                                          + '\n' +
 	    
 	    '<a href="mailto:fledermischief@gmail.com" ' + linkAttributes + '>'                             + '\n' + 
-	    '<img src="' + abs + 'images/mailFtIcon.png"     class="footer-icon" alt="Email">'              + '\n' +
+	    '<img src="' + abs + 'vampire-interviews/discord_icon.png" class="footer-icon" alt="Discord">'  + '\n' +
+	    '</a>'                                                                                          + '\n' +
+	    
+	    '<a href="mailto:fledermischief@gmail.com" ' + linkAttributes + '>'                             + '\n' + 
+	    '<img src="' + abs + 'vampire-interviews/mail_icon.png"     class="footer-icon" alt="Email">'   + '\n' +
 	    '</a>'                                                                                          + '\n' +
 	    
 	    '</p>'                                                                                          + '\n' +
