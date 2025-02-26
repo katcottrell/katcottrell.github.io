@@ -7,6 +7,7 @@ function makeHeader(tab) {
 	    '<img src="https://katcottrell.github.io/vampire-interviews/Nightlink%20banner.jpg" style="width:100%;border-bottom:solid 4px var(--myMidGray);">'      + '\n' +
 	    '</a>'                                                                                                        + '\n' +
 	    '</div>'                                                                                                      + '\n' +
-	    '</header>'                                                                                                   + '\n';
+	    '</header>'                                                                                                   + '\n' +
+	    '<br style="clear: both;">'                                                                                   + '\n';
 	document.write(headerCode);
 }
