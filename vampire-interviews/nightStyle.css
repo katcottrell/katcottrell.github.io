@@ -47,9 +47,9 @@ hr {
 }
 
 .skinnyHr {
-	width: 75%;
+	width: 70%;
 	margin: 10px 15%;
-	border-top: 1px solid #ccc;
+	border-top: 1px solid #666;
 }
 
 /*********************************************************************************/
