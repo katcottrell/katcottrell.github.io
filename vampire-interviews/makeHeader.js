@@ -1,4 +1,4 @@
-function makeHeader(tab) {	
+function makeHeader() {	
 	let headerCode = 
 	    '<header>'                                                                                                    + '\n' +
 	    '<link rel="stylesheet" href="https://katcottrell.github.io/vampire-interviews/nightStyle.css">'              + '\n' +
