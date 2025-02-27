@@ -119,6 +119,7 @@ li {
 
 a {
 	color: var(--myBloodRed);
+	text-shadow: none;
 }
 
 blockquote {
