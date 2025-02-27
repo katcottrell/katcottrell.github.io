@@ -396,17 +396,18 @@ img.footer-icon {
 /*********************************************************************************/
 
 table, th, td {
-  border-collapse: collapse;
-  padding: 5px 15px;
-  white-space: pre-wrap; 
-  word-wrap: break-word;
+	border-collapse: collapse;
+	padding: 5px 15px;
+	white-space: pre-wrap; 
+	word-wrap: break-word;
+	border: 1px solid #ddd;
 }
 
 table {
 	width: 100%;
 	color: white;
 	line-height: 200%;
-	border-bottom: solid #ddd 1px;
+	border: solid #ddd 1px;
 }
 
 .singleColTd {
