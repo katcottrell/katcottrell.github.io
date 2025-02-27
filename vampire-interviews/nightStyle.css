@@ -46,7 +46,7 @@ hr {
 	min-height: calc(100% - 40px);
 }
 
-.techIndent {
+.mainBody {
 	background: #000000dd;
 	max-width: calc(100% - var(--sideNavWidth));
 	width: 60%;
