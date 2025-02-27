@@ -115,7 +115,7 @@ h3 {
 p, ol, ul { 
 	color: white;
 	font-family: "Century Gothic", Helvetica, Arial, sans-serif;
-	font-size: 17px;
+	font-size: 18px;
 	line-height: 180%; 
 	text-shadow: 1px 1px 12px black, -1px 1px 12px black, 1px -1px 12px black, -1px -1px 12px black, 1px 1px 12px black, -1px 1px 12px black, 1px -1px 12px black, -1px -1px 12px black, 1px 1px 12px black, -1px 1px 12px black, 1px -1px 12px black, -1px -1px 12px black;
 }
@@ -230,6 +230,8 @@ img.footer-icon {
 	display: block;
 	margin: 12px 0;
 	text-align: center;
+	font-family: "Copperplate Gothic Light", serif;
+	text-transform: uppercase;
 }
 
 .sidenav a.sideTabs {
@@ -241,6 +243,7 @@ img.footer-icon {
 	color: white;
 	display: block;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 .sidenav a.sideTabs:hover {
