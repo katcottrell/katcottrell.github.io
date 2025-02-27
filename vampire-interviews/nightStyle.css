@@ -158,6 +158,7 @@ p.footer-text {
 	text-align: center;
 	margin: 5px;
 	line-height: 100%;
+	text-shadow: none;
 }
 
 img.footer-icon {
