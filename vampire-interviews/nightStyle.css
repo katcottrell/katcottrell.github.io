@@ -47,11 +47,10 @@ hr {
 }
 
 .techIndent {
-	background: #000000cc;
-	max-width: calc(80% - 338px);
-	width: 1000px;
-	margin-left: max(338px, calc(45% - 503px));
-	margin-right: max(10%, calc(45% - 503px));
+	background: #000000dd;
+	max-width: calc(100% - var(--sideNavWidth));
+	width: 60%;
+	margin-left: max(var(--sideNavWidth), calc(var(--sideNavWidth) + (30% - var(--sideNavWidth)) / 2));
 	padding: 20px 5% 200px 5%;
 	border-left: solid 4px var(--myMidGray);
 	border-right: solid 4px var(--myMidGray);
