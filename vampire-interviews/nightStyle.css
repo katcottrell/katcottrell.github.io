@@ -406,10 +406,7 @@ table {
 	width: 100%;
 	color: white;
 	line-height: 200%;
-}
-
-tbody {
-	border: solid #080808 1px;
+	border-bottom: solid #ddd 1px;
 }
 
 .singleColTd {
