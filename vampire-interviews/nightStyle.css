@@ -12,6 +12,7 @@
 	--myOffBlack:      #222222;
 	--myHighlightGray: #E0E0E0;
 	--myLinkGreen:     #00FF84;
+	--myBloodRed:      #c90000;
 	--sideNavWidth:    220px;
 }
 
@@ -197,8 +198,6 @@ img.footer-icon {
 	width: var(--sideNavWidth);
 	z-index: 1;
 	margin: 0;
-	border: solid 4px #999;
-	box-shadow: 0px 0px 20px var(--myTrueBlack);
 	height: calc(100vh);
 	overflow-x: hidden;
 	overflow-y: auto;
@@ -307,7 +306,7 @@ img.footer-icon {
 .art3ColPic {
 	width: calc(calc(100% - 76px) / 3);
 	margin-right: 20px;
-	border: solid var(--myMidGray); 4px;
+	border: solid var(--myMidGray) 4px;
 	margin-bottom: 20px;
 }
 
