@@ -379,7 +379,6 @@ img.footer-icon {
 /*********************************************************************************/
 
 table, th, td {
-  border: 1px solid var(--myMidGray);
   border-collapse: collapse;
   padding: 5px 15px;
   white-space: pre-wrap; 
@@ -387,12 +386,23 @@ table, th, td {
 }
 
 table {
-	width:100%;
-	color:var(--myTrueWhite);
+	width: 100%;
+	color: white;
 	line-height: 200%;
 }
 
+tbody {
+	border: solid #080808 1px;
+}
+
+.singleColTd {
+	background-color: #080808;
+	border-left:  4px solid #ddd;
+	border-right: 4px solid #ddd;
+}
+
 th {
+	background-color: #222222;
 	text-align: left;
 	width: 100px;
 }
