@@ -100,10 +100,11 @@ h3 {
 }
 	
 p, ol, ul { 
-	color: var(--myTrueWhite);
+	color: white;
 	font-family: "Century Gothic", Helvetica, Arial, sans-serif;
 	font-size: 17px;
 	line-height: 180%; 
+	text-shadow: 1px 1px 12px black, -1px 1px 12px black, 1px -1px 12px black, -1px -1px 12px black, 1px 1px 12px black, -1px 1px 12px black, 1px -1px 12px black, -1px -1px 12px black, 1px 1px 12px black, -1px 1px 12px black, 1px -1px 12px black, -1px -1px 12px black;
 }
 
 ol, ul { 
