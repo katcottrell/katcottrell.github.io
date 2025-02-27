@@ -21,7 +21,7 @@ function makeSideNav(tab) {
                     '<a class="sideTabs" href="' + abs + 'stem.html">STEM</a>'                             + '\n' +
                     '<a class="sideTabs" href="' + abs + 'visual-arts.html">Visual Arts</a>'               + '\n' +
                     '<a class="sideTabs" href="' + abs + 'writing.html">Writing</a>'                       + '\n' +
-                    '<a class="sideTabs" href="' + abs + 'other.html">Other</a></div>'                     + '\n' +
-                    '</div>'                                                                               + '\n';
+                    '<a class="sideTabs" href="' + abs + 'other.html">Other</a>'                           + '\n' +
+                    '</div> <!-- END class="sidenav" -->'                                                  + '\n';
 	document.write(sideNavCode);
 }
