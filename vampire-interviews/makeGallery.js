@@ -14,7 +14,7 @@ function makeGallery(galList) {
             let linkIdx = fileNameIdx + 1;
             if (fileNameIdx < galList.length) {
                 galleryCode += '<a href="' + galList[linkIdx] + '">';
-                galleryCode += '<img class="thirds" src="' + absGallery + galList[fileNameIdx] + '" style="width:31%;margin:1%;">';
+                galleryCode += '<img class="thirds" src="' + absGallery + galList[fileNameIdx] + '">';
                 galleryCode += '</a>\n';
             }
         }
