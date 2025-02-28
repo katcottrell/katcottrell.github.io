@@ -21,5 +21,4 @@ function makeGallery(galList) {
         galleryCode += '</div> <!-- end galleryRow -->\n';
     }
     document.write(galleryCode);
-} 
-makeGallery(generic);
+}
