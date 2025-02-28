@@ -17,8 +17,6 @@ function makeSideNav(tab) {
                     '<hr class="skinnyHr">'                                                                + '\n' +
                     '<a class="sideTabs" href="' + abs + 'events-and-venues.html">Events &amp; Venues</a>' + '\n' +
                     '<hr class="skinnyHr">'                                                                + '\n' +
-                    '<a class="sideTabs" href="' + abs + 'media.html">Media</a>'                           + '\n' +
-                    '<hr class="skinnyHr">'                                                                + '\n' +
                     '<a class="sideTabs" href="' + abs + 'merchants.html">Merchants</a>'                   + '\n' +
                     '<hr class="skinnyHr">'                                                                + '\n' +
                     '<a class="sideTabs" href="' + abs + 'music-and-audio.html">Music &amp; Audio</a>'     + '\n' +
@@ -28,6 +26,8 @@ function makeSideNav(tab) {
                     '<a class="sideTabs" href="' + abs + 'performing-arts.html">Performing Arts</a>'       + '\n' +
                     '<hr class="skinnyHr">'                                                                + '\n' +
                     '<a class="sideTabs" href="' + abs + 'photo-and-video.html">Photo &amp; Video</a>'     + '\n' +
+                    '<hr class="skinnyHr">'                                                                + '\n' +
+                    '<a class="sideTabs" href="' + abs + 'production.html">Production</a>'                 + '\n' +
                     '<hr class="skinnyHr">'                                                                + '\n' +
                     '<a class="sideTabs" href="' + abs + 'stem.html">STEM</a>'                             + '\n' +
                     '<hr class="skinnyHr">'                                                                + '\n' +
