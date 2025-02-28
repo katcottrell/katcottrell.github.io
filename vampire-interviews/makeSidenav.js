@@ -5,9 +5,9 @@ function makeSideNav(tab) {
                     '<div class="sidenav">'                                                                + '\n' +
                     '<a class="sideHeading" href="' + abs + 'nightlinks.html">Home</a>'                    + '\n' +
                     '<hr class="thickHr">'                                                                 + '\n' +
-                    '<a class="sideHeading" href="' + abs + 'rules_faq.html">Rules & FAQ</a>'              + '\n' +
+                    '<a class="sideHeading" href="' + abs + 'about.html">About</a>'                        + '\n' +
                     '<hr class="thickHr">'                                                                 + '\n' +
-                    '<a class="sideHeading" href="' + abs + 'rules_faq.html">Calendar</a>'                 + '\n' +
+                    '<a class="sideHeading" href="' + abs + 'calendar.html">Calendar</a>'                  + '\n' +
                     '<hr class="thickHr">'                                                                 + '\n' +
                     '<a class="sideHeading" href="' + abs + 'join.html">Join</a>'                          + '\n' +
                     '<hr class="thickHr">'                                                                 + '\n' +
