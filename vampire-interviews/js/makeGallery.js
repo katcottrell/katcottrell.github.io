@@ -1,4 +1,4 @@
-let absGallery = 'https://katcottrell.github.io/vampire-interviews/images/';
+let absGallery = 'https://katcottrell.github.io/vampire-interviews/';
 
 // GALLERIES
 const photos_wanted = ["photos_wanted.jpg", "https://google.com",
@@ -39,8 +39,8 @@ function makeGallery(galList) {
     let galleryCode = '\n';
     for (let fileNameIdx = 0; fileNameIdx < galList.length; fileNameIdx = fileNameIdx + 2) {
       let linkIdx = fileNameIdx + 1;
-      galleryCode += '<a href="' + galList[linkIdx] + '">';
-      galleryCode += '<img class="thirds" src="' + absGallery + galList[fileNameIdx] + '">';
+      galleryCode += '<a href="' + absGallery + 'categories/' + galList[linkIdx] + '">';
+      galleryCode += '<img class="thirds" src="' + absGallery + 'images/' + galList[fileNameIdx] + '">';
       galleryCode += '</a>';
     }
     document.write(galleryCode);
