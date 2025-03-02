@@ -11,7 +11,7 @@ function makeSideNav(tab) {
                     '<hr class="thickHr">'                                                                            + '\n' +
                     '<a class="sideHeading" href="' + abs + 'join.html">Join</a>'                                     + '\n' +
                     '<hr class="thickHr">'                                                                            + '\n' +
-                    '<a class="sideTabs" href="' + abs + 'categories/all-listings.html">All Listings</a>'             + '\n' +
+                    '<a class="sideTabs" href="' + abs + 'categories/all.html">All Listings</a>'                      + '\n' +
                     '<hr class="skinnyHr">'                                                                           + '\n' +
                     '<a class="sideTabs" href="' + abs + 'categories/cosmetology.html">Cosmetology</a>'               + '\n' +
                     '<hr class="skinnyHr">'                                                                           + '\n' +
