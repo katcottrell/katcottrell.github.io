@@ -1,23 +1,23 @@
-let absGallery = 'https://katcottrell.github.io/vampire-interviews/';
+let absGallery = 'https://katcottrell.github.io/vampire-interviews/images/';
 
 // GALLERIES
-const photos_wanted = ["images/photos_wanted.jpg", "https://google.com",
-                       "images/photos_wanted.jpg", "https://google.com",
-                       "images/photos_wanted.jpg", "https://google.com"]
-const homeCategories = ["images/home/cosmetology.JPG",       "cosmetology.html",
-                        "images/home/events-and-venues.JPG", "events-and-venues.html",
-                        "images/home/merchants.JPG",        "merchants.html",
-                        "images/home/music-and-audio.JPG",   "music-and-audio.html",
-                        "images/home/occult.JPG",            "occult.html",
-                        "images/home/performing-arts.JPG",   "performing-arts.html",
-                        "images/home/photo-and-video.JPG",   "photo-and-video.html",
-                        "images/home/production.JPG",        "production.html",
-                        "images/home/stem.JPG",              "stem.html",
-                        "images/home/visual-arts.JPG",       "visual-arts.html",
-                        "images/home/writing.JPG",           "writing.html",
-                        "images/home/other.JPG",             "other.html"]
+const photos_wanted = ["photos_wanted.jpg", "https://google.com",
+                       "photos_wanted.jpg", "https://google.com",
+                       "photos_wanted.jpg", "https://google.com"]
+const homeCategories = ["home/cosmetology.JPG",       "cosmetology.html",
+                        "home/events-and-venues.JPG", "events-and-venues.html",
+                        "home/merchants.JPG",        "merchants.html",
+                        "home/music-and-audio.JPG",   "music-and-audio.html",
+                        "home/occult.JPG",            "occult.html",
+                        "home/performing-arts.JPG",   "performing-arts.html",
+                        "home/photo-and-video.JPG",   "photo-and-video.html",
+                        "home/production.JPG",        "production.html",
+                        "home/stem.JPG",              "stem.html",
+                        "home/visual-arts.JPG",       "visual-arts.html",
+                        "home/writing.JPG",           "writing.html",
+                        "home/other.JPG",             "other.html"]
 
-function makeGallery(galList) {
+/*function makeGallery(galList) {
     let galleryCode = '\n';
     for (let rowOffset = 0; rowOffset < galList.length; rowOffset = rowOffset + 6) {
         galleryCode += '<div class="galleryRow"">\n';
@@ -31,6 +31,17 @@ function makeGallery(galList) {
             }
         }
         galleryCode += '</div> <!-- end galleryRow -->\n';
+    }
+    document.write(galleryCode);
+}*/
+
+function makeGallery(galList) {
+    let galleryCode = '\n';
+    for (let fileNameIdx = 0; fileNameIdx < galList.length; fileNameIdx = fileNameIdx + 2) {
+      let linkIdx = fileNameIdx + 1;
+      galleryCode += '<a href="' + galList[linkIdx] + '">';
+      galleryCode += '<img class="thirds" src="' + absGallery + galList[fileNameIdx] + '">';
+      galleryCode += '</a>';
     }
     document.write(galleryCode);
 }
