@@ -273,14 +273,15 @@ img.footer-icon {
 /*********************************************************************************/
 
 .thirds {
-	width: 31%;
+	width: calc(31% - 2px);
 	margin: 1%;
 	filter: grayscale(100%);
+	border: solid 1px #ccc;
 }
 
 @media screen and (max-width: 700px) {
 	.thirds {
-		width: 48%;
+		width: calc(48% - 2px);
 		margin: 1%;
 	}
 }
