@@ -11,3 +11,4 @@ function makeHeader() {
 	    '<br style="clear: both;">'                                                                                   + '\n';
 	document.write(headerCode);
 }
+makeHeader();
