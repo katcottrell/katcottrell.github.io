@@ -6,7 +6,7 @@ const photos_wanted = ["images/photos_wanted.jpg", "https://google.com",
                        "images/photos_wanted.jpg", "https://google.com"]
 const homeCategories = ["images/home/cosmetology.JPG",       "cosmetology.html",
                         "images/home/events-and-venues.JPG", "events-and-venues.html",
-                        "images/home/merchants.JPG", "",     "merchants.html",
+                        "images/home/merchants.JPG",        "merchants.html",
                         "images/home/music-and-audio.JPG",   "music-and-audio.html",
                         "images/home/occult.JPG",            "occult.html",
                         "images/home/other.JPG",             "other.html",
