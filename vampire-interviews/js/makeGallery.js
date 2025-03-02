@@ -27,7 +27,7 @@ function makeGallery(galList) {
             if (fileNameIdx < galList.length) {
                 galleryCode += '<a href="' + galList[linkIdx] + '">';
                 galleryCode += '<img class="thirds" src="' + absGallery + galList[fileNameIdx] + '">';
-                galleryCode += '</a>\n';
+                galleryCode += '</a>';
             }
         }
         galleryCode += '</div> <!-- end galleryRow -->\n';
