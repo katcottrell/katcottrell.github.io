@@ -27,3 +27,4 @@ function makeFooter() {
   
 	document.write(footerCode);
 }
+makeFooter();
