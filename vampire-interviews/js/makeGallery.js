@@ -9,13 +9,13 @@ const homeCategories = ["images/home/cosmetology.JPG",       "cosmetology.html",
                         "images/home/merchants.JPG",        "merchants.html",
                         "images/home/music-and-audio.JPG",   "music-and-audio.html",
                         "images/home/occult.JPG",            "occult.html",
-                        "images/home/other.JPG",             "other.html",
                         "images/home/performing-arts.JPG",   "performing-arts.html",
                         "images/home/photo-and-video.JPG",   "photo-and-video.html",
                         "images/home/production.JPG",        "production.html",
                         "images/home/stem.JPG",              "stem.html",
                         "images/home/visual-arts.JPG",       "visual-arts.html",
-                        "images/home/writing.JPG",           "writing.html"]
+                        "images/home/writing.JPG",           "writing.html",
+                        "images/home/other.JPG",             "other.html"]
 
 function makeGallery(galList) {
     let galleryCode = '\n';
