@@ -23,7 +23,7 @@ function makeSideNav(tab) {
                     '<hr class="skinnyHr">'                                                                           + '\n' +
                     '<a class="sideTabs" href="' + abs + 'categories/occult.html">Occult</a>'                         + '\n' +
                     '<hr class="skinnyHr">'                                                                           + '\n' +
-                    '<a class="sideTabs" href="' + abs + 'categories/performing-arts.html">Performing Arts</a>'       + '\n' +
+                    '<a class="sideTabs" href="' + abs + 'categories/performers.html">Performers</a>'                 + '\n' +
                     '<hr class="skinnyHr">'                                                                           + '\n' +
                     '<a class="sideTabs" href="' + abs + 'categories/photo-and-video.html">Photo &amp; Video</a>'     + '\n' +
                     '<hr class="skinnyHr">'                                                                           + '\n' +
