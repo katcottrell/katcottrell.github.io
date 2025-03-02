@@ -1,1 +1,1 @@
-/* MOVED TO JS FOLDER */
+/* MOVED TO JS FOLDER */ 
