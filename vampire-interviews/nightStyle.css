@@ -101,6 +101,7 @@ hr {
 h1, h2, h3 { 
 	padding: 0; 
 	color: var(--myTrueWhite); 
+	text-transform: uppercase;
 	font-family: "Copperplate Gothic Light", serif;
 	font-weight: normal;
 	text-align: center;
