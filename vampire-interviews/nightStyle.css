@@ -53,7 +53,7 @@ hr {
 }
 
 .sectionDivider {
-	width: 90%;
+	width: 50%;
 	margin: 10px 25%;
 	border-top: 3px solid #666;
 }
@@ -71,7 +71,7 @@ hr {
 	border: solid #ccc 3px;
 	text-shadow: none;
 	padding: 1px 20px;
-	margin-left: 5%;
+	margin: 0 0 60px 5%;
 }
 
 /*********************************************************************************/
