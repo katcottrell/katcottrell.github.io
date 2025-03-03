@@ -87,7 +87,7 @@ hr {
 	max-width: calc(100% - var(--sideNavWidth));
 	width: 60%;
 	margin-left: max(var(--sideNavWidth), calc(var(--sideNavWidth) + (30% - var(--sideNavWidth)) / 2));
-	padding: 20px 5% 200px 5%;
+	padding: 20px 5% 500px 5%;
 	border-left: solid 4px var(--myMidGray);
 	border-right: solid 4px var(--myMidGray);
 	box-shadow: 0px 0px 20px var(--myTrueBlack);
