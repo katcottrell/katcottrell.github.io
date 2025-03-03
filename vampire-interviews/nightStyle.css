@@ -58,6 +58,22 @@ hr {
 	border-top: 3px solid #666;
 }
 
+.warningBlock {
+	background-color: #ccc;
+	padding: 1px;
+	border: solid 3px #666;
+	margin: 24px 0;
+}
+
+.aBlock {
+	
+	background-color: #222;
+	border: solid #ccc 3px;
+	text-shadow: none;
+	padding: 1px 20px;
+	margin-left: 5%;
+}
+
 /*********************************************************************************/
 /*                           Indentation and Spacing                             */ 
 /*********************************************************************************/
@@ -76,29 +92,6 @@ hr {
 	border-right: solid 4px var(--myMidGray);
 	box-shadow: 0px 0px 20px var(--myTrueBlack);
 	min-height: calc(100vh - 480px);
-}
-
-.listItem {
-	margin: 30px 0;
-}
-
-.listText {
-	margin: 0 0 0 calc(30% + 38px);
-}
-
-.artListing {
-	margin: 30px 0px 0px 0px;
-}
-
-.faqText {
-	margin-left: calc(20% + 38px);
-}
-
-.warningBlock {
-	background-color: #ccc;
-	padding: 1px;
-	border: solid 3px #666;
-	margin: 24px 0;
 }
 
 /*********************************************************************************/
@@ -152,12 +145,10 @@ a {
 	text-shadow: none;
 }
 
-blockquote {
-	margin: 30px auto;
-	width: 75%;
-	border: solid var(--myMidGray);
-	padding: 5px 20px;
-	background: var(--myOffBlack);
+.qText {
+	text-align: left;
+	font-weight: bold;
+	font-size: 20px;
 }
 
 .warningNote {
@@ -166,6 +157,11 @@ blockquote {
 	font-size: 14px;
 	font-style: italic;
 	color: black;
+}
+
+.aText {
+	text-align: left;
+	text-shadow: none;
 }
 
 /*********************************************************************************/
