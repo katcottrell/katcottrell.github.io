@@ -18,7 +18,7 @@ function makeFooter() {
 	    '<img src="' + absFoot + 'discord_icon.png" class="footer-icon" alt="Discord">'                 + '\n' +
 	    '</a>'                                                                                          + '\n' +
 	    
-	    '<a href="mailto:fledermischief@gmail.com" ' + linkAttributes + '>'                             + '\n' + 
+	    '<a href="mailto:nightlinks.nyc@gmail.com" ' + linkAttributes + '>'                             + '\n' + 
 	    '<img src="' + absFoot + 'mail_icon.png" class="footer-icon" alt="Email">'                      + '\n' +
 	    '</a>'                                                                                          + '\n' +
 	    
