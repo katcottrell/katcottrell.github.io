@@ -12,7 +12,7 @@
 	--myOffBlack:      #222222;
 	--myHighlightGray: #E0E0E0;
 	--myLinkGreen:     #00FF84;
-	--myActiveColor    pink;
+	--myActiveColor    #ffc0cb;
 }
 
 /*********************************************************************************/
@@ -75,7 +75,7 @@ li {
  }
 
 a {
-	color: var(--myLinkGreen);
+	color: var(--myActiveColor);
 }
 
 blockquote {
@@ -219,7 +219,7 @@ img.footer-icon {
 
 .topnav a {
 	float: left;
-	color: var(--myActiveColor);
+	color: black;
 	text-align: center;
 	padding: 16px 16px;
 	text-decoration: none;
