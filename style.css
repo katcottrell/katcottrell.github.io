@@ -12,6 +12,7 @@
 	--myOffBlack:      #222222;
 	--myHighlightGray: #E0E0E0;
 	--myLinkGreen:     #00FF84;
+	--myActiveColor    pink;
 }
 
 /*********************************************************************************/
@@ -59,6 +60,7 @@ p, ol, ul {
 	font-family: "Calibre Light", Helvetica,Arial,sans-serif;
 	font-size: 17px;
 	line-height: 180%; 
+	text-align: center;
 }
 
 ol, ul { 
@@ -217,24 +219,21 @@ img.footer-icon {
 
 .topnav a {
 	float: left;
-	color: var(--myTrueBlack);
+	color: var(--myActiveColor);
 	text-align: center;
-	padding: 14px 16px;
+	padding: 16px 16px;
 	text-decoration: none;
 	font-size: 20px;
 	padding-left: 20px;
 }
 
 .topnav a:hover {
-	background-color: var(--myHighlightGray);
-	color: black;
+	color: var(--myActiveColor);
 }
 
 .topnav a.active {
-	background-color: var(--myHighlightGray);
-	color: black;
-	font-weight: bold;
-	box-shadow: 0 0 12px var(--myMidGray);
+	color: var(--myActiveColor);
+	border-bottom: solid var(--myActiveColor) 1px;
 }
 
 /*********************************************************************************/
