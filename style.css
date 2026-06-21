@@ -23,20 +23,23 @@ html, body {
 }
 
 body { 
-	background: var(--myTrueBlack);
+	background: white;
+	margin: 0px;
+	padding: 0px;
+	font-family: "Calibre Light", Helvetica,Arial,sans-serif;
+	/*
 	background-image: url(https://katcottrell.github.io/images/binary-background.png);
 	background-size: 300px;
 	background-repeat: repeat;
-	margin: 0px;
-	padding: 0px;
-	font-family: "Century Gothic", Helvetica, Arial, sans-serif;
+	*/
 }
 		
 h1, h2, h3 { 
 	padding: 0; 
-	color: var(--myTrueWhite); 
-	font-family: monospace;
+	font-family: serif;
 	font-weight: bold;
+	text-align: center;
+	color: black; 
 }
 
 h1 {
@@ -52,8 +55,8 @@ h3 {
 }
 	
 p, ol, ul { 
-	color: var(--myTrueWhite);
-	font-family: "Century Gothic", Helvetica, Arial, sans-serif;
+	color: black;
+	font-family: "Calibre Light", Helvetica,Arial,sans-serif;
 	font-size: 17px;
 	line-height: 180%; 
 }
@@ -94,7 +97,7 @@ hr {
 }
 
 .standardIndent {
-	background: var(--myTrueBlack);
+	background: white;
 	max-width: 70%;
 	width: 1000px;
 	margin: 0px max(10%, calc(45% - 503px));
@@ -106,7 +109,7 @@ hr {
 }
 
 .techIndent {
-	background: var(--myTrueBlack);
+	background: white;
 	max-width: calc(80% - 338px);
 	width: 1000px;
 	margin-left: max(338px, calc(45% - 503px));
@@ -196,15 +199,20 @@ img.footer-icon {
 /*********************************************************************************/
 
 .topnav {
-	background-color: var(--myLightGray);
-	font-family: monospace;
+	background-color: white;
 	font-size: 17px;
 	overflow: hidden;
-	padding-left: 20px;
 	position: relative;
 	z-index: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	/*
+	padding-left: 20px;
 	border-top: solid var(--myMidGray); 
 	border-bottom: solid var(--myMidGray);
+	font-family: monospace;
+	*/
 }
 
 .topnav a {
@@ -254,7 +262,7 @@ img.footer-icon {
 	font-family: monospace;
 	font-weight: bolder;
 	text-decoration: none;
-	color: var(--myTrueBlack);
+	color: black;
 	display: block;
 }
 
