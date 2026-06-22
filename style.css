@@ -67,6 +67,7 @@ p, ol, ul {
 ol, ul { 
 	padding: 0; 
 	list-style: none; 
+	text-align: left;
 }
 
 li {
@@ -113,6 +114,7 @@ hr {
 	background: white;
 	max-width: calc(80% - 338px);
 	width: 1000px;
+	margin-top: 48px;
 	margin-left: max(338px, calc(45% - 503px));
 	margin-right: max(10%, calc(45% - 503px));
 	padding: 20px 5% 200px 5%;
@@ -240,7 +242,7 @@ img.footer-icon {
 /*********************************************************************************/
 
 .sidenav {
-	background-color: var(--myLightGray);
+	background-color: white;
 	position: -webkit-sticky;
 	position: sticky;
 	top: 30px;
@@ -248,10 +250,10 @@ img.footer-icon {
 	width: 270px;
 	z-index: 1;
 	overflow-x: hidden;
-	margin: 30px 0px 30px max(30px, calc((45% - 773px) / 2));
+	margin: 48px 0px 30px max(30px, calc((45% - 773px) / 2));
 	padding: 20px 0px 20px 0px;
 	border: solid 4px #999;
-	box-shadow: 0px 0px 20px var(--myTrueBlack);
+	box-shadow: 0px 0px 20px lightgray;
 }
 
 .sidenav a.sideTitle {
@@ -270,7 +272,6 @@ img.footer-icon {
 	font-weight:bold;
 	font-family: monospace;
 	text-decoration: none;
-	color: var(--myTrueBlack);
 	display: block;
 }
 
