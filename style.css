@@ -470,3 +470,25 @@ th {
 	text-align: left;
 	width: 100px;
 }
+
+/*********************************************************************************/
+/*                            Horizontal Line Styling                            */ 
+/*********************************************************************************/
+
+hr {
+  border: none;
+  border-top: 3px double #666666;
+  color: #666666;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+
+hr::after {
+  background: white;
+  content: "§";
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+}
+
