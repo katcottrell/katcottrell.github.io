@@ -14,7 +14,7 @@ function makeHeader(tab) {
 	    '<link rel="stylesheet" href="/style.css">\n' +
 	    '<div id="header-image-menu">\n' +
 	    '<a href="https://katcottrell.github.io">' +
-	    '<img src="/images/Katherine Cottrell header padded.jpg" style="width=80%;margin:48px 10% 24px 10%;">\n' +
+	    '<img src="/images/Katherine Cottrell header padded.jpg" style="width:80%;margin:48px 10% 24px 10%;">\n' +
 	    '</a>' +
 	    '</div>\n' +
 	    '<div class="topnav">\n' +
