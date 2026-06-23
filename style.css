@@ -45,21 +45,21 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: 30px;
+	font-size: 30pt;
 }
 
 h2 {
-	font-size: 24px;
+	font-size: 24pt;
 }
 
 h3 {
-	font-size: 20px;
+	font-size: 20pt;
 }
 	
 p, ol, ul { 
 	color: black;
 	font-family: "Calibre Light", Helvetica,Arial,sans-serif;
-	font-size: 17px;
+	font-size: 12pt;
 	line-height: 180%; 
 	text-align: center;
 }
@@ -83,9 +83,9 @@ a {
 blockquote {
 	margin: 30px auto;
 	width: 75%;
-	border: solid var(--myMidGray);
 	padding: 5px 20px;
-	background: var(--myOffBlack);
+	background: #eeeeee;
+	box-shadow: 0px 0px 20px darkgrey;
 }
 
 hr {
@@ -148,7 +148,7 @@ hr {
 
 .artMedia {
 	margin-top: 0px;
-	font-size: 15px;
+	font-size: 10pt;
 }
 
 .quoteSource {
@@ -213,7 +213,7 @@ img.footer-icon {
 	border-top: solid var(--myMidGray); 
 	border-bottom: solid var(--myMidGray);
 	font-family: monospace;
-	font-size: 17px;
+	font-size: 17pt;
 	*/
 }
 
@@ -223,7 +223,7 @@ img.footer-icon {
 	text-align: center;
 	padding: 16px 16px;
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 18pt;
 	padding-left: 20px;
 	text-transform: uppercase;
 }
@@ -250,15 +250,14 @@ img.footer-icon {
 	width: 270px;
 	z-index: 1;
 	overflow-x: hidden;
-	margin: 48px 0px 30px max(30px, calc((45% - 773px) / 2));
+	margin: 0px 0px 30px max(30px, calc((45% - 773px) / 2));
 	padding: 20px 0px 20px 0px;
-	border: solid 4px #999;
 	box-shadow: 0px 0px 20px lightgray;
 }
 
 .sidenav a.sideTitle {
 	padding-left: 16px;
-	font-size: 30px;
+	font-size: 30pt;
 	font-family: monospace;
 	font-weight: bolder;
 	text-decoration: none;
@@ -268,7 +267,7 @@ img.footer-icon {
 
 .sidenav a.sideHeading {
 	padding: 6px 8px 6px 16px;
-	font-size:20px;
+	font-size:20pt;
 	font-weight:bold;
 	font-family: monospace;
 	text-decoration: none;
@@ -277,7 +276,7 @@ img.footer-icon {
 
 .sidenav a.sideTabs {
 	padding: 6px 8px 6px 40px;
-	font-size: 17px;
+	font-size: 17pt;
 	font-family: monospace;
 	text-decoration: none;
 	color: var(--myTrueBlack);
@@ -292,7 +291,7 @@ img.footer-icon {
 
 .sidenav a.active {
 	padding: 6px 8px 6px 40px;
-	font-size: 17px;
+	font-size: 17pt;
 	font-family: monospace;
 	font-weight: bold;
 	text-decoration: none;
@@ -386,7 +385,7 @@ img.footer-icon {
 .vidcap { 
 	width: 500px;
 	margin: auto;
-	font-size: 12px;
+	font-size: 12pt;
 	font-style: italic;
 	max-width: 100%;
 }
