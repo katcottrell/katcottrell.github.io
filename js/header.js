@@ -8,6 +8,7 @@ function makeHeader(tab) {
 	let projects   = tab === "community"  ? 'class="active" ' : '';
 	let art        = tab === "art"        ? 'class="active" ' : '';
 	let contact    = tab === "contact"    ? 'class="active" ' : '';
+	let community  = tab === "community"  ? 'class="active" ' : '';
 	
 	let headerCode = 
 	    '<header>\n' +
@@ -23,7 +24,7 @@ function makeHeader(tab) {
 	    /*'<a ' + management + 'href="' + abs + 'management.html">Management</a>\n' +*/
 	    /*'<a ' + events     + 'href="' + abs + 'events.html">Events</a>\n' +*/
 	    '<a ' + tech       + 'href="' + abs + 'tech.html">Tech</a>\n' +
-	    '<a ' + community   + 'href="' + abs + 'community.html">Community</a>\n' +
+	    '<a ' + community  + 'href="' + abs + 'community.html">Community</a>\n' +
 	    '<a ' + art        + 'href="' + abs + 'art.html">Art</a>\n' +
 	    '<a ' + contact    + 'href="' + abs + 'contact.html">Contact</a>\n' +
 	    '</div>\n' +
